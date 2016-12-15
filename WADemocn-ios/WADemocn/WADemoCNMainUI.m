@@ -8,10 +8,11 @@
 
 #import "WADemoCNMainUI.h"
 #import "WADemoUtil.h"
-#import "WADemoButtonSwitch.h"
+#import "WADemoButtonMain.h"
 #import <WASdkIntf/WASdkIntf.h>
 #import "WADemoMaskLayer.h"
 #import "WADemoPayView.h"
+#import "WADemoAppTrackingView.h"
 
 @interface WADemoCNMainUI() <WALoginDelegate>
 
@@ -54,6 +55,7 @@
     [btnTitles addObject:@[@"不缓存登录", @"缓存登录", [NSNumber numberWithBool:_cacheEnabled]]];
     [btnTitles addObject:@[@"切换账号"]];
     [btnTitles addObject:@[@"登出"]];
+    [btnTitles addObject:@[@"数据收集"]];
     
     UIImage *bgNormal = [self imageWithColor:[UIColor grayColor] size:CGSizeMake(1, 1)];
     UIImage *bgHighlighted = [self imageWithColor:[UIColor orangeColor] size:CGSizeMake(1, 1)];
@@ -96,8 +98,8 @@
         }
     }
     
-    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@1]];
-    self.title = @"WADemocn1.0";
+    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2]];
+    self.title = @"WADemocn1.1.0";
     self.btnLayout = btnLayout;
     self.btns = btns;
 }
@@ -145,6 +147,7 @@
         productList.hasBackBtn = YES;
         [vc.view addSubview:productList];
         [productList moveIn];
+        [productList pay];
     }
     else if (tag == 4) //设置是否缓存登录
     {
@@ -170,9 +173,17 @@
     {
         [WAUserProxy logout];
     }
+    else if (tag == 7) // 数据收集
+    {
+        UIViewController* vc = [WADemoUtil getCurrentVC];
+        WADemoAppTrackingView* appTrackView = [[WADemoAppTrackingView alloc]init];
+        appTrackView.hasBackBtn = YES;
+        [vc.view addSubview:appTrackView];
+        [appTrackView moveIn];
+    }
 }
 
-#pragma mark GHWLoginDelegate
+#pragma mark WALoginDelegate
 -(void)loginDidCompleteWithResults:(WALoginResult *)result{
     [WADemoMaskLayer stopAnimating];
     NSLog(@"result--token:%@",result.token);
@@ -181,34 +192,7 @@
     NSLog(@"result--pUserid:%@",result.pUserId);
     NSLog(@"result--platform:%@",result.platform);
     NSLog(@"result--extends:%@",result.extends);
-    if (result.platform == WA_PLATFORM_FACEBOOK||result.platform == WA_PLATFORM_VK) {
-        
-        [WASocialProxy inviteInstallRewardPlatform:result.platform TokenString:result.pToken handler:^(NSUInteger code, NSString *msg, NSError *error) {
-            if (code == 200) {
-                
-                UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"tip" message:[NSString stringWithFormat:@"触发Facebook被邀请人安装应用事件接口成功 msg:%@",msg] delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
-                [alert show];
-            }else{
-                UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"tip" message:[NSString stringWithFormat:@"触发Facebook被邀请人安装应用事件接口失败 error:%@",error] delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
-                [alert show];
-            }
-        }];
-    }
 }
-
-//-(void)loginDidCompleteWithResults:(WALoginResult *)result{
-//    if (result.platform == WA_PLATFORM_FACEBOOK||result.platform == WA_PLATFORM_VK) {
-//
-//        [WASocialProxy inviteInstallRewardPlatform:result.platform TokenString:result.pToken handler:^(NSUInteger code, NSString *msg, NSError *error) {
-//            if (code == 200) {
-//                //触发被邀请人安装应用事件接口成功
-//
-//            }else{
-//               //触发被邀请人安装应用事件接口失败
-//            }
-//        }];
-//    }
-//}
 
 -(void)loginDidFailWithError:(NSError *)error andResult:(WALoginResult *)result
 {

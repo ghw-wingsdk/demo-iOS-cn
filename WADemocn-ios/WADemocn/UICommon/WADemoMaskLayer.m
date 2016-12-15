@@ -8,10 +8,13 @@
 
 #import "WADemoMaskLayer.h"
 #import "WADemoUtil.h"
+
 static WADemoMaskLayer* ghwMaskLayer_;
+
 @interface WADemoMaskLayer()
 @property(nonatomic,strong)UIActivityIndicatorView* maskLayerIndicator;
 @end
+
 @implementation WADemoMaskLayer
 
 -(instancetype)init{
@@ -20,7 +23,7 @@ static WADemoMaskLayer* ghwMaskLayer_;
         //添加界面旋转通知
         [WADemoUtil addOrientationNotification:self selector:@selector(handleDeviceOrientationDidChange:) object:nil];
         self.frame = [UIScreen mainScreen].bounds;
-        self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+        self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
         [self initUI];
     }
     return self;
@@ -31,8 +34,6 @@ static WADemoMaskLayer* ghwMaskLayer_;
 }
 
 -(void)initUI{
-    UIViewController* currentVC = [WADemoUtil getCurrentVC];
-    [currentVC.view addSubview:self];
     
     _maskLayerIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     [self addSubview:_maskLayerIndicator];
@@ -41,17 +42,21 @@ static WADemoMaskLayer* ghwMaskLayer_;
 -(void)layoutSubviews{
     [super layoutSubviews];
     self.frame = [UIScreen mainScreen].bounds;
-    _maskLayerIndicator.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
+    _maskLayerIndicator.center = self.center;
 }
 
 +(void)startAnimating{
     if (!ghwMaskLayer_) {
         ghwMaskLayer_ = [[WADemoMaskLayer alloc]init];
     }
+    
+    UIViewController* currentVC = [WADemoUtil getCurrentVC];
+    [currentVC.view addSubview:ghwMaskLayer_];
     [ghwMaskLayer_.maskLayerIndicator startAnimating];
 }
 
 +(void)stopAnimating{
+    [ghwMaskLayer_.maskLayerIndicator stopAnimating];
     [ghwMaskLayer_ removeFromSuperview];
     ghwMaskLayer_ = nil;
 }

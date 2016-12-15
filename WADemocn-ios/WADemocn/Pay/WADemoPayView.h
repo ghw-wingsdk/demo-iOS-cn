@@ -11,4 +11,6 @@
 
 @interface WADemoPayView : WADemoNaviView<WAInventoryDelegate>
 
+-(void)pay;
+
 @end

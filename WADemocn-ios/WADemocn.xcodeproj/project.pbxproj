@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3651BAF41DFFE0D6002B955C /* WADemoAppTrackingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3651BAED1DFFE0D6002B955C /* WADemoAppTrackingView.m */; };
+		3651BAF51DFFE0D7002B955C /* WADemoEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3651BAEF1DFFE0D6002B955C /* WADemoEventData.m */; };
+		3651BAF61DFFE0D7002B955C /* WADemoEventParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 3651BAF11DFFE0D6002B955C /* WADemoEventParam.m */; };
+		3651BAF71DFFE0D7002B955C /* WADemoSendEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3651BAF31DFFE0D6002B955C /* WADemoSendEventView.m */; };
 		36F6FBB31CD3092800EB0DBC /* WADemoPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F6FBB21CD3092800EB0DBC /* WADemoPayView.m */; };
 		36FEA53B1D990322000B300D /* WADemoCNMainUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FEA53A1D990322000B300D /* WADemoCNMainUI.m */; };
 		7FA55E781D332BC400341D7A /* WADemoInvite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA55E771D332BC400341D7A /* WADemoInvite.m */; };
@@ -24,13 +28,6 @@
 		7FC4E3381C8EEF3F0075FC7D /* WADemoAccountManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2DF1C8EEF3F0075FC7D /* WADemoAccountManagement.m */; };
 		7FC4E3391C8EEF3F0075FC7D /* WADemoAccountSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2E11C8EEF3F0075FC7D /* WADemoAccountSwitch.m */; };
 		7FC4E33A1C8EEF3F0075FC7D /* WADemoBindingAccountList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2E31C8EEF3F0075FC7D /* WADemoBindingAccountList.m */; };
-		7FC4E33B1C8EEF3F0075FC7D /* WADemoAppTrackingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2E61C8EEF3F0075FC7D /* WADemoAppTrackingView.m */; };
-		7FC4E33C1C8EEF3F0075FC7D /* WADemoEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2E81C8EEF3F0075FC7D /* WADemoEventData.m */; };
-		7FC4E33D1C8EEF3F0075FC7D /* WADemoEventParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2EA1C8EEF3F0075FC7D /* WADemoEventParam.m */; };
-		7FC4E33E1C8EEF3F0075FC7D /* WADemoEventTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2EC1C8EEF3F0075FC7D /* WADemoEventTableView.m */; };
-		7FC4E33F1C8EEF3F0075FC7D /* WADemoPostEventTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2EE1C8EEF3F0075FC7D /* WADemoPostEventTextView.m */; };
-		7FC4E3401C8EEF3F0075FC7D /* WADemoPostEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2F01C8EEF3F0075FC7D /* WADemoPostEventView.m */; };
-		7FC4E3411C8EEF3F0075FC7D /* WADemoPostEventViewBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2F21C8EEF3F0075FC7D /* WADemoPostEventViewBtn.m */; };
 		7FC4E3441C8EEF3F0075FC7D /* WADemoHotUpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2F71C8EEF3F0075FC7D /* WADemoHotUpdateView.m */; };
 		7FC4E3451C8EEF3F0075FC7D /* WADemoIapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2FA1C8EEF3F0075FC7D /* WADemoIapView.m */; };
 		7FC4E3461C8EEF3F0075FC7D /* WADemoProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2FC1C8EEF3F0075FC7D /* WADemoProductList.m */; };
@@ -55,7 +52,6 @@
 		7FC4E35B1C8EEF3F0075FC7D /* WADemoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E32E1C8EEF3F0075FC7D /* WADemoScrollView.m */; };
 		7FC4E35C1C8EEF3F0075FC7D /* WADemoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E3311C8EEF3F0075FC7D /* WADemoUtil.m */; };
 		7FC4E35D1C8EEF3F0075FC7D /* WADemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E3331C8EEF3F0075FC7D /* WADemoAppDelegate.m */; };
-		7FC4E35E1C8EEF3F0075FC7D /* WADemoMainUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E3351C8EEF3F0075FC7D /* WADemoMainUI.m */; };
 		7FC4E35F1C8EEF3F0075FC7D /* WADemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E3371C8EEF3F0075FC7D /* WADemoViewController.m */; };
 		7FC4E37C1C8EF0310075FC7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4E37A1C8EF0310075FC7D /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -71,6 +67,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3651BAEC1DFFE0D6002B955C /* WADemoAppTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoAppTrackingView.h; sourceTree = "<group>"; };
+		3651BAED1DFFE0D6002B955C /* WADemoAppTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoAppTrackingView.m; sourceTree = "<group>"; };
+		3651BAEE1DFFE0D6002B955C /* WADemoEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoEventData.h; sourceTree = "<group>"; };
+		3651BAEF1DFFE0D6002B955C /* WADemoEventData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoEventData.m; sourceTree = "<group>"; };
+		3651BAF01DFFE0D6002B955C /* WADemoEventParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoEventParam.h; sourceTree = "<group>"; };
+		3651BAF11DFFE0D6002B955C /* WADemoEventParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoEventParam.m; sourceTree = "<group>"; };
+		3651BAF21DFFE0D6002B955C /* WADemoSendEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoSendEventView.h; sourceTree = "<group>"; };
+		3651BAF31DFFE0D6002B955C /* WADemoSendEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoSendEventView.m; sourceTree = "<group>"; };
 		36EF881E1CE2BF5700E7DF11 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		36F6FBB11CD3092800EB0DBC /* WADemoPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoPayView.h; sourceTree = "<group>"; };
 		36F6FBB21CD3092800EB0DBC /* WADemoPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoPayView.m; sourceTree = "<group>"; };
@@ -108,20 +112,6 @@
 		7FC4E2E11C8EEF3F0075FC7D /* WADemoAccountSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoAccountSwitch.m; sourceTree = "<group>"; };
 		7FC4E2E21C8EEF3F0075FC7D /* WADemoBindingAccountList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoBindingAccountList.h; sourceTree = "<group>"; };
 		7FC4E2E31C8EEF3F0075FC7D /* WADemoBindingAccountList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoBindingAccountList.m; sourceTree = "<group>"; };
-		7FC4E2E51C8EEF3F0075FC7D /* WADemoAppTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoAppTrackingView.h; sourceTree = "<group>"; };
-		7FC4E2E61C8EEF3F0075FC7D /* WADemoAppTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoAppTrackingView.m; sourceTree = "<group>"; };
-		7FC4E2E71C8EEF3F0075FC7D /* WADemoEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoEventData.h; sourceTree = "<group>"; };
-		7FC4E2E81C8EEF3F0075FC7D /* WADemoEventData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoEventData.m; sourceTree = "<group>"; };
-		7FC4E2E91C8EEF3F0075FC7D /* WADemoEventParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoEventParam.h; sourceTree = "<group>"; };
-		7FC4E2EA1C8EEF3F0075FC7D /* WADemoEventParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoEventParam.m; sourceTree = "<group>"; };
-		7FC4E2EB1C8EEF3F0075FC7D /* WADemoEventTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoEventTableView.h; sourceTree = "<group>"; };
-		7FC4E2EC1C8EEF3F0075FC7D /* WADemoEventTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoEventTableView.m; sourceTree = "<group>"; };
-		7FC4E2ED1C8EEF3F0075FC7D /* WADemoPostEventTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoPostEventTextView.h; sourceTree = "<group>"; };
-		7FC4E2EE1C8EEF3F0075FC7D /* WADemoPostEventTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoPostEventTextView.m; sourceTree = "<group>"; };
-		7FC4E2EF1C8EEF3F0075FC7D /* WADemoPostEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoPostEventView.h; sourceTree = "<group>"; };
-		7FC4E2F01C8EEF3F0075FC7D /* WADemoPostEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoPostEventView.m; sourceTree = "<group>"; };
-		7FC4E2F11C8EEF3F0075FC7D /* WADemoPostEventViewBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoPostEventViewBtn.h; sourceTree = "<group>"; };
-		7FC4E2F21C8EEF3F0075FC7D /* WADemoPostEventViewBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoPostEventViewBtn.m; sourceTree = "<group>"; };
 		7FC4E2F31C8EEF3F0075FC7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FC4E2F61C8EEF3F0075FC7D /* WADemoHotUpdateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoHotUpdateView.h; sourceTree = "<group>"; };
 		7FC4E2F71C8EEF3F0075FC7D /* WADemoHotUpdateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoHotUpdateView.m; sourceTree = "<group>"; };
@@ -171,8 +161,6 @@
 		7FC4E3311C8EEF3F0075FC7D /* WADemoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoUtil.m; sourceTree = "<group>"; };
 		7FC4E3321C8EEF3F0075FC7D /* WADemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoAppDelegate.h; sourceTree = "<group>"; };
 		7FC4E3331C8EEF3F0075FC7D /* WADemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoAppDelegate.m; sourceTree = "<group>"; };
-		7FC4E3341C8EEF3F0075FC7D /* WADemoMainUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoMainUI.h; sourceTree = "<group>"; };
-		7FC4E3351C8EEF3F0075FC7D /* WADemoMainUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoMainUI.m; sourceTree = "<group>"; };
 		7FC4E3361C8EEF3F0075FC7D /* WADemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoViewController.h; sourceTree = "<group>"; };
 		7FC4E3371C8EEF3F0075FC7D /* WADemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoViewController.m; sourceTree = "<group>"; };
 		7FC4E37B1C8EF0310075FC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -198,6 +186,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3651BAEB1DFFE0D6002B955C /* AppTracking */ = {
+			isa = PBXGroup;
+			children = (
+				3651BAEC1DFFE0D6002B955C /* WADemoAppTrackingView.h */,
+				3651BAED1DFFE0D6002B955C /* WADemoAppTrackingView.m */,
+				3651BAEE1DFFE0D6002B955C /* WADemoEventData.h */,
+				3651BAEF1DFFE0D6002B955C /* WADemoEventData.m */,
+				3651BAF01DFFE0D6002B955C /* WADemoEventParam.h */,
+				3651BAF11DFFE0D6002B955C /* WADemoEventParam.m */,
+				3651BAF21DFFE0D6002B955C /* WADemoSendEventView.h */,
+				3651BAF31DFFE0D6002B955C /* WADemoSendEventView.m */,
+			);
+			path = AppTracking;
+			sourceTree = "<group>";
+		};
 		36F6FBB01CD3092800EB0DBC /* Pay */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,9 +231,9 @@
 		7FC4E2B71C8EEE7C0075FC7D /* WADemocn */ = {
 			isa = PBXGroup;
 			children = (
+				3651BAEB1DFFE0D6002B955C /* AppTracking */,
 				36F6FBB01CD3092800EB0DBC /* Pay */,
 				7FC4E2DD1C8EEF3F0075FC7D /* AccountManagement  */,
-				7FC4E2E41C8EEF3F0075FC7D /* AppTracking */,
 				7FC4E2F31C8EEF3F0075FC7D /* Assets.xcassets */,
 				7FC4E2F81C8EEF3F0075FC7D /* InAppPurchase */,
 				7FC4E2F51C8EEF3F0075FC7D /* HotUpdate */,
@@ -240,8 +243,6 @@
 				7FC4E32F1C8EEF3F0075FC7D /* Util */,
 				7FC4E3321C8EEF3F0075FC7D /* WADemoAppDelegate.h */,
 				7FC4E3331C8EEF3F0075FC7D /* WADemoAppDelegate.m */,
-				7FC4E3341C8EEF3F0075FC7D /* WADemoMainUI.h */,
-				7FC4E3351C8EEF3F0075FC7D /* WADemoMainUI.m */,
 				7FC4E3361C8EEF3F0075FC7D /* WADemoViewController.h */,
 				7FC4E3371C8EEF3F0075FC7D /* WADemoViewController.m */,
 				7FC4E2C11C8EEE7C0075FC7D /* Main.storyboard */,
@@ -284,27 +285,6 @@
 				7FC4E2E31C8EEF3F0075FC7D /* WADemoBindingAccountList.m */,
 			);
 			path = "AccountManagement ";
-			sourceTree = "<group>";
-		};
-		7FC4E2E41C8EEF3F0075FC7D /* AppTracking */ = {
-			isa = PBXGroup;
-			children = (
-				7FC4E2E51C8EEF3F0075FC7D /* WADemoAppTrackingView.h */,
-				7FC4E2E61C8EEF3F0075FC7D /* WADemoAppTrackingView.m */,
-				7FC4E2E71C8EEF3F0075FC7D /* WADemoEventData.h */,
-				7FC4E2E81C8EEF3F0075FC7D /* WADemoEventData.m */,
-				7FC4E2E91C8EEF3F0075FC7D /* WADemoEventParam.h */,
-				7FC4E2EA1C8EEF3F0075FC7D /* WADemoEventParam.m */,
-				7FC4E2EB1C8EEF3F0075FC7D /* WADemoEventTableView.h */,
-				7FC4E2EC1C8EEF3F0075FC7D /* WADemoEventTableView.m */,
-				7FC4E2ED1C8EEF3F0075FC7D /* WADemoPostEventTextView.h */,
-				7FC4E2EE1C8EEF3F0075FC7D /* WADemoPostEventTextView.m */,
-				7FC4E2EF1C8EEF3F0075FC7D /* WADemoPostEventView.h */,
-				7FC4E2F01C8EEF3F0075FC7D /* WADemoPostEventView.m */,
-				7FC4E2F11C8EEF3F0075FC7D /* WADemoPostEventViewBtn.h */,
-				7FC4E2F21C8EEF3F0075FC7D /* WADemoPostEventViewBtn.m */,
-			);
-			path = AppTracking;
 			sourceTree = "<group>";
 		};
 		7FC4E2F51C8EEF3F0075FC7D /* HotUpdate */ = {
@@ -563,22 +543,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FEA53B1D990322000B300D /* WADemoCNMainUI.m in Sources */,
-				7FC4E33F1C8EEF3F0075FC7D /* WADemoPostEventTextView.m in Sources */,
 				7FA55E8E1D338EC300341D7A /* WADemoGroups.m in Sources */,
 				7FC4E35A1C8EEF3F0075FC7D /* WADemoNaviView.m in Sources */,
+				3651BAF61DFFE0D7002B955C /* WADemoEventParam.m in Sources */,
 				7FC4E3481C8EEF3F0075FC7D /* WADemoFriendInGameTV.m in Sources */,
 				7FC4E2BA1C8EEE7C0075FC7D /* main.m in Sources */,
-				7FC4E3401C8EEF3F0075FC7D /* WADemoPostEventView.m in Sources */,
 				7FAF3DBE1D3CCBBD00CC9A48 /* WADemoVKGiftView.m in Sources */,
 				7FA55E781D332BC400341D7A /* WADemoInvite.m in Sources */,
+				3651BAF71DFFE0D7002B955C /* WADemoSendEventView.m in Sources */,
 				7FC4E3491C8EEF3F0075FC7D /* WADemoFriendListForSendingAsking.m in Sources */,
 				7FC4E3501C8EEF3F0075FC7D /* WADemoFBGiftView.m in Sources */,
 				7FAF3DBB1D3CC67000CC9A48 /* WADemoGiftView.m in Sources */,
-				7FC4E33C1C8EEF3F0075FC7D /* WADemoEventData.m in Sources */,
 				7FC4E3461C8EEF3F0075FC7D /* WADemoProductList.m in Sources */,
 				7FC4E3531C8EEF3F0075FC7D /* WADemoFBShareView.m in Sources */,
 				7FC4E3381C8EEF3F0075FC7D /* WADemoAccountManagement.m in Sources */,
 				7FC4E3571C8EEF3F0075FC7D /* WADemoButtonSwitch.m in Sources */,
+				3651BAF41DFFE0D6002B955C /* WADemoAppTrackingView.m in Sources */,
 				7FC4E34B1C8EEF3F0075FC7D /* WADemoGiftListTVC.m in Sources */,
 				7FC4E34C1C8EEF3F0075FC7D /* WADemoGiftListView.m in Sources */,
 				7FA55E7B1D33310E00341D7A /* WADemoVKInviteView.m in Sources */,
@@ -591,23 +571,19 @@
 				36F6FBB31CD3092800EB0DBC /* WADemoPayView.m in Sources */,
 				7FC4E3581C8EEF3F0075FC7D /* WADemoListTableView.m in Sources */,
 				7FC4E35B1C8EEF3F0075FC7D /* WADemoScrollView.m in Sources */,
-				7FC4E33E1C8EEF3F0075FC7D /* WADemoEventTableView.m in Sources */,
 				7FC4E35F1C8EEF3F0075FC7D /* WADemoViewController.m in Sources */,
 				7FC4E3591C8EEF3F0075FC7D /* WADemoMaskLayer.m in Sources */,
-				7FC4E33D1C8EEF3F0075FC7D /* WADemoEventParam.m in Sources */,
 				7FC4E35D1C8EEF3F0075FC7D /* WADemoAppDelegate.m in Sources */,
 				7FC4E3451C8EEF3F0075FC7D /* WADemoIapView.m in Sources */,
 				7FC4E3521C8EEF3F0075FC7D /* WADemoFriendListTV.m in Sources */,
-				7FC4E35E1C8EEF3F0075FC7D /* WADemoMainUI.m in Sources */,
 				7FC4E34D1C8EEF3F0075FC7D /* WADemoGiftBoxTV.m in Sources */,
 				7FC4E33A1C8EEF3F0075FC7D /* WADemoBindingAccountList.m in Sources */,
 				7FC4E3391C8EEF3F0075FC7D /* WADemoAccountSwitch.m in Sources */,
 				7FC4E3511C8EEF3F0075FC7D /* WADemoFBInviteView.m in Sources */,
-				7FC4E3411C8EEF3F0075FC7D /* WADemoPostEventViewBtn.m in Sources */,
 				7FC4E3441C8EEF3F0075FC7D /* WADemoHotUpdateView.m in Sources */,
 				7FC4E34A1C8EEF3F0075FC7D /* WADemoGiftList.m in Sources */,
 				7FC4E3561C8EEF3F0075FC7D /* WADemoButtonMain.m in Sources */,
-				7FC4E33B1C8EEF3F0075FC7D /* WADemoAppTrackingView.m in Sources */,
+				3651BAF51DFFE0D7002B955C /* WADemoEventData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,7 +20,6 @@
         //添加界面旋转通知
         [WADemoUtil addOrientationNotification:self selector:@selector(handleDeviceOrientationDidChange:) object:nil];
         [self initBtnAndLayout];
-        [self pay];
     }
     return self;
 }

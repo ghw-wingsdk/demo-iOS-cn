@@ -7,7 +7,6 @@
 //
 
 #import "WADemoViewController.h"
-#import "WADemoMainUI.h"
 #import "WADemoCNMainUI.h"
 #import "WADemoAlertView.h"
 
