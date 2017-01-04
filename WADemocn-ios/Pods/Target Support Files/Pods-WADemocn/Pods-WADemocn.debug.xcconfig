@@ -1,0 +1,9 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/WAApImpl_CN/frameworks" "${PODS_ROOT}/WASdkImpl_CN/frameworks" "${PODS_ROOT}/WASdkIntf_CN/frameworks" "${PODS_ROOT}/WAWebPayImpl_CN/frameworks" "${PODS_ROOT}/WAWechatImpl_CN/frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/WAApImpl_CN" "${PODS_ROOT}/Headers/Public/WASdkImpl_CN" "${PODS_ROOT}/Headers/Public/WASdkIntf_CN" "${PODS_ROOT}/Headers/Public/WAWebPayImpl_CN" "${PODS_ROOT}/Headers/Public/WAWechatImpl_CN"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/WAApImpl_CN" -isystem "${PODS_ROOT}/Headers/Public/WASdkImpl_CN" -isystem "${PODS_ROOT}/Headers/Public/WASdkIntf_CN" -isystem "${PODS_ROOT}/Headers/Public/WAWebPayImpl_CN" -isystem "${PODS_ROOT}/Headers/Public/WAWechatImpl_CN"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"sqlite3" -l"z" -framework "AFNetworking" -framework "CFNetwork" -framework "CoreTelephony" -framework "FMDB" -framework "MJRefresh" -framework "Security" -framework "SystemConfiguration" -framework "Toast" -framework "WAApImpl" -framework "WACommon" -framework "WASdkImpl" -framework "WASdkIntf" -framework "WAWebPayImpl" -framework "WAWechatImpl" -framework "ZipArchive" -framework "lua" -framework "wax"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods
