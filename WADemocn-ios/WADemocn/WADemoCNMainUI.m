@@ -99,7 +99,7 @@
     }
     
     NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2]];
-    self.title = @"WADemocn1.1.0";
+    self.title = @"WADemocn1.1.2";
     self.btnLayout = btnLayout;
     self.btns = btns;
 }
