@@ -6,7 +6,6 @@ workspace 'Workspace.xcworkspace'
 #source 'http://172.16.100.58:7070/r/WAApImpl_CN.git'
 #source 'http://172.16.100.58:7070/r/WAWebPayImpl_CN.git'
 #source 'http://172.16.100.58:7070/r/WAWechatImpl_CN.git'
-#source 'http://172.16.100.58:7070/r/WAPushImpl_CN.git'
 
 source 'http://repo.wingsdk.cn:8082/r/WASdkIntf_CN.git'
 source 'http://repo.wingsdk.cn:8082/r/WASdkImpl_CN.git'
@@ -14,7 +13,6 @@ source 'http://repo.wingsdk.cn:8082/r/WAApwImpl_CN.git'
 source 'http://repo.wingsdk.cn:8082/r/WAApImpl_CN.git'
 source 'http://repo.wingsdk.cn:8082/r/WAWebPayImpl_CN.git'
 source 'http://repo.wingsdk.cn:8082/r/WAWechatImpl_CN.git'
-source 'http://repo.wingsdk.cn:8082/r/WAPushImpl_CN.git'
 
 target "WADemocn" do
 
@@ -24,6 +22,5 @@ pod 'WAApwImpl_CN', '1.1.4'
 pod 'WAApImpl_CN', '1.1.4'
 pod 'WAWebPayImpl_CN', '1.1.4'
 pod 'WAWechatImpl_CN', '1.1.4'
-pod 'WAPushImpl_CN', '1.1.4'
 
 end

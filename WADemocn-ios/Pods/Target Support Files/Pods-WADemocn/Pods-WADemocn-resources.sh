@@ -76,7 +76,6 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "WAApImpl_CN/config/wa_sdk_impl_config_apple.xml"
   install_resource "WAApwImpl_CN/config/wa_sdk_impl_config_apw.xml"
-  install_resource "WAPushImpl_CN/config/wa_sdk_impl_config_push.xml"
   install_resource "WASdkImpl_CN/config/wa_sdk_impl_config_winga.xml"
   install_resource "WASdkImpl_CN/bundle/WASDK-Resource.bundle"
   install_resource "WASdkImpl_CN/localizable/base.plist"
@@ -92,7 +91,6 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "WAApImpl_CN/config/wa_sdk_impl_config_apple.xml"
   install_resource "WAApwImpl_CN/config/wa_sdk_impl_config_apw.xml"
-  install_resource "WAPushImpl_CN/config/wa_sdk_impl_config_push.xml"
   install_resource "WASdkImpl_CN/config/wa_sdk_impl_config_winga.xml"
   install_resource "WASdkImpl_CN/bundle/WASDK-Resource.bundle"
   install_resource "WASdkImpl_CN/localizable/base.plist"
