@@ -18,6 +18,8 @@
 
 @property(nonatomic)BOOL cacheEnabled;
 @property(nonatomic)BOOL appWallEnabled;
+@property(nonatomic, strong) WADemoPayView* productList;
+@property(nonatomic, strong) WADemoAppTrackingView* appTrackView;
 
 @end
 
@@ -31,18 +33,12 @@
     return self;
 }
 
--(instancetype)init{
-    self = [super init];
+-(instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
     if (self) {
-        //添加界面旋转通知
-        [WADemoUtil addOrientationNotification:self selector:@selector(handleDeviceOrientationDidChange:) object:nil];
         [self initBtnAndLayout];
     }
     return self;
-}
-
--(void)handleDeviceOrientationDidChange:(NSNotification*)noti{
-    [self setNeedsLayout];
 }
 
 -(void)initBtnAndLayout{
@@ -102,7 +98,13 @@
     }
     
     NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2]];
-    self.title = @"WADemocn1.1.3";
+    
+    NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+//    CFShow((__bridge CFTypeRef)(infoDict));
+    // app版本
+    NSString *appVersion = [infoDict objectForKey:@"CFBundleShortVersionString"];
+    
+    self.title = [NSString stringWithFormat:@"WADemocn%@", appVersion];
     self.btnLayout = btnLayout;
     self.btns = btns;
 }
@@ -156,11 +158,11 @@
     else if (tag == 4) // 支付
     {
         UIViewController* vc = [WADemoUtil getCurrentVC];
-        WADemoPayView* productList = [[WADemoPayView alloc]init];
-        productList.hasBackBtn = YES;
-        [vc.view addSubview:productList];
-        [productList moveIn];
-        [productList pay];
+        _productList = [[WADemoPayView alloc]initWithFrame:self.bounds];
+        _productList.hasBackBtn = YES;
+        [vc.view addSubview:_productList];
+        [_productList moveIn];
+        [_productList pay];
     }
     else if (tag == 5) //设置是否缓存登录
     {
@@ -189,10 +191,10 @@
     else if (tag == 8) // 数据收集
     {
         UIViewController* vc = [WADemoUtil getCurrentVC];
-        WADemoAppTrackingView* appTrackView = [[WADemoAppTrackingView alloc]init];
-        appTrackView.hasBackBtn = YES;
-        [vc.view addSubview:appTrackView];
-        [appTrackView moveIn];
+        _appTrackView = [[WADemoAppTrackingView alloc]initWithFrame:self.bounds];
+        _appTrackView.hasBackBtn = YES;
+        [vc.view addSubview:_appTrackView];
+        [_appTrackView moveIn];
     }
     else if (tag == 9) // 闪退测试
     {
@@ -200,6 +202,16 @@
         int i = (int)array[1];
         NSLog(@"%d",i);
     }
+}
+
+- (void)deviceOrientationDidChange
+{
+    [super deviceOrientationDidChange];
+    if (_productList)
+        [_productList deviceOrientationDidChange];
+    
+    if (_appTrackView)
+        [_appTrackView deviceOrientationDidChange];
 }
 
 #pragma mark WALoginDelegate
@@ -225,11 +237,6 @@
 {
     [WADemoMaskLayer stopAnimating];
     NSLog(@"loginDidCancel--platform:%@",result.platform);
-}
-
--(void)dealloc
-{
-    [WADemoUtil removeOrientationNotification:self object:nil];
 }
 
 @end

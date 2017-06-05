@@ -12,20 +12,20 @@
 #import "WADemoUtil.h"
 #import "WADemoAlertView.h"
 
+@interface WADemoPayView ()
+{
+    WADemoProductList* productList;
+}
+@end
+
 @implementation WADemoPayView
 
--(instancetype)init{
-    self = [super init];
+-(instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
     if (self) {
-        //添加界面旋转通知
-        [WADemoUtil addOrientationNotification:self selector:@selector(handleDeviceOrientationDidChange:) object:nil];
         [self initBtnAndLayout];
     }
     return self;
-}
-
--(void)handleDeviceOrientationDidChange:(NSNotification*)noti{
-    [self setNeedsLayout];
 }
 
 -(void)initBtnAndLayout{
@@ -45,13 +45,8 @@
 
 -(void)queryInventoryDidCompleteWithResult:(NSArray<WAIapProduct *> *)Inventory{
     [WADemoMaskLayer stopAnimating];
-    for (WAIapProduct *iapProdict in Inventory)
-    {
-        iapProdict.localizedTitle = iapProdict.productIdentifier;
-        iapProdict.localizedDescription = iapProdict.productIdentifier;
-    }
     
-    WADemoProductList* productList = [[WADemoProductList alloc]initWithFrame:self.scrollView.bounds];
+    productList = [[WADemoProductList alloc]initWithFrame:self.scrollView.bounds];
     productList.goToType = GoToTypeWA;
     productList.products = Inventory;
     [self.scrollView addSubview:productList];
@@ -70,8 +65,11 @@
     [WADemoMaskLayer stopAnimating];
 }
 
--(void)dealloc{
-    [WADemoUtil removeOrientationNotification:self object:nil];
+- (void)deviceOrientationDidChange
+{
+    [super deviceOrientationDidChange];
+    productList.frame = self.scrollView.bounds;
+    [productList deviceOrientationDidChange];
 }
 
 @end

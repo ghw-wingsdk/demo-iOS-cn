@@ -11,7 +11,9 @@
 #import "WADemoAlertView.h"
 
 @interface WADemoViewController ()
-
+{
+    WADemoCNMainUI* maincnUI;
+}
 @end
 
 @implementation WADemoViewController
@@ -19,19 +21,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    
+    [self initUI];
     
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self initUI];
 }
 
 -(void)initUI{
 //    WADemoMainUI* mainUI = [[WADemoMainUI alloc]init];
 //    [self.view addSubview:mainUI];
-    WADemoCNMainUI* maincnUI = [[WADemoCNMainUI alloc]init];
+    CGFloat width = self.view.bounds.size.width;
+    CGFloat height = self.view.bounds.size.height;
+    if (((self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) && width > height)
+        || ((self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft || self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) && width < height))
+    {
+        width = self.view.bounds.size.height;
+        height = self.view.bounds.size.width;
+    }
+    
+    maincnUI = [[WADemoCNMainUI alloc]initWithFrame:CGRectMake(0, 0, width, height)];
     [self.view addSubview:maincnUI];
 }
 
@@ -67,6 +78,11 @@
 -(void)switchAcctDidCompleteWithResult:(WALoginResult*)result{
     WADemoAlertView* alert = [[WADemoAlertView alloc]initWithTitle:@"切换账户成功" message:[NSString stringWithFormat:@"platform:%@\npUserId:%@,pToken:%@,userId:%@,token:%@",result.platform,result.pUserId,result.pToken,result.token,result.userId] cancelButtonTitle:@"Sure" otherButtonTitles:nil block:nil];
     [alert show];
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [maincnUI deviceOrientationDidChange];
 }
 
 @end

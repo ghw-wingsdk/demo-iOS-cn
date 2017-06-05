@@ -23,9 +23,9 @@
 
 @implementation WADemoSendEventView
 
--(instancetype)initWithEventName:(NSString*)eventName
+-(instancetype)initWithFrame:(CGRect)frame eventName:(NSString*)eventName
 {
-    if (self = [super init])
+    if (self = [super initWithFrame:frame])
     {
         mEventName = eventName;
         
@@ -45,13 +45,16 @@
     UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hiddenKeyboard:)];
     [self addGestureRecognizer:ges];
     
+    CGRect rectStatus = [[UIApplication sharedApplication] statusBarFrame];
+    CGFloat heightStatus = rectStatus.size.width > rectStatus.size.height ? rectStatus.size.height : rectStatus.size.width;
+    
     // titleView
-    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 44)];
+    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, heightStatus, self.frame.size.width, 44)];
     titleView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     titleView.backgroundColor = [UIColor grayColor];
     [self addSubview:titleView];
     
-    UILabel *titleLable = [[UILabel alloc] initWithFrame:titleView.frame];
+    UILabel *titleLable = [[UILabel alloc] initWithFrame:titleView.bounds];
     titleLable.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     titleLable.textColor = [UIColor whiteColor];
     titleLable.font = [UIFont fontWithName:@"Arial" size:15];
@@ -75,11 +78,11 @@
     [btnSend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btnSend setTitle:@"发送" forState:UIControlStateNormal];
     [btnSend addTarget:self action:@selector(buttonEvents:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:btnSend];
+    [titleView addSubview:btnSend];
     
     //
     CGRect frame = self.frame;
-    frame.origin.y = titleView.frame.size.height;
+    frame.origin.y = titleView.frame.origin.y + titleView.frame.size.height;
     frame.size.height = frame.size.height - frame.origin.y - 20;
     
     svContent = [[UIScrollView alloc] initWithFrame:frame];
@@ -219,11 +222,9 @@
     }
 }
 
-- (void)layoutSubviews
+- (void)deviceOrientationDidChange
 {
-    [super layoutSubviews];
-    
-    self.frame = [UIScreen mainScreen].bounds;
+    self.frame = self.superview.bounds;
     
     svContent.contentSize = CGSizeMake(self.frame.size.width, svContent.contentSize.height);
 

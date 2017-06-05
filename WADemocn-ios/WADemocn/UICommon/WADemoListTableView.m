@@ -88,8 +88,7 @@
 }
 
 -(void)setTableViewFrame{
-    UIViewController *rootController = [[UIApplication sharedApplication] keyWindow].rootViewController;
-    float width = rootController.view.frame.size.width - 2*_left;
+    float width = self.superview.frame.size.width - 2*_left;
     float height = _heightForContentView + _heightForHearder + _heightForFooter;
     
     self.frame = CGRectMake(_left, _top, width, height);

@@ -22,7 +22,17 @@ static WADemoMaskLayer* ghwMaskLayer_;
     if (self) {
         //添加界面旋转通知
         [WADemoUtil addOrientationNotification:self selector:@selector(handleDeviceOrientationDidChange:) object:nil];
-        self.frame = [UIScreen mainScreen].bounds;
+        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        CGFloat height = [UIScreen mainScreen].bounds.size.height;
+        UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+        if (((orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown) && width > height)
+            || ((orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight) && width < height))
+        {
+            width = [UIScreen mainScreen].bounds.size.height;
+            height = [UIScreen mainScreen].bounds.size.width;
+        }
+        self.frame = CGRectMake(0, 0, width, height);
+        
         self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
         [self initUI];
     }

@@ -20,4 +20,5 @@
 -(void)initUI;
 -(void)moveIn;
 -(void)removeView;
+-(void)deviceOrientationDidChange;
 @end

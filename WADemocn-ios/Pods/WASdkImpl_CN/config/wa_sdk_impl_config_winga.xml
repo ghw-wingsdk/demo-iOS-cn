@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<version val="WA1.1.4"/>
+    <comps>
+        <!-- 用户模块 -->
+        <comp module="USR" plaf="WINGA" mandatory="YES" value="WASdkUser" desc="WINGA用户账户"/>
+        <!-- 基础支付模块 -->
+        <comp module="PAY" plaf="WINGA" value="WASdkPay" desc="基础支付"/>
+        <!-- 数据收集模块 -->
+        <comp module="TRA" plaf="WINGA" mandatory="YES" value="WASdkTrack" desc="WINGA数据统计"/>
+        <!-- 数据收集模块 -->
+        <comp module="SOC" plaf="WINGA" mandatory="YES" value="WASdkSocial" desc="WINGA社交"/>
+        
+        <!-- 公共模块 -->
+        <comp module="CORE" plaf="WINGA" mandatory="YES" value="WASdkCore" desc="公共模块"/>
+    </comps>
+    <ops>
+        <op type="copy" category="res" isFile="NO" from="frameworks" to="wasdk/wa/frameworks" />
+        <op type="copy" category="res" isFile="NO" from="bundle" to="wasdk/wa/bundle" />
+        <op type="ref" category="res" isFile="NO" from="usr/lib/libz.tbd"/>
+        <op type="ref" category="res" isFile="NO" from="usr/lib/libsqlite3.tbd"/>
+        <op type="ref" category="res" isFile="NO" from="System/Library/Frameworks/AdSupport.framework"/>
+        <op type="copy" category="res" isFile="NO" from="localizable" to="wasdk/wa/localizable"/>
+    </ops>
+</config>

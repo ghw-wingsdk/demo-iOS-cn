@@ -1,0 +1,1 @@
+../../../../WASdkIntf_CN/frameworks/WASdkIntf.framework/Headers/WAFBObject.h

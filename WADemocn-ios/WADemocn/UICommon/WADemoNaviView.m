@@ -23,19 +23,22 @@
 -(instancetype)initWithBtns:(NSMutableArray *)btns btnLayout:(NSMutableArray *)btnLayout{
     self = [super init];
     if (self) {
-        //添加界面旋转通知
-        [WADemoUtil addOrientationNotification:self selector:@selector(handleDeviceOrientationDidChange:) object:nil];
         self.btns = btns;
         self.btnLayout = btnLayout;
     }
     return self;
 }
--(instancetype)init{
-    self = [super init];
-    if (self) {
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame])
+    {
+        [self initUI];
     }
+    
     return self;
 }
+
 #pragma mark setter getter
 -(void)setTitle:(NSString *)title{
     if (![_title isEqual:title]) {
@@ -97,15 +100,18 @@
     if (!_btnLayout||!_btns) {
         return;
     }
-    [self setCurrentFrame];
     
-    
+    CGRect rectStatus = [[UIApplication sharedApplication] statusBarFrame];
+    CGFloat heightStatus = rectStatus.size.width > rectStatus.size.height ? rectStatus.size.height : rectStatus.size.width;
     _naviHeight = 44;
     
     _naviBar = [[UIView alloc]init];
+    _naviBar.frame = CGRectMake(0, heightStatus, self.frame.size.width, _naviHeight);
     [self addSubview:_naviBar];
     _naviBar.backgroundColor = [UIColor grayColor];
+    
     _titleLable = [[UILabel alloc]init];
+    _titleLable.frame = _naviBar.bounds;
     [_naviBar addSubview:_titleLable];
     _titleLable.textColor = [UIColor whiteColor];
     _titleLable.font = [UIFont fontWithName:@"Arial" size:15];
@@ -117,7 +123,9 @@
     
     NSMutableArray* m_btns = [NSMutableArray arrayWithArray:_btns];
     NSMutableArray* m_btnLayout = [NSMutableArray arrayWithArray:_btnLayout];
-    _scrollView = [[WADemoScrollView alloc]initWithFrame:CGRectMake(0, _naviHeight, self.bounds.size.width, self.bounds.size.height - _naviHeight) btns:m_btns btnLayout:m_btnLayout];
+    _scrollView = [[WADemoScrollView alloc]initWithFrame:CGRectMake(0, _naviBar.frame.origin.y + _naviBar.frame.size.height,
+                                                                    self.bounds.size.width, self.bounds.size.height - _naviHeight)
+                                                    btns:m_btns btnLayout:m_btnLayout];
     
     [self addSubview:_scrollView];
 
@@ -152,37 +160,6 @@
     }];
 }
 
-#pragma mark layout
--(void)setCurrentFrame{
-    float statusBarH = [UIApplication sharedApplication].statusBarFrame.size.height;
-    
-    float naviBarH = 0;
-    UIViewController* currentView = [WADemoUtil getCurrentVC];
-    if (currentView.navigationController) {
-        naviBarH = currentView.navigationController.navigationBar.bounds.size.height;
-    }
-    float screenW = [UIScreen mainScreen].bounds.size.width;
-    float screenH = [UIScreen mainScreen].bounds.size.height;
-    self.frame =CGRectMake(0, statusBarH + naviBarH, screenW,screenH - statusBarH -naviBarH);
-}
-
-
--(void)layoutSubviews{
-    [super layoutSubviews];
-    
-    if (!_btns||!_btnLayout) {
-        return;
-    }
-    
-    [self setCurrentFrame];
-    
-    
-    float viewW = self.bounds.size.width;
-    _naviBar.frame = CGRectMake(0, 0, viewW, _naviHeight);
-    _titleLable.frame = _naviBar.bounds;
-    
-}
-
 -(void)moveIn{
     __block CGRect frame = self.frame;
     frame.origin.x = [UIScreen mainScreen].bounds.size.width;
@@ -194,11 +171,21 @@
     }];
 }
 
--(void)handleDeviceOrientationDidChange:(NSNotification*)noti{
-    [self setNeedsLayout];
+-(void)deviceOrientationDidChange{
+    if (!_btns||!_btnLayout) {
+        return;
+    }
+    
+    self.frame = self.superview.bounds;
+    CGRect rectStatus = [[UIApplication sharedApplication] statusBarFrame];
+    CGFloat heightStatus = rectStatus.size.width > rectStatus.size.height ? rectStatus.size.height : rectStatus.size.width;
+    
+    _naviBar.frame = CGRectMake(0, heightStatus, self.bounds.size.width, _naviHeight);
+    _titleLable.frame = _naviBar.bounds;
+    
+    _scrollView.frame = CGRectMake(0, _naviBar.frame.origin.y + _naviBar.frame.size.height,
+                                   self.bounds.size.width, self.bounds.size.height - _naviHeight);
+    [_scrollView deviceOrientationDidChange];
 }
 
--(void)dealloc{
-    [WADemoUtil removeOrientationNotification:self object:nil];
-}
 @end

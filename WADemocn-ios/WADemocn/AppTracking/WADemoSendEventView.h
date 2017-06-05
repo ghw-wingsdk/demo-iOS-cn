@@ -10,6 +10,8 @@
 
 @interface WADemoSendEventView : UIView
 
--(instancetype)initWithEventName:(NSString*)eventName;
+-(instancetype)initWithFrame:(CGRect)frame eventName:(NSString*)eventName;
+
+- (void)deviceOrientationDidChange;
 
 @end

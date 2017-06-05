@@ -13,23 +13,18 @@
 @interface WADemoAppTrackingView ()
 {
     NSArray *events;
+    WADemoSendEventView *sendEventView;
 }
 @end
 
 @implementation WADemoAppTrackingView
 
--(instancetype)init{
-    self = [super init];
+-(instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
     if (self) {
-        //添加界面旋转通知
-        [WADemoUtil addOrientationNotification:self selector:@selector(handleDeviceOrientationDidChange:) object:nil];
         [self initBtnAndLayout];
     }
     return self;
-}
-
--(void)handleDeviceOrientationDidChange:(NSNotification*)noti{
-    [self setNeedsLayout];
 }
 
 -(void)initBtnAndLayout{
@@ -73,12 +68,19 @@
 {
     NSString *eventType = events[button.tag][@"eventType"];
     
-    WADemoSendEventView *sendEventView = [[WADemoSendEventView alloc] initWithEventName:eventType];
+    if (sendEventView)
+        sendEventView = nil;
+    
+    sendEventView = [[WADemoSendEventView alloc] initWithFrame:self.bounds eventName:eventType];
     [self addSubview:sendEventView];
 }
 
--(void)dealloc{
-    [WADemoUtil removeOrientationNotification:self object:nil];
+- (void)deviceOrientationDidChange
+{
+    [super deviceOrientationDidChange];
+    
+    if (sendEventView)
+        [sendEventView deviceOrientationDidChange];
 }
 
 @end
