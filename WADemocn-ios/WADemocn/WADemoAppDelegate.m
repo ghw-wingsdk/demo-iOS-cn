@@ -26,39 +26,8 @@
     [WACoreProxy setLevel:10];
     [WACoreProxy setGameUserId:@"12345"];
     
-//    [WAPushProxy application:application initPushWithDelegate:self];
-    
     return [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];
     
-}
-
-- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
-{
-    [WACoreProxy application:application didRegisterUserNotificationSettings:notificationSettings];
-}
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [WACoreProxy application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-}
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    [WACoreProxy application:application didFailToRegisterForRemoteNotificationsWithError:error];
-}
-
-#pragma mark IOS8 IOS9 Push Notification Receive
-- (void)application:(UIApplication *)application didReceiveRemoteNotification: (NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
-    [WACoreProxy application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
-}
-
-#pragma mark IOS10 Push Notification Receive
-//App处于前台接收通知时
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler{
-    
-    [WACoreProxy userNotificationCenter:center willPresentNotification:notification withCompletionHandler:completionHandler];
-}
-
-// 通知的点击事件
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
-    [WACoreProxy userNotificationCenter:center didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -83,7 +52,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    [WACoreProxy applicationDidBecomeActive:application];
 }
 //
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
