@@ -17,7 +17,7 @@ source 'http://repo.wingsdk.cn:8082/r/WAWechatImpl_CN.git'
 target "WADemocn" do
 
 pod 'WASdkIntf_CN', '1.1.4'
-pod 'WASdkImpl_CN', '1.1.4'
+pod 'WASdkImpl_CN', '1.1.4.1'
 pod 'WAApwImpl_CN', '1.1.4'
 pod 'WAApImpl_CN', '1.1.4'
 pod 'WAWebPayImpl_CN', '1.1.4'

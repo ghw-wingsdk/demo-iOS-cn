@@ -1,4 +1,4 @@
 ## WASdkImpl_CN
 
-WASdkImpl.framework
+国内WASDK WA实现层
 

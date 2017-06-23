@@ -1,4 +1,4 @@
 ## WAWebPayImpl_CN
 
-WAWebPayImpl.framework
+国内WASDK 网页支付实现层
 

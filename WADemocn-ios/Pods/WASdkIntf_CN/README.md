@@ -1,4 +1,4 @@
 ## WASdkIntf_CN
 
-WASdkIntf.framework
+国内WASDK抽象层
 
