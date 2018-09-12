@@ -70,6 +70,18 @@
  */
 @property NSInteger paymentRna;
 
+/**!
+ @abstract 当前用户ID含义标识：
+ * 0:原账号
+ * 1:被绑账号
+ */
+@property (strong,nonatomic) NSString *userFlag;
+/**!
+ @abstract 是否被绑定用户
+ *
+ */
+@property BOOL isBindUser;
+
 -(id)initWithPUserId:(NSString*)userId pToken:(NSString*)token platform:(NSString*)platform;
 +(id)loginResultWithPUserId:(NSString*)userId pToken:(NSString*)token platform:(NSString*)platform;
 @end

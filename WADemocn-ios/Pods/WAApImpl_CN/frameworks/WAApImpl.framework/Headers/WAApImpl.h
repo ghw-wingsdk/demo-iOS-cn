@@ -19,4 +19,4 @@ FOUNDATION_EXPORT const unsigned char WAApImplVersionString[];
 #import <WAApImpl/WAAPUser.h>
 #import <WAApImpl/WAAPLogin.h>
 
-//time:2017/6/5 10:45 ver:1.1.4
+//time:2018/08/27 15:44 ver:3.7.0

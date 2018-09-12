@@ -17,4 +17,4 @@ FOUNDATION_EXPORT const unsigned char WAWebPayImplVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <WAWebPayImpl/PublicHeader.h>
 
-//time:2017/6/49 14:40 ver:1.1.4
+//time:2018/09/11 15:38 ver:1.2.0

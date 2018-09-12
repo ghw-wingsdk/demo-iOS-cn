@@ -109,6 +109,23 @@ NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WACoreProxy getSdkVer],__FUNCTION
  */
 +(NSString*)getGameUserId;
 /*!
+ @abstract 设置nickName
+ @param nickName 游戏角色名
+ */
++(void)setNickName:(NSString*)nickName;
+/*!
+ @abstract 获取nickName
+ */
++(NSString*)getNickName;
+/*!
+ @abstract 获取userFlag
+ */
++(void)setUserFlag:(NSString*)userFlag;
+/*!
+ @abstract 获取userFlag
+ */
++(NSString*)getUserFlag;
+/*!
  @abstract 获取WA Server url
  */
 +(NSString*)getWaSdkServerUrl;
@@ -153,6 +170,18 @@ NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WACoreProxy getSdkVer],__FUNCTION
  */
 +(NSString*)getSessionId;
 /*!
+ @abstract 隐私政策URL地址
+ */
++(NSString *)getPrivacyUrl;
+/*!
+ @abstract 隐私政策更新时间
+ */
++(NSString *)getPrivacyUpdateTime;
+/*!
+ @abstract 隐私政策内容界面
+ */
++(void)showPrivacyUI:(void(^)(void))privacyUIClosedHandler;
+/*!
  @abstract 下面两个方法是关于Facebook deeplink, CP不用关注
  */
 -(NSString*)getDeepLinkWithUrl:(NSURL*)url;
@@ -179,30 +208,47 @@ NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WACoreProxy getSdkVer],__FUNCTION
 + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 #pragma mark 消息通知
-// 注册通知
-+ (void)application:(UIApplication *)application initPushWithDelegate:(id<UNUserNotificationCenterDelegate>)delegate;
+/*!
+@abstract 注册通知
+*/
++ (void)application:(UIApplication *)application initPushWithDelegate:(id<UNUserNotificationCenterDelegate>)delegate API_AVAILABLE(ios(10.0));
 
-// 调用过用户注册通知方法之后执行
-+ (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings;
+/*!
+ @abstract 调用过用户注册通知方法之后执行
+ */
++ (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings API_AVAILABLE(ios(8.0));
 
-// 获取deviceToken
+/*!
+ @abstract 获取deviceToken
+ */
 + (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 
-// 注册失败
+/*!
+ @abstract 注册失败
+ */
 + (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
 
 #pragma mark IOS8 IOS9 Push Notification Receive
-// 接收本地通知
+/*!
+ @abstract 接收本地通知
+ */
 + (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification;
-// 接收远程通知
+
+/*!
+ @abstract 接收远程通知
+ */
 + (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler;
 
 #pragma mark IOS10 Push Notification Receive
-//App处于前台接收通知时
-+ (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler;
+/*!
+ @abstractApp 处于前台接收通知时
+ */
++ (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler API_AVAILABLE(ios(10.0)) API_AVAILABLE(ios(10.0)) API_AVAILABLE(ios(10.0));
 
-// 通知的点击事件
-+ (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler;
+/*!
+ @abstract 通知的点击事件
+ */
++ (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler API_AVAILABLE(ios(10.0)) API_AVAILABLE(ios(10.0));
 
 /*!
  程序进入后台
@@ -230,5 +276,13 @@ NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WACoreProxy getSdkVer],__FUNCTION
  */
 + (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 
-+ (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
++ (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
+
++ (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler API_AVAILABLE(ios(8.0));
+
+/*!
+ @abstract 设备是否越狱
+ */
++ (BOOL)isJailBreak;
+
 @end

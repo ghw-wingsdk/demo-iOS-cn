@@ -14,9 +14,9 @@
 	<string>Click here to popup menu</string>
 	<key>wasdk_sdk_version</key>
 	<string>SDK Version</string>
-	<key>wasdk_patch_version</key>
-	<string>Patch Version</string>
-	<key>wasdk_has_no_patch</key>
+	<key>wasdk_pat_version</key>
+	<string>Pat Version</string>
+	<key>wasdk_has_no_pat</key>
 	<string>None</string>
 	<key>wasdk_login</key>
 	<string>Login</string>
@@ -95,10 +95,32 @@
 	<key>wasdk_jailbreak_not_purchase</key>
 	<string>You can not do purchase in a jailbreak device.</string>
 	<key>wasdk_copy</key>
-	<string>copy</string>
-    <key>wasdk_login_twitter</key>
-    <string>Twitter</string>
-    <key>wasdk_login_instagram</key>
-    <string>Instagram</string>
+	<string>Copy</string>
+	<key>wasdk_login_twitter</key>
+	<string>Twitter</string>
+	<key>wasdk_login_instagram</key>
+	<string>Instagram</string>
+	<key>wasdk_tip_bind_closed</key>
+	<string>Failed to bind.</string>
+	<key>wasdk_tip_unbind_closed</key>
+	<string>Failed to unbind. </string>
+	<key>wasdk_loading_error</key>
+	<string>Failed to Loading.</string>
+	<key>wasdk_privacy_policy</key>
+	<string>Privacy Policy</string>
+	<key>wasdk_privacy_reminder</key>
+	<string>A privacy reminder</string>
+	<key>wasdk_privacy_policy_alert_content</key>
+	<string>Thank you for supporting us. Please read and agree to the presented legal agreement.</string>
+	<key>wasdk_privacy_view details</key>
+	<string>Tap to view details</string>
+	<key>wasdk_no_agree</key>
+	<string>I do not agree</string>
+	<key>wasdk_agree</key>
+	<string>I agree</string>
+	<key>wasdk_privacy_policy_agree</key>
+	<string>I have read and agree</string>
+	<key>wasdk_please_agree_privacy_policy</key>
+	<string>Please agree to the Privacy Policy first.</string>
 </dict>
 </plist>

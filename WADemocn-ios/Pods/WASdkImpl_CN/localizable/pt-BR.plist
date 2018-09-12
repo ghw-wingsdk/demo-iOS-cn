@@ -14,9 +14,9 @@
 	<string>Clique aqui para abrir o menu popup</string>
 	<key>wasdk_sdk_version</key>
 	<string>Versão SDK</string>
-	<key>wasdk_patch_version</key>
-	<string>Versão Patch</string>
-	<key>wasdk_has_no_patch</key>
+	<key>wasdk_pat_version</key>
+	<string>Versão Pat</string>
+	<key>wasdk_has_no_pat</key>
 	<string>Nenhum</string>
 	<key>wasdk_login</key>
 	<string>Entrar</string>
@@ -92,11 +92,31 @@
 	<string>Aviso</string>
 	<key>wasdk_jailbreak_not_purchase</key>
 	<string>proibido compras em telefones com jailbreak</string>
-	<key>New item</key>
+	<key>wasdk_copy</key>
 	<string>Copy</string>
-    <key>wasdk_login_twitter</key>
-    <string>Twitter</string>
-    <key>wasdk_login_instagram</key>
-    <string>Instagram</string>
+	<key>wasdk_login_twitter</key>
+	<string>Twitter</string>
+	<key>wasdk_login_instagram</key>
+	<string>Instagram</string>
+	<key>wasdk_tip_bind_closed</key>
+	<string>Falha ao vincular</string>
+	<key>wasdk_tip_unbind_closed</key>
+	<string>Falha ao desvincular</string>
+	<key>wasdk_privacy_policy</key>
+	<string>Política de Privacidade</string>
+	<key>wasdk_privacy_reminder</key>
+	<string>Aviso de Privacidade</string>
+	<key>wasdk_privacy_policy_alert_content</key>
+	<string>Obrigado pelo Suporte. Por favor leia os termos legais.</string>
+	<key>wasdk_privacy_view details</key>
+	<string>Toque para ver os detalhes</string>
+	<key>wasdk_no_agree</key>
+	<string>Discordo</string>
+	<key>wasdk_agree</key>
+	<string>Concordo</string>
+	<key>wasdk_privacy_policy_agree</key>
+	<string>Li e concordo</string>
+	<key>wasdk_please_agree_privacy_policy</key>
+	<string>Por favor, concorde com a Política de Privacidade Primeiro.</string>
 </dict>
 </plist>

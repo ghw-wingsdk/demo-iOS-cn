@@ -24,4 +24,11 @@
 @property(nonatomic,strong)NSNumber* enableChangeAccount;
 @property(nonatomic,strong)NSNumber* isTestDevice;
 @property(nonatomic,copy)NSString* userAgreementUrl;
+@property(nonatomic,strong)NSNumber* uploadPurchaseLog;
+@property(nonatomic) NSInteger adVideoCacheCount;
+@property(nonatomic) NSInteger enableBindAccount; // 绑定：  0-关闭， 1-打开
+@property(nonatomic) NSInteger enableUnBindAccount; // 解绑：   0-关闭，1-打开
+@property(nonatomic,copy)NSString* privacyUrl; // 用户协议url
+@property(nonatomic,copy)NSString* privacyUpdateTime; // 用户协议更新时间
+
 @end

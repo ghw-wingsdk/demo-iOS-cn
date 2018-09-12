@@ -30,12 +30,12 @@
 -(void)initBtnAndLayout{
     NSMutableArray* btns = [NSMutableArray array];
     
-    events = @[@{@"title" : @"登录游戏",          @"eventType" : WAEventLogin},
-             @{@"title" : @"点击充值",  @"eventType" : WAEventInitiatedPayment},
-             @{@"title" : @"充值完成",           @"eventType" : WAEventPayment},
-             @{@"title" : @"点击购买", @"eventType" : WAEventInitiatedPurchase},
-             @{@"title" : @"充值购买",          @"eventType" : WAEventPurchase},
-             @{@"title" : @"玩家等级增长",      @"eventType" : WAEventLevelAchieved},
+//    events = @[@{@"title" : @"登录游戏",          @"eventType" : WAEventLogin},
+//             @{@"title" : @"点击充值",  @"eventType" : WAEventInitiatedPayment},
+//             @{@"title" : @"充值完成",           @"eventType" : WAEventPayment},
+//             @{@"title" : @"点击购买", @"eventType" : WAEventInitiatedPurchase},
+//             @{@"title" : @"充值购买",          @"eventType" : WAEventPurchase},
+    events = @[@{@"title" : @"玩家等级增长",      @"eventType" : WAEventLevelAchieved},
              @{@"title" : @"创建游戏角色",        @"eventType" : WAEventUserCreate},
              @{@"title" : @"更新用户资料",    @"eventType" : WAEventUserInfoUpdate},
              @{@"title" : @"玩家任务信息",        @"eventType" : WAEventTaskUpdate},

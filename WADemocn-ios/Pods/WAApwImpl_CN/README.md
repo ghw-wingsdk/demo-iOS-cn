@@ -1,4 +1,4 @@
 ## WAApwImpl_CN
 
-WAApwImpl.framewrok
+WAApwImpl_CN.framework
 

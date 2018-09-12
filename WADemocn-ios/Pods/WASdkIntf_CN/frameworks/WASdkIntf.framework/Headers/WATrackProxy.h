@@ -19,11 +19,11 @@ typedef enum WAParameterType{
 }WAParameterType;
 
 //支付类型
-typedef enum WAEnumPaymentType{
-    WAEnumPaymentTypeGoogle,
-    WAEnumPaymentTypeApple,
-    WAEnumPaymentTypeFree
-}WAEnumPaymentType;
+//typedef enum WAEnumPaymentType{
+//    WAEnumPaymentTypeGoogle,
+//    WAEnumPaymentTypeApple,
+//    WAEnumPaymentTypeFree
+//}WAEnumPaymentType;
 
 //性别
 typedef enum WAEnumGender{
@@ -79,6 +79,14 @@ extern NSString *const WAEventTaskUpdate;
 extern NSString *const WAEventGoldUpdate;
 extern NSString *const WAEventUserImport;
 extern NSString *const WAEventSession;
+
+extern NSString *const WAEventAFTrackingInit;
+
+extern NSString *const WAEventInitiatedLoginWay; // 获取登录方式之前
+extern NSString *const WAEventPostLoginWay; // 获取登录方式之后
+extern NSString *const WAEventInitiatedPlatformLogin; // 进行登录之前
+extern NSString *const WAEventPostThirdPartyLogin; // 进行第三方渠道登录之后
+extern NSString *const WAEventPostWingLogin; // 进行WING平台登录之后
 
 extern NSString *const WAEventParameterNameRegistrationMethod;
 
@@ -166,6 +174,13 @@ extern NSString *const WAEventParameterNameGoldType;//货币类型
 extern NSString *const WAEventParameterNameApproach;//变更途径
 extern NSString *const WAEventParameterNameCurrentAmount;//当前货币数量
 extern NSString *const WAEventParameterNameAmount;//变更货币数
+
+// 获取登录方式之后
+extern NSString *const WAEventParameterNameLoginWayCount; // 登录方式个数
+
+// 进行登录之前、进行第三方渠道登录之后、进行WING平台登录之后
+extern NSString *const WAEventParameterNamePlatformName; // 登录渠道名称
+extern NSString *const WAEventParameterNameLoginStatus; //  登录状态
 
 //支付类型
 extern NSString *const WAValueForPaymentTypeApple;

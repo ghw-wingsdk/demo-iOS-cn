@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface WAITrack : NSObject
 @property(strong,nonatomic)NSMutableDictionary *params;
@@ -133,8 +134,34 @@
  */
 -(void)userImport;
 /**
+ *  获取登录方式之前
+ */
+-(void)initiatedLoginWay;
+/**
+ *  获取登录方式之后
+ */
+-(void)postLoginWay;
+/**
+ *  进行登录之前
+ */
+-(void)initiatedPlatformLogin;
+/**
+ *  进行第三方渠道登录之后
+ */
+-(void)postThirdPartyLogin;
+/**
+ *  进行WING平台登录之后
+ */
+-(void)postWingLogin;
+/**
  *  自定义事件
  */
 -(void)custom;
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler;
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
 
 @end

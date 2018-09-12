@@ -18,6 +18,8 @@ extern NSString *const WASDK_FLOW_TYPE_DEFAULT;
 extern NSString *const WASDK_FLOW_TYPE_REBIND;
 
 extern NSString *const WASDK_PARAM_KEY_SDK_VER;
+extern NSString *const WASDK_PARAM_KEY_SDK_TYPE;
+extern NSString *const WASDK_PARAM_KEY_RUN_PLATFORM;
 extern NSString *const WASDK_PARAM_KEY_SDK_ID;
 extern NSString *const WASDK_PARAM_KEY_PATCH_ID;
 extern NSString *const WASDK_PARAM_KEY_PATCH_VER;
@@ -26,6 +28,9 @@ extern NSString *const WASDK_PARAM_KEY_PUSER_ID;
 extern NSString *const WASDK_PARAM_KEY_PUSER_ID_LOWER;
 extern NSString *const WASDK_PARAM_KEY_PUSER_IDS;
 extern NSString *const WASDK_PARAM_KEY_GAMEUSER_ID;
+extern NSString *const WASDK_PARAM_KEY_NICK_NAME;
+extern NSString *const WASDK_PARAM_KEY_PUSER_NAME;
+extern NSString *const WASDK_PARAM_KEY_USER_FLAG;
 extern NSString *const WASDK_PARAM_KEY_SERVER_ID;
 extern NSString *const WASDK_PARAM_KEY_OS;
 extern NSString *const WASDK_PARAM_KEY_OS_VERSION;
@@ -149,11 +154,16 @@ extern NSString *const WASDK_GUEST_LOGIN_USERID_CACHE;
 extern NSString *const WASDK_ACOUNT_BINDING_PREUSERID;
 extern NSString *const WASDK_ACOUNT_BINDING_PREPLATFORM;
 
+//绑定账号 支付订单购买日志
+extern NSString *const WASDK_TIME_STAMP;
+extern NSString *const WASDK_LOG_INFO;
+
 // 消息推送
 extern NSString *const WASDK_ACCESS_TOKEN;
 extern NSString *const WASDK_MSG_ID;
+extern NSString *const WASDK_ACTION_TYPE;
 
-extern NSString *const WASDK_IAP_URL_PROLIST;
+//extern NSString *const WASDK_IAP_URL_PROLIST;
 extern NSString *const WASDK_IAP_URL_NOTIFY_SERVER;
 extern NSString *const WASDK_IAP_URL_CREATE_ORDER;
 extern NSString *const WASDK_REFRESH_TOKEN;
@@ -188,6 +198,8 @@ extern NSString *const WASDK_USER_LIST;
 
 // 获取客户端未统计上报的订单列表
 extern NSString *const WASDK_ORDER_LIST;
+// 客户端订单购买日志收集
+extern NSString *const WASDK_CLIENT_PURCHASE_LOG;
 // 更新订单的客户端统计上报状态
 extern NSString *const WASDK_CLT_STATUS_DONE;
 
@@ -228,6 +240,13 @@ extern NSString *const WASDK_LOGIN_URL_MESSAGE_CLIENT_PULL;
 extern NSString *const WASDK_LOGIN_URL_MESSAGE_SEND_RECEIPT;
 // 消息打开确认
 extern NSString *const WASDK_LOGIN_URL_MESSAGE_OPEN_MESSAGE_CONFIRM;
+
+// 获取视频广告列表
+extern NSString *const WASDK_AD_URL_GET_AD_LIST;
+// 提交广告展示事件
+extern NSString *const WASDK_AD_URL_SUBMIT_SHOW_EVENT;
+// 更新展示广告状态
+extern NSString *const WASDK_AD_URL_UPDATE_STATUS;
 
 extern NSString *const WASDK_FB_INVITE_FROM_USERID;
 extern NSString *const WASDK_FB_INVITE_TO_USERID;

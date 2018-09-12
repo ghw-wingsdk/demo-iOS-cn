@@ -14,9 +14,9 @@
 	<string>Нажмите для вызова всплывающего меню</string>
 	<key>wasdk_sdk_version</key>
 	<string>Версия SDK</string>
-	<key>wasdk_patch_version</key>
+	<key>wasdk_pat_version</key>
 	<string>Версия патча</string>
-	<key>wasdk_has_no_patch</key>
+	<key>wasdk_has_no_pat</key>
 	<string>Нет</string>
 	<key>wasdk_login</key>
 	<string>Вход</string>
@@ -96,9 +96,29 @@
 	<string>Вы не можете совершать покупки на взломанном устройстве</string>
 	<key>wasdk_copy</key>
 	<string>Copy</string>
-    <key>wasdk_login_twitter</key>
-    <string>Twitter</string>
-    <key>wasdk_login_instagram</key>
-    <string>Instagram</string>
+	<key>wasdk_login_twitter</key>
+	<string>Twitter</string>
+	<key>wasdk_login_instagram</key>
+	<string>Instagram</string>
+	<key>wasdk_tip_bind_closed</key>
+	<string>Не удалось выполнить привязку</string>
+	<key>wasdk_tip_unbind_closed</key>
+	<string>Не удалось выполнить отвязку</string>
+	<key>wasdk_privacy_policy</key>
+	<string>политика конфиденциальности</string>
+	<key>wasdk_privacy_reminder</key>
+	<string>Напоминание о конфиденциальности</string>
+	<key>wasdk_privacy_policy_alert_content</key>
+	<string>Спасибо Вам за поддержку. Прочтите и согласитесь с представленным юридическим соглашением.</string>
+	<key>wasdk_privacy_view details</key>
+	<string>Нажмите для просмотра сведений.</string>
+	<key>wasdk_no_agree</key>
+	<string>Не согласен</string>
+	<key>wasdk_agree</key>
+	<string>Согласен</string>
+	<key>wasdk_privacy_policy_agree</key>
+	<string>Я прочел и принимаю соглашение</string>
+	<key>wasdk_please_agree_privacy_policy</key>
+	<string>Пожалуйста, согласитесь с Политикой конфиденциальности.</string>
 </dict>
 </plist>
