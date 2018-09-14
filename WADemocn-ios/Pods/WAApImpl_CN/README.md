@@ -1,4 +1,4 @@
 ## WAApImpl_CN
 
-WAApImpl.framework
+国内WASDK Apple实现层
 

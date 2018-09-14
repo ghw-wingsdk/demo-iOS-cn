@@ -472,7 +472,6 @@
 				7FC4E2B11C8EEE7C0075FC7D /* Sources */,
 				7FC4E2B21C8EEE7C0075FC7D /* Frameworks */,
 				7FC4E2B31C8EEE7C0075FC7D /* Resources */,
-				C620CD32BF14009812CBB661 /* [CP] Embed Pods Frameworks */,
 				BAE5B62CB60FE174AB26CAE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -625,24 +624,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WADemocn/Pods-WADemocn-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C620CD32BF14009812CBB661 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WADemocn/Pods-WADemocn-frameworks.sh",
-				"${PODS_ROOT}/WASdkImpl_CN/frameworks/AFNetworking.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WADemocn/Pods-WADemocn-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

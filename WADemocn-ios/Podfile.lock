@@ -24,27 +24,27 @@ DEPENDENCIES:
   - WAWechatImpl_CN (= 1.2.0)
 
 SPEC REPOS:
-  http://172.16.100.58:7070/r/WAApImpl_CN.git:
+  http://repo.wingsdk.cn:8082/r/WAApImpl_CN.git:
     - WAApImpl_CN
-  http://172.16.100.58:7070/r/WAApwImpl_CN.git:
+  http://repo.wingsdk.cn:8082/r/WAApwImpl_CN.git:
     - WAApwImpl_CN
-  http://172.16.100.58:7070/r/WASdkImpl_CN.git:
+  http://repo.wingsdk.cn:8082/r/WASdkImpl_CN.git:
     - WASdkImpl_CN
-  http://172.16.100.58:7070/r/WASdkIntf_CN.git:
+  http://repo.wingsdk.cn:8082/r/WASdkIntf_CN.git:
     - WASdkIntf_CN
-  http://172.16.100.58:7070/r/WAWebPayImpl_CN.git:
+  http://repo.wingsdk.cn:8082/r/WAWebPayImpl_CN.git:
     - WAWebPayImpl_CN
-  http://172.16.100.58:7070/r/WAWechatImpl_CN.git:
+  http://repo.wingsdk.cn:8082/r/WAWechatImpl_CN.git:
     - WAWechatImpl_CN
 
 SPEC CHECKSUMS:
-  WAApImpl_CN: 78e48a97b7e11c4d51b170e59c84407670e62504
-  WAApwImpl_CN: 03aa53bb326f6139c6c8efa0771c02ea64cc56bb
-  WASdkImpl_CN: 9a4fc705a04d2c1171c3b64d947c8db6d35dc2e6
-  WASdkIntf_CN: ab739b127692328eacae1de945a4c1b3f438fec5
-  WAWebPayImpl_CN: 544a57c372f4656514dc01bc1465c4a8697bfd5f
-  WAWechatImpl_CN: 23783e8e6a69599c94c07d321313dea12fb65ec8
+  WAApImpl_CN: bfa5dac3b47991c3e0b1b0d80d200a037d1ad749
+  WAApwImpl_CN: ec100b7545b518be22d5e0e3cfb4a702efc0ecbd
+  WASdkImpl_CN: ba6e9daf27445e2de2683cb2e64a39cf8e73a227
+  WASdkIntf_CN: c35eb95f1171a2c82067b363ea5ce8a3f8d53717
+  WAWebPayImpl_CN: e7b468f5e96681e435f0d31ce3566acc237fad4c
+  WAWechatImpl_CN: 51e7c1d0594c39e50dafe81ebe93d4521e92b937
 
-PODFILE CHECKSUM: b155b8a7dd7e3ad983967a77337cff34447f4780
+PODFILE CHECKSUM: 7bef1f481d87a562670e9b72863935942c278f0f
 
 COCOAPODS: 1.5.0

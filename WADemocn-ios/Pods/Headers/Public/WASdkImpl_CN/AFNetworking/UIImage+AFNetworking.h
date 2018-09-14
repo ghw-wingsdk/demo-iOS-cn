@@ -1,1 +1,0 @@
-../../../../WASdkImpl_CN/frameworks/AFNetworking.framework/Headers/UIImage+AFNetworking.h
