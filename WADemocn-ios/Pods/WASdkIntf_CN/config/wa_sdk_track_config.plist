@@ -7,7 +7,7 @@
 		<key>ChannelId</key>
 		<string>AppleStore</string>
 		<key>URL</key>
-		<string>http://sdk-test1.wingsdk.cn/sdk_bkd_qa/data_collection/data/</string>
+		<string>https://api.wingsdk.cn/data/</string>
 		<key>Enabled</key>
 		<true/>
 		<key>Mapping</key>
