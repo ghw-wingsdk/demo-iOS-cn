@@ -1,5 +1,5 @@
 PODS:
-  - WAApImpl_CN (1.2.0):
+  - WAApImpl_CN (1.2.0.1):
     - WASdkImpl_CN (~> 1.2.0)
     - WASdkIntf_CN (~> 1.2.0)
   - WAApwImpl_CN (1.2.0):
@@ -16,7 +16,7 @@ PODS:
     - WASdkIntf_CN (~> 1.2.0)
 
 DEPENDENCIES:
-  - WAApImpl_CN (= 1.2.0)
+  - WAApImpl_CN (= 1.2.0.1)
   - WAApwImpl_CN (= 1.2.0)
   - WASdkImpl_CN (= 1.2.0)
   - WASdkIntf_CN (= 1.2.0)
@@ -38,13 +38,13 @@ SPEC REPOS:
     - WAWechatImpl_CN
 
 SPEC CHECKSUMS:
-  WAApImpl_CN: bfa5dac3b47991c3e0b1b0d80d200a037d1ad749
+  WAApImpl_CN: 8763a5881d49e3c0a2d17b37973657092dcc788b
   WAApwImpl_CN: ec100b7545b518be22d5e0e3cfb4a702efc0ecbd
   WASdkImpl_CN: ba6e9daf27445e2de2683cb2e64a39cf8e73a227
   WASdkIntf_CN: c35eb95f1171a2c82067b363ea5ce8a3f8d53717
   WAWebPayImpl_CN: e7b468f5e96681e435f0d31ce3566acc237fad4c
   WAWechatImpl_CN: 51e7c1d0594c39e50dafe81ebe93d4521e92b937
 
-PODFILE CHECKSUM: 7bef1f481d87a562670e9b72863935942c278f0f
+PODFILE CHECKSUM: d06701dcf02e0b36abec2592b8c35701c48b2c6d
 
 COCOAPODS: 1.5.0
