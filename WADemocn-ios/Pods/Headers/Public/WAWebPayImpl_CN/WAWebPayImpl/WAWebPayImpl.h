@@ -1,1 +1,0 @@
-../../../../WAWebPayImpl_CN/frameworks/WAWebPayImpl.framework/Headers/WAWebPayImpl.h

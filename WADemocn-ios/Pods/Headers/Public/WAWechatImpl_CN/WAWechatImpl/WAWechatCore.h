@@ -1,1 +1,0 @@
-../../../../WAWechatImpl_CN/frameworks/WAWechatImpl.framework/Headers/WAWechatCore.h

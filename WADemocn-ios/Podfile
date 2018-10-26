@@ -16,10 +16,10 @@ source 'http://repo.wingsdk.cn:8082/r/WAWechatImpl_CN.git'
 
 target "WADemocn" do
 
-pod 'WASdkIntf_CN', '1.2.0'
-pod 'WASdkImpl_CN', '1.2.0'
+pod 'WASdkIntf_CN', '1.2.1'
+pod 'WASdkImpl_CN', '1.2.1'
 pod 'WAApwImpl_CN', '1.2.0'
-pod 'WAApImpl_CN', '1.2.0.1'
+pod 'WAApImpl_CN', '1.2.1'
 pod 'WAWebPayImpl_CN', '1.2.0'
 pod 'WAWechatImpl_CN', '1.2.0'
 

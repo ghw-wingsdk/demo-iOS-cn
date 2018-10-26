@@ -1,6 +1,0 @@
-framework module WAWechatImpl {
-  umbrella header "WAWechatImpl.h"
-
-  export *
-  module * { export * }
-}

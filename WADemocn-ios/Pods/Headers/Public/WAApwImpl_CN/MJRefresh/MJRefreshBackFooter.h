@@ -1,1 +1,0 @@
-../../../../WAApwImpl_CN/frameworks/MJRefresh.framework/Headers/MJRefreshBackFooter.h
