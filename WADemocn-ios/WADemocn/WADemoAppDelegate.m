@@ -25,6 +25,14 @@
     [WACoreProxy setServerId:@"China"];
     [WACoreProxy setLevel:10];
     [WACoreProxy setGameUserId:@"12345"];
+	
+	
+    NSString *universalLink = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"universalLink"];
+    if (!universalLink || [@"" isEqualToString:universalLink]) {
+        UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请在info.plist里面配置universalLink" delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
+        [alert show];
+
+	}
     
     return [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];
     
