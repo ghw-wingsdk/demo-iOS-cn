@@ -54,6 +54,7 @@
 		7FC4E35D1C8EEF3F0075FC7D /* WADemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E3331C8EEF3F0075FC7D /* WADemoAppDelegate.m */; };
 		7FC4E35F1C8EEF3F0075FC7D /* WADemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E3371C8EEF3F0075FC7D /* WADemoViewController.m */; };
 		7FC4E37C1C8EF0310075FC7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4E37A1C8EF0310075FC7D /* Localizable.strings */; };
+		B20551C423C804220063DA5E /* WADemoCscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20551C223C804220063DA5E /* WADemoCscViewController.m */; };
 		B20B9F03234DB83200592386 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B9F02234DB83200592386 /* WebKit.framework */; };
 		D6CD5606E1699BFD0382E7D0 /* libPods-WADemocn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 104D83C95EE0E45F42E716F2 /* libPods-WADemocn.a */; };
 /* End PBXBuildFile section */
@@ -171,6 +172,8 @@
 		7FC4E37D1C8EF03C0075FC7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7FC4E37E1C8EF0490075FC7D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		9D23F14C739EDC174EC32525 /* Pods-WADemocn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WADemocn.release.xcconfig"; path = "Pods/Target Support Files/Pods-WADemocn/Pods-WADemocn.release.xcconfig"; sourceTree = "<group>"; };
+		B20551C223C804220063DA5E /* WADemoCscViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoCscViewController.m; sourceTree = "<group>"; };
+		B20551C323C804220063DA5E /* WADemoCscViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoCscViewController.h; sourceTree = "<group>"; };
 		B20B9F02234DB83200592386 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B20B9F06234DD28C00592386 /* WADemocn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WADemocn.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,6 +245,7 @@
 		7FC4E2B71C8EEE7C0075FC7D /* WADemocn */ = {
 			isa = PBXGroup;
 			children = (
+				B20551C123C804220063DA5E /* Csc */,
 				B20B9F06234DD28C00592386 /* WADemocn.entitlements */,
 				3651BAEB1DFFE0D6002B955C /* AppTracking */,
 				36F6FBB01CD3092800EB0DBC /* Pay */,
@@ -449,6 +453,15 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		B20551C123C804220063DA5E /* Csc */ = {
+			isa = PBXGroup;
+			children = (
+				B20551C223C804220063DA5E /* WADemoCscViewController.m */,
+				B20551C323C804220063DA5E /* WADemoCscViewController.h */,
+			);
+			path = Csc;
+			sourceTree = "<group>";
+		};
 		DADDAF22A4B48C543937B1B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +609,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WADemocn/Pods-WADemocn-resources.sh",
+				"${PODS_ROOT}/WAAiHelpImpl_CN/config/wa_sdk_impl_config_aihelp.xml",
+				"${PODS_ROOT}/WAAiHelpImpl_CN/res/ElvaChatServiceSDK.bundle",
 				"${PODS_ROOT}/WAApImpl_CN/config/wa_sdk_impl_config_apple.xml",
 				"${PODS_ROOT}/WAApwImpl_CN/config/wa_sdk_impl_config_apw.xml",
 				"${PODS_ROOT}/WASdkImpl_CN/config/wa_sdk_impl_config_winga.xml",
@@ -613,6 +628,8 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_aihelp.xml",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ElvaChatServiceSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_apple.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_apw.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_winga.xml",
@@ -669,6 +686,7 @@
 				36F6FBB31CD3092800EB0DBC /* WADemoPayView.m in Sources */,
 				7FC4E3581C8EEF3F0075FC7D /* WADemoListTableView.m in Sources */,
 				7FC4E35B1C8EEF3F0075FC7D /* WADemoScrollView.m in Sources */,
+				B20551C423C804220063DA5E /* WADemoCscViewController.m in Sources */,
 				7FC4E35F1C8EEF3F0075FC7D /* WADemoViewController.m in Sources */,
 				7FC4E3591C8EEF3F0075FC7D /* WADemoMaskLayer.m in Sources */,
 				7FC4E35D1C8EEF3F0075FC7D /* WADemoAppDelegate.m in Sources */,
@@ -849,6 +867,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
+				MARKETING_VERSION = 1.4.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
 				PRODUCT_NAME = WADemocn;
@@ -882,6 +901,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
+				MARKETING_VERSION = 1.4.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;

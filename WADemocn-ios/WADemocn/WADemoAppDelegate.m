@@ -17,27 +17,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [WACoreProxy init];
+	[WACoreProxy setDebugMode:YES];
+	[WACoreProxy init];
     [WACoreProxy setSDKType:WA_SDK_TYPE_CN];
-    [WACoreProxy setDebugMode:YES];
     [WACoreProxy initAppEventTracker];
     [WAPayProxy init4Iap];
-    [WACoreProxy setServerId:@"China"];
-    [WACoreProxy setLevel:10];
-    [WACoreProxy setGameUserId:@"12345"];
-	
-	
-    NSString *universalLink = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"universalLink"];
-    if (!universalLink || [@"" isEqualToString:universalLink]) {
-        UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请在info.plist里面配置universalLink" delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
-        [alert show];
-
-	}
+//    [WACoreProxy setServerId:@"China"];
+//    [WACoreProxy setLevel:10];
+//    [WACoreProxy setGameUserId:@"12345"];
+	[WACoreProxy setClientId:@"1234455222168899"];
     
     return [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];
     
 }
 
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+    if ([userActivity.activityType isEqualToString:NSUserActivityTypeBrowsingWeb]) {
+        NSURL *url = userActivity.webpageURL;
+       // TODO 根据需求进行处理
+    }
+      // TODO 根据需求进行处理
+	
+	return [WACoreProxy application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -73,3 +75,4 @@
 }
 
 @end
+

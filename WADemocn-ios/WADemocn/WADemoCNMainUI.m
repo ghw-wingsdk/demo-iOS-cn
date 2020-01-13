@@ -13,6 +13,8 @@
 #import "WADemoMaskLayer.h"
 #import "WADemoPayView.h"
 #import "WADemoAppTrackingView.h"
+#import "WADemoCscViewController.h"
+#import <Toast/Toast.h>
 
 @interface WADemoCNMainUI() <WALoginDelegate>
 
@@ -55,7 +57,10 @@
     [btnTitles addObject:@[@"登出"]];
     [btnTitles addObject:@[@"数据收集"]];
     [btnTitles addObject:@[@"闪退测试"]];
-    
+    [btnTitles addObject:@[@"进入客服"]];
+    [btnTitles addObject:@[@"查询实名认证状态"]];
+    [btnTitles addObject:@[@"Apple 登录"]];
+
     UIImage *bgNormal = [self imageWithColor:[UIColor grayColor] size:CGSizeMake(1, 1)];
     UIImage *bgHighlighted = [self imageWithColor:[UIColor orangeColor] size:CGSizeMake(1, 1)];
     
@@ -97,7 +102,7 @@
         }
     }
     
-    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2]];
+    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2]];
     
     NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
 //    CFShow((__bridge CFTypeRef)(infoDict));
@@ -167,6 +172,16 @@
     else if (tag == 5) //设置是否缓存登录
     {
         _cacheEnabled = !_cacheEnabled;
+		
+		if(_cacheEnabled){
+			[self showToastMessage:@"打开了免密登录"];
+		}else{
+			[self showToastMessage:@"关闭了免密登录"];
+
+		}
+		
+
+		
         NSString *titleNormal = [button titleForState:UIControlStateNormal];
         [button setTitle:[button titleForState:UIControlStateSelected] forState:UIControlStateNormal];
         [button setTitle:titleNormal forState:UIControlStateSelected];
@@ -201,9 +216,66 @@
         NSArray* array = [NSArray array];
         int i = (int)array[1];
         NSLog(@"%d",i);
-    }
+    }else if (tag == 10) // 进入客服
+    {
+
+		WADemoCscViewController *cscVC = [[WADemoCscViewController alloc] init];
+		UIViewController * vc =[WADemoUtil getCurrentVC];
+		[vc presentViewController:cscVC animated:YES completion:^{
+			
+		}];
+		
+		
+
+    }else if (tag == 11) // 查询实名认证状态
+		{
+			
+			[WAUserProxy queryUserCertificationInfo:^(WACertificationInfo *certificationInfo, NSError *error) {
+				
+				if (!error) {
+
+					if (certificationInfo) {
+						
+						NSString * message= @"";
+						if (certificationInfo.userRealNameStatus==-1) {
+							message=@"未开启实名认证";
+						}else if(certificationInfo.userRealNameStatus==1){
+							message=@"未实名";
+
+						}else {
+							message=[NSString stringWithFormat:@"已经实名，年龄:=%ld",(long)certificationInfo.age];
+							
+						}
+						[self showToastMessage:message];
+
+					}
+
+					
+
+					
+
+				}else{
+					NSLog(@"d实名认证状态======%@",error);
+					[self showToastMessage:@"用户未登录"];
+					
+				}
+			}];
+
+			
+			
+
+		}else if(tag==12){
+			
+			[WAUserProxy loginWithPlatform:WA_PLATFORM_APPLE extInfo:nil delegate:self];
+			
+		}
 }
 
+- (void)showToastMessage:(NSString *)messag{
+	
+	[self makeToast:messag duration:2 position:CSToastPositionCenter];
+
+}
 - (void)deviceOrientationDidChange
 {
     [super deviceOrientationDidChange];
@@ -223,6 +295,11 @@
     NSLog(@"result--pUserid:%@",result.pUserId);
     NSLog(@"result--platform:%@",result.platform);
     NSLog(@"result--extends:%@",result.extends);
+	
+	[self showToastMessage:@"登录成功回调,通知cp"];
+
+	
+	
 }
 
 -(void)loginDidFailWithError:(NSError *)error andResult:(WALoginResult *)result
@@ -231,12 +308,17 @@
     NSLog(@"result.pToken:%@",result.pToken);
     NSLog(@"result.pUserId:%@",result.pUserId);
     NSLog(@"loginDidFailWithError:%@",error);
+	[self showToastMessage:@"loginDidFailWithError"];
+
 }
 
 -(void)loginDidCancel:(WALoginResult *)result
 {
     [WADemoMaskLayer stopAnimating];
     NSLog(@"loginDidCancel--platform:%@",result.platform);
+	[self showToastMessage:@"loginDidCancel"];
+
 }
 
 @end
+

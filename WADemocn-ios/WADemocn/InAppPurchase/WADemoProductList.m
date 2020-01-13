@@ -8,6 +8,8 @@
 
 #import "WADemoProductList.h"
 #import "WADemoUtil.h"
+#import <Toast/Toast.h>
+
 static NSString* productCellIdentifier = @"ProductCellIdentifier";
 @interface WADemoProductList()
 @property(nonatomic)float naviheight;
@@ -130,22 +132,51 @@ static NSString* productCellIdentifier = @"ProductCellIdentifier";
     }else{
         if (iapResult.resultCode == 1) {
             NSLog(@"%@ 支付成功.", platform);
+			
+			[self makeToast:[NSString stringWithFormat:@"支付成功%@",platform] duration:2 position:CSToastPositionCenter];
+			
         }else if (iapResult.resultCode == 2) {
             NSLog(@"%@ 支付失败.", platform);
+			[self makeToast:[NSString stringWithFormat:@"支付失败%@",platform] duration:2 position:CSToastPositionCenter];
+
         }else if (iapResult.resultCode == 3) {
             NSLog(@"%@ 取消.", platform);
+			[self makeToast:[NSString stringWithFormat:@"支付取消.%@",platform] duration:2 position:CSToastPositionCenter];
+
         }else if (iapResult.resultCode == 4) {
             NSLog(@"%@ 上报失败.", platform);
+			[self makeToast:[NSString stringWithFormat:@"上报失败.%@",platform] duration:2 position:CSToastPositionCenter];
+
         }else if (iapResult.resultCode == 5) {
             NSLog(@"%@ 商品未消耗.", platform);
+			[self makeToast:[NSString stringWithFormat:@"商品未消耗.%@",platform] duration:2 position:CSToastPositionCenter];
+
+			
         }else if (iapResult.resultCode == 6) {
             NSLog(@"%@ 创建订单失败.", platform);
-        }
+			[self makeToast:[NSString stringWithFormat:@"创建订单失败.%@",platform] duration:2 position:CSToastPositionCenter];
+
+			/*
+			 根据《关于防止未成年人沉迷网络游戏的通知》规定，本次充值金额超过限制
+			 */
+		}else if(iapResult.resultCode==4066||iapResult.resultCode==4067){
+			
+			[self makeToast:[NSString stringWithFormat:@"创建订单失败.%@",platform] duration:2 position:CSToastPositionCenter];
+			/*
+			根据《关于防止未成年人沉迷网络游戏的通知》规定，本月充值金额超过限制
+			*/
+		}else if(iapResult.resultCode==4070||iapResult.resultCode==4071){
+			[self makeToast:[NSString stringWithFormat:@"创建订单失败.%@",platform] duration:2 position:CSToastPositionCenter];
+
+		}else{
+			[self makeToast:iapResult.message duration:2 position:CSToastPositionCenter];
+		}
     }
 }
 -(void)paymentDidFailWithError:(NSError*)error andPlatform:(NSString*)platform{
     if (error) {
         NSLog(@"paymentDidFailWithError:%@",error.description);
+		[self makeToast:error.description duration:2 position:CSToastPositionCenter];
     }
 }
 
