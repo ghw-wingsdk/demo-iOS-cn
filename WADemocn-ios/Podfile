@@ -15,7 +15,7 @@ workspace 'Workspace.xcworkspace'
  source 'http://repo.wingsdk.cn:8082/r/WAApImpl_CN.git'
  source 'http://repo.wingsdk.cn:8082/r/WAWebPayImpl_CN.git'
  source 'http://repo.wingsdk.cn:8082/r/WAWechatImpl_CN.git'
-source 'http://repo.wingsdk.cn:8082/r/WAAiHelpImpl_CN.git'
+ source 'http://repo.wingsdk.cn:8082/r/WAAiHelpImpl_CN.git'
 
 target "WADemocn" do
 
