@@ -24,7 +24,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
+	<string>1.5.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -81,6 +81,12 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string> 需要访问您的相机权限，才能拍摄问题图片并反馈给客服</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>需要照片添加权限，才能保存图片到相册</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要访问您的相册权限，才能将图片上传反馈给客服</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
@@ -117,11 +123,5 @@
 	<string>72433f65963879edfeeb812d8c977111</string>
 	<key>universalLink</key>
 	<string>https://sdk-test1.gamehollywood.com/</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>需要访问您的相册权限，才能将图片上传反馈给客服</string>
-	<key>NSCameraUsageDescription</key>
-	<string> 需要访问您的相机权限，才能拍摄问题图片并反馈给客服</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>需要照片添加权限，才能保存图片到相册</string>
 </dict>
 </plist>

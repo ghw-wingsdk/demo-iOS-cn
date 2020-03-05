@@ -8,6 +8,7 @@
 
 #import "WADemoCscViewController.h"
 #import <WASdkIntf/WASdkIntf.h>
+#import <Toast/Toast.h>
 
 @interface WADemoCscViewController ()
 
@@ -72,7 +73,7 @@
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:frame];
     [self.view addSubview:scrollView];
     
-    NSArray *titles = @[@"启动机器人客服界面", @"启动运营界面", @"展示全部FAQ菜单", @"展示FAQ分类", @"展示单条FAQ", @"进入人工客服界面"];
+    NSArray *titles = @[@"启动机器人客服界面", @"启动运营界面", @"展示全部FAQ菜单", @"展示FAQ分类", @"展示单条FAQ", @"进入人工客服界面",@"展示全部FAQ菜单(无机器人客服)",@"检测是否开启客服",@"同步登陆按钮点击客服"];
     
     CGFloat left = 10, right = 10, top = 60, bottom = 40, mid_space_h = 10, mid_space_v = 10, btnHeight = 40;
     
@@ -198,8 +199,38 @@
         [config setObject:customData forKey:@"cp-custom-metadata"];
         
         [WACscProxy showConversation:config];
-    }
+	}else if(button.tag==7){ 	//展示全部FAQ菜单(无机器人客服)
+		
+		
+        NSMutableDictionary *customData = [NSMutableDictionary dictionary];
+        [customData setObject:@"vip,pay1" forKey:@"WINGSDK-tags"];
+        [customData setObject:@"1.0.0" forKey:@"VersionCode"];
+
+        NSMutableDictionary *config = [NSMutableDictionary dictionary];
+		[config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+		[config setObject:@"1" forKey:@"showContactButtonFlag"]; //展示联系客服按钮
+		[config setObject:@"1" forKey:@"directConversation"];    //直接进入人工页面
+
+        [WACscProxy showFAQs:config];
+		
+		
+	}else if(button.tag==8){ 	//检测是否开启客服
+		
+		if([WACscProxy isOpenAiHelp]){
+			UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"开启了客服" message:@"" delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
+			[alert show];
+		}
+		
+	}else if(button.tag==9){
+		
+		[WACscProxy openAiHelp:@"zh_CN"];
+		
+	}
 }
+
+
+
+
 
 #pragma mark -- 弹出框
 - (void)alertViewWithTitle:(NSString *)title message:(NSString *)message placeholder:(NSString *)placeholder callBack:(void (^ __nullable)(NSString *text))callBack
