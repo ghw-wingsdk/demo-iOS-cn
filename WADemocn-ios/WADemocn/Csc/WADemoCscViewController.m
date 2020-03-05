@@ -219,12 +219,18 @@
 		if([WACscProxy isOpenAiHelp]){
 			UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"开启了客服" message:@"" delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
 			[alert show];
+		}else{
+			UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"未开启客服" message:@"" delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
+			[alert show];
+			
 		}
 		
 	}else if(button.tag==9){
 		
-		[WACscProxy openAiHelp:@"zh_CN"];
-		
+		if([WACscProxy isOpenAiHelp]){
+				[WACscProxy openAiHelp:@"zh_CN"];
+			}
+
 	}
 }
 
