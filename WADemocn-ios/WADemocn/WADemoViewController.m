@@ -17,18 +17,28 @@
 @end
 
 @implementation WADemoViewController
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     [self initUI];
+	
+	
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+		
+		BOOL cacheEnabled=YES;
+		[WAUserProxy loginWithPlatform:WA_PLATFORM_WINGA
+								   extInfo:[NSString stringWithFormat:@"{\"enableCache\":%d,\"extInfo\":\"\"}", cacheEnabled]
+								  delegate:maincnUI];
+	});
+
     
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-}
+
 
 -(void)initUI{
 //    WADemoMainUI* mainUI = [[WADemoMainUI alloc]init];
@@ -44,6 +54,10 @@
     
     maincnUI = [[WADemoCNMainUI alloc]initWithFrame:CGRectMake(0, 0, width, height)];
     [self.view addSubview:maincnUI];
+	
+
+	
+	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,8 +90,16 @@
 }
 
 -(void)switchAcctDidCompleteWithResult:(WALoginResult*)result{
-    WADemoAlertView* alert = [[WADemoAlertView alloc]initWithTitle:@"切换账户成功" message:[NSString stringWithFormat:@"platform:%@\npUserId:%@,pToken:%@,userId:%@,token:%@",result.platform,result.pUserId,result.pToken,result.token,result.userId] cancelButtonTitle:@"Sure" otherButtonTitles:nil block:nil];
+    WADemoAlertView* alert = [[WADemoAlertView alloc]initWithTitle:@"切换账户成功" message:[NSString stringWithFormat:@"platform:%@\npUserId:%@,pToken:%@,userId:%@,token:%@",result.platform,result.pUserId,result.pToken,result.userId,result.token] cancelButtonTitle:@"Sure" otherButtonTitles:nil block:nil];
     [alert show];
+}
+
+-(void)bindAccountDidCompleteWithResult:(WABindingResult*)bindResult{
+
+	WALog(@"绑定成功了========");
+	WADemoAlertView* alert = [[WADemoAlertView alloc]initWithTitle:@"绑定账户成功" message:[NSString stringWithFormat:@"platform:%@\n ,pToken:%@,userId:%@",bindResult.platform,bindResult.accessToken,bindResult.userId] cancelButtonTitle:@"Sure" otherButtonTitles:nil block:nil];
+	 [alert show];
+	
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation

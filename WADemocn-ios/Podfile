@@ -7,6 +7,7 @@ workspace 'Workspace.xcworkspace'
 # source 'http://172.16.100.58:7070/r/WAWebPayImpl_CN.git'
 # source 'http://172.16.100.58:7070/r/WAWechatImpl_CN.git'
 # source 'http://172.16.100.58:7070/r/WAAiHelpImpl_CN.git'
+# source 'http://172.16.100.58:7070/r/WAQQImpl_CN.git'
 
 
   source 'http://repo.wingsdk.cn:8082/r/WASdkIntf_CN.git'
@@ -16,16 +17,20 @@ workspace 'Workspace.xcworkspace'
   source 'http://repo.wingsdk.cn:8082/r/WAWebPayImpl_CN.git'
   source 'http://repo.wingsdk.cn:8082/r/WAWechatImpl_CN.git'
   source 'http://repo.wingsdk.cn:8082/r/WAAiHelpImpl_CN.git'
+  source 'http://repo.wingsdk.cn:8082/r/WAQQImpl_CN.git'
+
+
 
 target "WADemocn" do
 
-pod 'WASdkIntf_CN', 	     '1.5.0'
-pod 'WASdkImpl_CN', 	     '1.5.0'
-pod 'WAApImpl_CN', 		     '1.5.0'
-pod 'WAApwImpl_CN', 	     '1.5.0'
-pod 'WAWebPayImpl_CN', 	     '1.5.0'
-pod 'WAWechatImpl_CN',       '1.5.0'
-pod 'WAAiHelpImpl_CN',       '1.5.0'
+pod 'WASdkIntf_CN', 	     '2.0.0'
+pod 'WASdkImpl_CN', 	     '2.0.0'
+pod 'WAApImpl_CN', 		     '2.0.0'
+pod 'WAApwImpl_CN', 	     '2.0.0'
+pod 'WAWebPayImpl_CN', 	     '2.0.0'
+pod 'WAWechatImpl_CN',       '2.0.0'
+pod 'WAAiHelpImpl_CN',       '2.0.0'
+pod 'WAQQImpl_CN',      	 '2.0.0'
 
 
 

@@ -9,14 +9,14 @@
 #import "WADemoCNMainUI.h"
 #import "WADemoUtil.h"
 #import "WADemoButtonSwitch.h"
-#import <WASdkIntf/WASdkIntf.h>
 #import "WADemoMaskLayer.h"
 #import "WADemoPayView.h"
 #import "WADemoAppTrackingView.h"
 #import "WADemoCscViewController.h"
 #import <Toast/Toast.h>
+#import "WADemoViewController.h"
 
-@interface WADemoCNMainUI() <WALoginDelegate>
+@interface WADemoCNMainUI()
 
 @property(nonatomic)BOOL cacheEnabled;
 @property(nonatomic)BOOL appWallEnabled;
@@ -38,6 +38,9 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+	
+		_cacheEnabled=YES;
+
         [self initBtnAndLayout];
     }
     return self;
@@ -59,7 +62,12 @@
     [btnTitles addObject:@[@"闪退测试"]];
     [btnTitles addObject:@[@"进入客服"]];
     [btnTitles addObject:@[@"查询实名认证状态"]];
-    [btnTitles addObject:@[@"Apple 登录"]];
+
+//	[btnTitles addObject:@[@"检测是否绑定账号"]];
+//    [btnTitles addObject:@[@"查询账号绑定"]];
+    [btnTitles addObject:@[@"打开用户中心"]];
+    
+
 
     UIImage *bgNormal = [self imageWithColor:[UIColor grayColor] size:CGSizeMake(1, 1)];
     UIImage *bgHighlighted = [self imageWithColor:[UIColor orangeColor] size:CGSizeMake(1, 1)];
@@ -102,7 +110,7 @@
         }
     }
     
-    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2]];
+    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2,@1]];
     
     NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
 //    CFShow((__bridge CFTypeRef)(infoDict));
@@ -112,6 +120,10 @@
     self.title = [NSString stringWithFormat:@"WADemocn%@", appVersion];
     self.btnLayout = btnLayout;
     self.btns = btns;
+	
+
+
+	
 }
 
 -(UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
@@ -233,7 +245,9 @@
 			[WAUserProxy queryUserCertificationInfo:^(WACertificationInfo *certificationInfo, NSError *error) {
 				
 				if (!error) {
-
+					NSLog(@"d实名认证状态======%ld",certificationInfo.userRealNameStatus);
+					NSLog(@"d实名认证状态======%ld",certificationInfo.age);
+					
 					if (certificationInfo) {
 						
 						NSString * message= @"";
@@ -243,7 +257,7 @@
 							message=@"未实名";
 
 						}else {
-							message=[NSString stringWithFormat:@"已经实名，年龄:=%ld",(long)certificationInfo.age];
+							message=[NSString stringWithFormat:@"已经实名，年龄:=%ld",certificationInfo.age];
 							
 						}
 						[self showToastMessage:message];
@@ -263,11 +277,37 @@
 
 			
 			
-
+			//用户中心
 		}else if(tag==12){
 			
-			[WAUserProxy loginWithPlatform:WA_PLATFORM_APPLE extInfo:nil delegate:self];
+			WADemoViewController* vc = (WADemoViewController*)[WADemoUtil getCurrentVC];
+			[WAUserProxy openAccountManager:vc];
 			
+
+			
+			//查询绑定
+		}else if(tag==13){
+			//账号绑定
+			[WAUserProxy queryBoundAccountWithCompleteBlock:^(NSError *error, NSArray<WAAccount *> *accounts) {
+				
+				if (!error) {
+					if ([accounts count]>0) {
+								
+						[self showToastMessage:[NSString stringWithFormat:@"绑定平台数=%lu",(unsigned long)[accounts count]]];
+
+					}
+				}else{
+					
+					[self showToastMessage:error.description];
+				}
+		
+				
+				
+			}];
+			
+
+		}else if(tag==14){
+
 		}
 }
 

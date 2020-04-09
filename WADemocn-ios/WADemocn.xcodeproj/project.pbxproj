@@ -56,7 +56,7 @@
 		7FC4E37C1C8EF0310075FC7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4E37A1C8EF0310075FC7D /* Localizable.strings */; };
 		B20551C423C804220063DA5E /* WADemoCscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20551C223C804220063DA5E /* WADemoCscViewController.m */; };
 		B20B9F03234DB83200592386 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B9F02234DB83200592386 /* WebKit.framework */; };
-		D6CD5606E1699BFD0382E7D0 /* libPods-WADemocn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 104D83C95EE0E45F42E716F2 /* libPods-WADemocn.a */; };
+		B2C41FF14461EF0E67AA489A /* libPods-WADemocn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F2FAA49B28E7DF2D4FB62F /* libPods-WADemocn.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		104D83C95EE0E45F42E716F2 /* libPods-WADemocn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WADemocn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FE5262709B5FEEB3A6CF92 /* Pods-WADemocn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WADemocn.release.xcconfig"; path = "Target Support Files/Pods-WADemocn/Pods-WADemocn.release.xcconfig"; sourceTree = "<group>"; };
 		3651BAEC1DFFE0D6002B955C /* WADemoAppTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoAppTrackingView.h; sourceTree = "<group>"; };
 		3651BAED1DFFE0D6002B955C /* WADemoAppTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoAppTrackingView.m; sourceTree = "<group>"; };
 		3651BAEE1DFFE0D6002B955C /* WADemoEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoEventData.h; sourceTree = "<group>"; };
@@ -84,7 +84,8 @@
 		36F6FBB21CD3092800EB0DBC /* WADemoPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoPayView.m; sourceTree = "<group>"; };
 		36FEA5391D990322000B300D /* WADemoCNMainUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoCNMainUI.h; sourceTree = "<group>"; };
 		36FEA53A1D990322000B300D /* WADemoCNMainUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoCNMainUI.m; sourceTree = "<group>"; };
-		3BEADB5D240273F5953F6CA8 /* Pods-WADemocn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WADemocn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WADemocn/Pods-WADemocn.debug.xcconfig"; sourceTree = "<group>"; };
+		52F2FAA49B28E7DF2D4FB62F /* libPods-WADemocn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WADemocn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0A3D22BD6B88F7F9E70F25 /* Pods-WADemocn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WADemocn.debug.xcconfig"; path = "Target Support Files/Pods-WADemocn/Pods-WADemocn.debug.xcconfig"; sourceTree = "<group>"; };
 		7F558AAF1CB609A3001E1A2A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		7F558AB01CB609A3001E1A2A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7F558AB11CB609A4001E1A2A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -171,7 +172,6 @@
 		7FC4E37B1C8EF0310075FC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7FC4E37D1C8EF03C0075FC7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7FC4E37E1C8EF0490075FC7D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		9D23F14C739EDC174EC32525 /* Pods-WADemocn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WADemocn.release.xcconfig"; path = "Pods/Target Support Files/Pods-WADemocn/Pods-WADemocn.release.xcconfig"; sourceTree = "<group>"; };
 		B20551C223C804220063DA5E /* WADemoCscViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoCscViewController.m; sourceTree = "<group>"; };
 		B20551C323C804220063DA5E /* WADemoCscViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoCscViewController.h; sourceTree = "<group>"; };
 		B20B9F02234DB83200592386 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20B9F03234DB83200592386 /* WebKit.framework in Frameworks */,
-				D6CD5606E1699BFD0382E7D0 /* libPods-WADemocn.a in Frameworks */,
+				B2C41FF14461EF0E67AA489A /* libPods-WADemocn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,14 +222,23 @@
 			path = Pay;
 			sourceTree = "<group>";
 		};
+		3FB9B7F9B5820D34540C86FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C0A3D22BD6B88F7F9E70F25 /* Pods-WADemocn.debug.xcconfig */,
+				02FE5262709B5FEEB3A6CF92 /* Pods-WADemocn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7FC4E2AC1C8EEE7C0075FC7D = {
 			isa = PBXGroup;
 			children = (
 				7FC4E2B71C8EEE7C0075FC7D /* WADemocn */,
 				7FC4E2D11C8EEE7C0075FC7D /* WADemocnUITests */,
 				7FC4E2B61C8EEE7C0075FC7D /* Products */,
-				FF7C6F21B9A8420B9E49FEF7 /* Pods */,
 				DADDAF22A4B48C543937B1B0 /* Frameworks */,
+				3FB9B7F9B5820D34540C86FC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -466,18 +475,9 @@
 			isa = PBXGroup;
 			children = (
 				B20B9F02234DB83200592386 /* WebKit.framework */,
-				104D83C95EE0E45F42E716F2 /* libPods-WADemocn.a */,
+				52F2FAA49B28E7DF2D4FB62F /* libPods-WADemocn.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FF7C6F21B9A8420B9E49FEF7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3BEADB5D240273F5953F6CA8 /* Pods-WADemocn.debug.xcconfig */,
-				9D23F14C739EDC174EC32525 /* Pods-WADemocn.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,11 +487,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FC4E2D71C8EEE7C0075FC7D /* Build configuration list for PBXNativeTarget "WADemocn" */;
 			buildPhases = (
-				03B222451E01CD8F03DD0CC0 /* [CP] Check Pods Manifest.lock */,
+				CF37E2E83B7B9C0DF6DA74CC /* [CP] Check Pods Manifest.lock */,
 				7FC4E2B11C8EEE7C0075FC7D /* Sources */,
 				7FC4E2B21C8EEE7C0075FC7D /* Frameworks */,
 				7FC4E2B31C8EEE7C0075FC7D /* Resources */,
-				BAE5B62CB60FE174AB26CAE1 /* [CP] Copy Pods Resources */,
+				439F10DA7C29239235FC8FC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -584,25 +584,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03B222451E01CD8F03DD0CC0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WADemocn-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BAE5B62CB60FE174AB26CAE1 /* [CP] Copy Pods Resources */ = {
+		439F10DA7C29239235FC8FC7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -613,6 +595,7 @@
 				"${PODS_ROOT}/WAAiHelpImpl_CN/res/ElvaChatServiceSDK.bundle",
 				"${PODS_ROOT}/WAApImpl_CN/config/wa_sdk_impl_config_apple.xml",
 				"${PODS_ROOT}/WAApwImpl_CN/config/wa_sdk_impl_config_apw.xml",
+				"${PODS_ROOT}/WAQQImpl_CN/config/wa_sdk_impl_config_qq.xml",
 				"${PODS_ROOT}/WASdkImpl_CN/config/wa_sdk_impl_config_winga.xml",
 				"${PODS_ROOT}/WASdkImpl_CN/bundle/WASDK-Resource.bundle",
 				"${PODS_ROOT}/WASdkImpl_CN/localizable/base.plist",
@@ -632,6 +615,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ElvaChatServiceSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_apple.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_apw.xml",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_qq.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_winga.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WASDK-Resource.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/base.plist",
@@ -648,6 +632,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WADemocn/Pods-WADemocn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF37E2E83B7B9C0DF6DA74CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WADemocn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -843,12 +849,13 @@
 		};
 		7FC4E2D81C8EEE7C0075FC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BEADB5D240273F5953F6CA8 /* Pods-WADemocn.debug.xcconfig */;
+			baseConfigurationReference = 5C0A3D22BD6B88F7F9E70F25 /* Pods-WADemocn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WADemocn/WADemocn.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8Z2D47ET4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -867,7 +874,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
 				PRODUCT_NAME = WADemocn;
@@ -877,12 +884,13 @@
 		};
 		7FC4E2D91C8EEE7C0075FC7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D23F14C739EDC174EC32525 /* Pods-WADemocn.release.xcconfig */;
+			baseConfigurationReference = 02FE5262709B5FEEB3A6CF92 /* Pods-WADemocn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WADemocn/WADemocn.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8Z2D47ET4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -901,7 +909,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 2.0.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
