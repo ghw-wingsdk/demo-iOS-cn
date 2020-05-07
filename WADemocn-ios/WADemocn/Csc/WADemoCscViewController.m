@@ -243,7 +243,7 @@ BOOL vip;
 	}else if(button.tag==10){
 		
 		if([WACscProxy isOpenAiHelp]){
-//			[WACscProxy openAiHelp:@"zh_CN" isVip:vip];
+			[WACscProxy openAiHelp:@"zh_CN" isVip:vip];
 		}
 		
 	}

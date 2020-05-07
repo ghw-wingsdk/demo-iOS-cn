@@ -22,9 +22,10 @@
     [WACoreProxy setSDKType:WA_SDK_TYPE_CN];
     [WACoreProxy initAppEventTracker];
     [WAPayProxy init4Iap];
-//    [WACoreProxy setServerId:@"China"];
-//    [WACoreProxy setLevel:10];
-//    [WACoreProxy setGameUserId:@"12345"];
+    [WACoreProxy setServerId:@"100"];
+	[WACoreProxy setNickName:@"apple"];
+    [WACoreProxy setLevel:10];
+    [WACoreProxy setGameUserId:@"12345"];
 //	  [WACoreProxy setClientId:@"220000000002"];
     
     return [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];
