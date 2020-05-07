@@ -56,6 +56,7 @@
 		7FC4E37C1C8EF0310075FC7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4E37A1C8EF0310075FC7D /* Localizable.strings */; };
 		B20551C423C804220063DA5E /* WADemoCscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20551C223C804220063DA5E /* WADemoCscViewController.m */; };
 		B20B9F03234DB83200592386 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B9F02234DB83200592386 /* WebKit.framework */; };
+		B29A5140245A77D800631BF9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B29A513F245A77D800631BF9 /* libresolv.tbd */; };
 		B2C41FF14461EF0E67AA489A /* libPods-WADemocn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F2FAA49B28E7DF2D4FB62F /* libPods-WADemocn.a */; };
 /* End PBXBuildFile section */
 
@@ -176,6 +177,7 @@
 		B20551C323C804220063DA5E /* WADemoCscViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoCscViewController.h; sourceTree = "<group>"; };
 		B20B9F02234DB83200592386 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B20B9F06234DD28C00592386 /* WADemocn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WADemocn.entitlements; sourceTree = "<group>"; };
+		B29A513F245A77D800631BF9 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29A5140245A77D800631BF9 /* libresolv.tbd in Frameworks */,
 				B20B9F03234DB83200592386 /* WebKit.framework in Frameworks */,
 				B2C41FF14461EF0E67AA489A /* libPods-WADemocn.a in Frameworks */,
 			);
@@ -474,6 +477,7 @@
 		DADDAF22A4B48C543937B1B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B29A513F245A77D800631BF9 /* libresolv.tbd */,
 				B20B9F02234DB83200592386 /* WebKit.framework */,
 				52F2FAA49B28E7DF2D4FB62F /* libPods-WADemocn.a */,
 			);
@@ -874,7 +878,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
 				PRODUCT_NAME = WADemocn;
@@ -909,7 +913,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;

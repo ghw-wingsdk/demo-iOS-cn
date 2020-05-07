@@ -25,7 +25,7 @@
 //    [WACoreProxy setServerId:@"China"];
 //    [WACoreProxy setLevel:10];
 //    [WACoreProxy setGameUserId:@"12345"];
-	[WACoreProxy setClientId:@"220000000002"];
+//	  [WACoreProxy setClientId:@"220000000002"];
     
     return [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];
     

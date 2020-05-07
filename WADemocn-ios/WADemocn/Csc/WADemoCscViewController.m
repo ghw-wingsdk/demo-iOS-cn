@@ -24,6 +24,7 @@
     [self initViews];
 }
 
+BOOL vip;
 - (void)initViews
 {
     self.view.backgroundColor = [UIColor whiteColor];
@@ -32,6 +33,7 @@
     [self initScrollView];
     
     [WACscProxy setLanguage:@"zh_CN"];
+	
 //    [WACscProxy setName:@"WADemo"];
 
 }
@@ -73,7 +75,7 @@
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:frame];
     [self.view addSubview:scrollView];
     
-    NSArray *titles = @[@"启动机器人客服界面", @"启动运营界面", @"展示全部FAQ菜单", @"展示FAQ分类", @"展示单条FAQ", @"进入人工客服界面",@"展示全部FAQ菜单(无机器人客服)",@"检测是否开启客服",@"同步登陆按钮点击客服"];
+    NSArray *titles = @[@"启动机器人客服界面", @"启动运营界面", @"展示全部FAQ菜单", @"展示FAQ分类", @"展示单条FAQ", @"进入人工客服界面",@"展示全部FAQ菜单(无机器人客服)",@"检测是否开启客服",@"打开vip",@"同步登陆按钮点击客服"];
     
     CGFloat left = 10, right = 10, top = 60, bottom = 40, mid_space_h = 10, mid_space_v = 10, btnHeight = 40;
     
@@ -124,13 +126,16 @@
     }
     else if (button.tag == 1)   //  启动机器人客服界面
     {
+
         NSMutableDictionary *customData = [NSMutableDictionary dictionary];
         [customData setObject:@"vip,pay1" forKey:@"WINGSDK-tags"];
         [customData setObject:@"1.0.0" forKey:@"VersionCode"];
         
         NSMutableDictionary *config = [NSMutableDictionary dictionary];
         [config setObject:customData forKey:@"cp-custom-metadata"];
-        
+//		[WACscProxy setSDKInterfaceOrientationMask:UIInterfaceOrientationMaskLandscape];
+//		[WACscProxy setSDKInterfaceOrientationMask:UIInterfaceOrientationMaskAll];
+
         [WACscProxy showElva:@"1" config:config];
     }
     else if (button.tag == 2)   // 启动运营界面
@@ -219,24 +224,38 @@
 		if([WACscProxy isOpenAiHelp]){
 			UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"开启了客服" message:@"" delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
 			[alert show];
-		}else{
-			UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"未开启客服" message:@"" delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
-			[alert show];
-			
 		}
 		
 	}else if(button.tag==9){
 		
-		if([WACscProxy isOpenAiHelp]){
-				[WACscProxy openAiHelp:@"zh_CN"];
-			}
+		vip=!vip;
+		if (vip) {
+			[button setTitle:@"关闭vip" forState:UIControlStateNormal];
+			[self showToastMessage:@"打开了vip"];
+		}else{
+			[self showToastMessage:@"关闭了vip"];
+			[button setTitle:@"打开vip" forState:UIControlStateNormal];
 
+		}
+		
+
+		
+	}else if(button.tag==10){
+		
+		if([WACscProxy isOpenAiHelp]){
+//			[WACscProxy openAiHelp:@"zh_CN" isVip:vip];
+		}
+		
 	}
 }
 
 
 
+- (void)showToastMessage:(NSString *)messag{
+	
+	[self.view makeToast:messag duration:2 position:CSToastPositionCenter];
 
+}
 
 #pragma mark -- 弹出框
 - (void)alertViewWithTitle:(NSString *)title message:(NSString *)message placeholder:(NSString *)placeholder callBack:(void (^ __nullable)(NSString *text))callBack
@@ -285,3 +304,4 @@
 }
 
 @end
+

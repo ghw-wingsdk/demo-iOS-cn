@@ -16,7 +16,7 @@
 #import <Toast/Toast.h>
 #import "WADemoViewController.h"
 
-@interface WADemoCNMainUI()
+@interface WADemoCNMainUI() 
 
 @property(nonatomic)BOOL cacheEnabled;
 @property(nonatomic)BOOL appWallEnabled;
@@ -26,6 +26,10 @@
 @end
 
 @implementation WADemoCNMainUI
+
+static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+#define kRandomLength 32
+
 
 -(instancetype)initWithBtns:(NSMutableArray *)btns btnLayout:(NSMutableArray *)btnLayout{
     self = [super initWithBtns:btns btnLayout:btnLayout];
@@ -62,11 +66,12 @@
     [btnTitles addObject:@[@"闪退测试"]];
     [btnTitles addObject:@[@"进入客服"]];
     [btnTitles addObject:@[@"查询实名认证状态"]];
+    [btnTitles addObject:@[@"设置随机clientid"]];
+    [btnTitles addObject:@[@"用户中心"]];
+    [btnTitles addObject:@[@"单独账号绑定页"]];
+    [btnTitles addObject:@[@"单独账号切换页"]];
+    [btnTitles addObject:@[@"单独实名认证页"]];
 
-//	[btnTitles addObject:@[@"检测是否绑定账号"]];
-//    [btnTitles addObject:@[@"查询账号绑定"]];
-    [btnTitles addObject:@[@"打开用户中心"]];
-    
 
 
     UIImage *bgNormal = [self imageWithColor:[UIColor grayColor] size:CGSizeMake(1, 1)];
@@ -110,7 +115,7 @@
         }
     }
     
-    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2,@1]];
+    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2,@1,@1,@2,@1]];
     
     NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
 //    CFShow((__bridge CFTypeRef)(infoDict));
@@ -140,6 +145,8 @@
 #pragma mark 按钮事件
 - (void)buttonEvents:(WADemoButtonMain *)button
 {
+	
+	NSString * titleStr= button.titleLabel.text;
     NSInteger tag = button.tag;
     if (tag == 1) //修改登录流程
     {
@@ -166,13 +173,13 @@
         
         button.selected = !button.isSelected;
     }
-    else if (tag == 3) // 登录
+    else if ([titleStr isEqualToString:@"登录"]) // 登录
     {
         [WAUserProxy loginWithPlatform:WA_PLATFORM_WINGA
                                extInfo:[NSString stringWithFormat:@"{\"enableCache\":%d,\"extInfo\":\"\"}", _cacheEnabled]
                               delegate:self];
     }
-    else if (tag == 4) // 支付
+    else if ([titleStr isEqualToString:@"支付"]) // 支付
     {
         UIViewController* vc = [WADemoUtil getCurrentVC];
         _productList = [[WADemoPayView alloc]initWithFrame:self.bounds];
@@ -181,7 +188,7 @@
         [_productList moveIn];
         [_productList pay];
     }
-    else if (tag == 5) //设置是否缓存登录
+    else if ([titleStr isEqualToString:@"缓存登录"]) //设置是否缓存登录
     {
         _cacheEnabled = !_cacheEnabled;
 		
@@ -198,7 +205,7 @@
         [button setTitle:[button titleForState:UIControlStateSelected] forState:UIControlStateNormal];
         [button setTitle:titleNormal forState:UIControlStateSelected];
     }
-    else if (tag == 6) // 切换账号
+    else if ([titleStr isEqualToString:@"切换账号"]) // 切换账号
     {
         [WAUserProxy switchAccountWithPlatform:WA_PLATFORM_WINGA
                                  completeBlock:^(NSError *error, WALoginResult *loginResult) {
@@ -211,11 +218,11 @@
                                      [self loginDidCompleteWithResults:loginResult];
                                  }];
     }
-    else if (tag == 7) // 登出
+    else if ([titleStr isEqualToString:@"登出"]) // 登出
     {
         [WAUserProxy logout];
     }
-    else if (tag == 8) // 数据收集
+    else if ([titleStr isEqualToString:@"数据收集"]) // 数据收集
     {
         UIViewController* vc = [WADemoUtil getCurrentVC];
         _appTrackView = [[WADemoAppTrackingView alloc]initWithFrame:self.bounds];
@@ -223,12 +230,12 @@
         [vc.view addSubview:_appTrackView];
         [_appTrackView moveIn];
     }
-    else if (tag == 9) // 闪退测试
+    else if ([titleStr isEqualToString:@"闪退测试"]) // 闪退测试
     {
         NSArray* array = [NSArray array];
         int i = (int)array[1];
         NSLog(@"%d",i);
-    }else if (tag == 10) // 进入客服
+    }else if ([titleStr isEqualToString:@"进入客服"]) // 进入客服
     {
 
 		WADemoCscViewController *cscVC = [[WADemoCscViewController alloc] init];
@@ -239,7 +246,7 @@
 		
 		
 
-    }else if (tag == 11) // 查询实名认证状态
+    }else if ([titleStr isEqualToString:@"查询实名认证状态"]) //
 		{
 			
 			[WAUserProxy queryUserCertificationInfo:^(WACertificationInfo *certificationInfo, NSError *error) {
@@ -278,37 +285,110 @@
 			
 			
 			//用户中心
-		}else if(tag==12){
+		}else if([titleStr isEqualToString:@"用户中心"]){
 			
 			WADemoViewController* vc = (WADemoViewController*)[WADemoUtil getCurrentVC];
 			[WAUserProxy openAccountManager:vc];
 			
-
 			
 			//查询绑定
-		}else if(tag==13){
-			//账号绑定
-			[WAUserProxy queryBoundAccountWithCompleteBlock:^(NSError *error, NSArray<WAAccount *> *accounts) {
+		}else if([titleStr isEqualToString:@"设置随机clientid"]){
+
+			NSMutableString *randomString = [NSMutableString stringWithCapacity:kRandomLength];
+			for (int i = 0; i < kRandomLength; i++) {
+				[randomString appendFormat: @"%C", [kRandomAlphabet characterAtIndex:arc4random_uniform((u_int32_t)[kRandomAlphabet length])]];
+			}
+			
+			[WACoreProxy setClientId:randomString];
+			[self makeToast:randomString duration:2 position:CSToastPositionCenter];
+
+			
+			WALog(@"设置随机吗")
+			
+		}else if([titleStr isEqualToString:@"单独账号绑定页"]){
+
+			if ([WAUserProxy canOpenAccoutbind]) {
+				[WAUserProxy openAccoutbindManager:^(NSError *error, WABindingResult *bindResult) {
+						
+					if (!error) {
+						
+						WALog(@"cp回掉绑定成功信息描述platform=%@",bindResult.platform);
+						WALog(@"cp回掉绑定成功信息描述userId=%@",bindResult.userId);
+						WALog(@"cp回掉绑定成功信息描述accessToken=%@",bindResult.accessToken);
+
+						[self showToastMessage:@"账号绑定成功===="];
+
+					}else{
+						
+						WALog(@"cp回掉错误信息描述=%@",error.localizedDescription);
+						[self showToastMessage:error.localizedDescription];
+						
+					}
+					
+					
+					
+				}];
+			}else{
 				
-				if (!error) {
-					if ([accounts count]>0) {
-								
-						[self showToastMessage:[NSString stringWithFormat:@"绑定平台数=%lu",(unsigned long)[accounts count]]];
+				[self showToastMessage:@"没有登录或没有开启绑定账号权限"];
+
+			}
+	
+			
+		}else if([titleStr isEqualToString:@"单独账号切换页"]){
+			
+			if ([WAUserProxy canOpenAccoutSwitch]) {
+				[WAUserProxy openAccoutSwithchManager:^(NSError *error, WALoginResult *loginResult) {
+					if (!error) {
+
+						[self showToastMessage:@"cp会调切换账号成功===="];
+
+					}else{
+
+						WALog(@"cp回掉错误信息描述=%@",error.localizedDescription);
+						[self showToastMessage:error.localizedDescription];
 
 					}
-				}else{
-					
-					[self showToastMessage:error.description];
-				}
-		
-				
-				
-			}];
+
+				}];
+
+			}else{
+
+				[self showToastMessage:@"没有登录或没有开启切换账号权限"];
+
+			}
 			
+			
+		}else if([titleStr isEqualToString:@"单独实名认证页"]){
+			
+			if ([WAUserProxy canOpenRealNameAuth]) {
+				[WAUserProxy openRealNameAuthManager:^(NSError *error, WACertificationInfo *certificationInfo)
+				{
+					if (!error) {
 
-		}else if(tag==14){
+						[self showToastMessage:@"cp回调 实名认证成功===="];
+						WALog(@"实名认证成功=");
 
+					}else{
+
+						WALog(@"cp回调 实名认证 错误信息描述=%@",error.localizedDescription);
+						[self showToastMessage:error.localizedDescription];
+
+					}
+
+
+				}];
+			}else{
+
+				[self showToastMessage:@"未登录或者已实名"];
+
+
+			}
+			
+			
 		}
+	
+
 }
 
 - (void)showToastMessage:(NSString *)messag{
@@ -361,4 +441,3 @@
 }
 
 @end
-

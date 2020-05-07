@@ -90,6 +90,10 @@
 }
 
 -(void)switchAcctDidCompleteWithResult:(WALoginResult*)result{
+	
+	WALog(@"切换账号成功了========");
+
+	
     WADemoAlertView* alert = [[WADemoAlertView alloc]initWithTitle:@"切换账户成功" message:[NSString stringWithFormat:@"platform:%@\npUserId:%@,pToken:%@,userId:%@,token:%@",result.platform,result.pUserId,result.pToken,result.userId,result.token] cancelButtonTitle:@"Sure" otherButtonTitles:nil block:nil];
     [alert show];
 }
@@ -108,4 +112,6 @@
 }
 
 @end
+
+
 
