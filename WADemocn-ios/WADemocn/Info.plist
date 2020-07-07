@@ -35,9 +35,7 @@
 			<key>CFBundleURLName</key>
 			<string>mqqapi</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>101858514</string>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
@@ -86,7 +84,6 @@
 			<string>wasdk</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>myapp://wasdkcn</string>
 				<string>wasdkcn</string>
 				<string>wxfd7062f046e15cf3</string>
 			</array>
@@ -260,6 +257,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 	<key>WXAppId</key>
 	<string>wxfd7062f046e15cf3</string>
 	<key>WXSecret</key>

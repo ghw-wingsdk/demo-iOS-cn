@@ -57,7 +57,7 @@
 		B20551C423C804220063DA5E /* WADemoCscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20551C223C804220063DA5E /* WADemoCscViewController.m */; };
 		B20B9F03234DB83200592386 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B9F02234DB83200592386 /* WebKit.framework */; };
 		B29A5140245A77D800631BF9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B29A513F245A77D800631BF9 /* libresolv.tbd */; };
-		B2C41FF14461EF0E67AA489A /* libPods-WADemocn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F2FAA49B28E7DF2D4FB62F /* libPods-WADemocn.a */; };
+		D2212C047AECFE9B72434FE7 /* libPods-WADemocn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 874D6C94927E99E70313BB7A /* libPods-WADemocn.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02FE5262709B5FEEB3A6CF92 /* Pods-WADemocn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WADemocn.release.xcconfig"; path = "Target Support Files/Pods-WADemocn/Pods-WADemocn.release.xcconfig"; sourceTree = "<group>"; };
 		3651BAEC1DFFE0D6002B955C /* WADemoAppTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoAppTrackingView.h; sourceTree = "<group>"; };
 		3651BAED1DFFE0D6002B955C /* WADemoAppTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoAppTrackingView.m; sourceTree = "<group>"; };
 		3651BAEE1DFFE0D6002B955C /* WADemoEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoEventData.h; sourceTree = "<group>"; };
@@ -85,8 +84,6 @@
 		36F6FBB21CD3092800EB0DBC /* WADemoPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoPayView.m; sourceTree = "<group>"; };
 		36FEA5391D990322000B300D /* WADemoCNMainUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoCNMainUI.h; sourceTree = "<group>"; };
 		36FEA53A1D990322000B300D /* WADemoCNMainUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoCNMainUI.m; sourceTree = "<group>"; };
-		52F2FAA49B28E7DF2D4FB62F /* libPods-WADemocn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WADemocn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C0A3D22BD6B88F7F9E70F25 /* Pods-WADemocn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WADemocn.debug.xcconfig"; path = "Target Support Files/Pods-WADemocn/Pods-WADemocn.debug.xcconfig"; sourceTree = "<group>"; };
 		7F558AAF1CB609A3001E1A2A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		7F558AB01CB609A3001E1A2A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7F558AB11CB609A4001E1A2A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -173,11 +170,14 @@
 		7FC4E37B1C8EF0310075FC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7FC4E37D1C8EF03C0075FC7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7FC4E37E1C8EF0490075FC7D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		874D6C94927E99E70313BB7A /* libPods-WADemocn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WADemocn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20551C223C804220063DA5E /* WADemoCscViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoCscViewController.m; sourceTree = "<group>"; };
 		B20551C323C804220063DA5E /* WADemoCscViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoCscViewController.h; sourceTree = "<group>"; };
 		B20B9F02234DB83200592386 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B20B9F06234DD28C00592386 /* WADemocn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WADemocn.entitlements; sourceTree = "<group>"; };
 		B29A513F245A77D800631BF9 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		BC0E6C6410F928C58BFD6DD3 /* Pods-WADemocn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WADemocn.release.xcconfig"; path = "Target Support Files/Pods-WADemocn/Pods-WADemocn.release.xcconfig"; sourceTree = "<group>"; };
+		E79530CF9DB6A8B21D6E8618 /* Pods-WADemocn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WADemocn.debug.xcconfig"; path = "Target Support Files/Pods-WADemocn/Pods-WADemocn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +187,7 @@
 			files = (
 				B29A5140245A77D800631BF9 /* libresolv.tbd in Frameworks */,
 				B20B9F03234DB83200592386 /* WebKit.framework in Frameworks */,
-				B2C41FF14461EF0E67AA489A /* libPods-WADemocn.a in Frameworks */,
+				D2212C047AECFE9B72434FE7 /* libPods-WADemocn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,15 +225,6 @@
 			path = Pay;
 			sourceTree = "<group>";
 		};
-		3FB9B7F9B5820D34540C86FC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5C0A3D22BD6B88F7F9E70F25 /* Pods-WADemocn.debug.xcconfig */,
-				02FE5262709B5FEEB3A6CF92 /* Pods-WADemocn.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		7FC4E2AC1C8EEE7C0075FC7D = {
 			isa = PBXGroup;
 			children = (
@@ -241,7 +232,7 @@
 				7FC4E2D11C8EEE7C0075FC7D /* WADemocnUITests */,
 				7FC4E2B61C8EEE7C0075FC7D /* Products */,
 				DADDAF22A4B48C543937B1B0 /* Frameworks */,
-				3FB9B7F9B5820D34540C86FC /* Pods */,
+				D3D7F4308DC5D930DE0988B3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -474,12 +465,21 @@
 			path = Csc;
 			sourceTree = "<group>";
 		};
+		D3D7F4308DC5D930DE0988B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E79530CF9DB6A8B21D6E8618 /* Pods-WADemocn.debug.xcconfig */,
+				BC0E6C6410F928C58BFD6DD3 /* Pods-WADemocn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DADDAF22A4B48C543937B1B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B29A513F245A77D800631BF9 /* libresolv.tbd */,
 				B20B9F02234DB83200592386 /* WebKit.framework */,
-				52F2FAA49B28E7DF2D4FB62F /* libPods-WADemocn.a */,
+				874D6C94927E99E70313BB7A /* libPods-WADemocn.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -853,13 +853,13 @@
 		};
 		7FC4E2D81C8EEE7C0075FC7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C0A3D22BD6B88F7F9E70F25 /* Pods-WADemocn.debug.xcconfig */;
+			baseConfigurationReference = E79530CF9DB6A8B21D6E8618 /* Pods-WADemocn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WADemocn/WADemocn.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20200707001;
 				DEVELOPMENT_TEAM = Y8Z2D47ET4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -878,7 +878,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.1;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
 				PRODUCT_NAME = WADemocn;
@@ -888,13 +888,13 @@
 		};
 		7FC4E2D91C8EEE7C0075FC7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02FE5262709B5FEEB3A6CF92 /* Pods-WADemocn.release.xcconfig */;
+			baseConfigurationReference = BC0E6C6410F928C58BFD6DD3 /* Pods-WADemocn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WADemocn/WADemocn.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20200707001;
 				DEVELOPMENT_TEAM = Y8Z2D47ET4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -913,7 +913,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
