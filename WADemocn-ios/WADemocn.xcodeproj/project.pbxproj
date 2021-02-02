@@ -600,6 +600,7 @@
 				"${PODS_ROOT}/WAApImpl_CN/config/wa_sdk_impl_config_apple.xml",
 				"${PODS_ROOT}/WAApwImpl_CN/config/wa_sdk_impl_config_apw.xml",
 				"${PODS_ROOT}/WAQQImpl_CN/config/wa_sdk_impl_config_qq.xml",
+				"${PODS_ROOT}/WAQQImpl_CN/bundle/TencentOpenApi_IOS_Bundle.bundle",
 				"${PODS_ROOT}/WASdkImpl_CN/config/wa_sdk_impl_config_winga.xml",
 				"${PODS_ROOT}/WASdkImpl_CN/bundle/WASDK-Resource.bundle",
 				"${PODS_ROOT}/WASdkImpl_CN/localizable/base.plist",
@@ -620,6 +621,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_apple.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_apw.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_qq.xml",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TencentOpenApi_IOS_Bundle.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_winga.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WASDK-Resource.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/base.plist",
@@ -878,7 +880,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.2.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
 				PRODUCT_NAME = WADemocn;
@@ -913,7 +915,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.2.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;

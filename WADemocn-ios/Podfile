@@ -27,14 +27,14 @@ target "WADemocn" do
 
 
 
- pod 'WASdkIntf_CN', 	     '2.1.1'
- pod 'WASdkImpl_CN', 	     '2.1.1'
- pod 'WAApImpl_CN', 		 '2.1.1'
- pod 'WAApwImpl_CN', 	     '2.1.0'
- pod 'WAWebPayImpl_CN', 	 '2.1.0'
- pod 'WAWechatImpl_CN',      '2.1.1'
- pod 'WAAiHelpImpl_CN',      '2.1.0'
- pod 'WAQQImpl_CN',      	 '2.1.0'
+ pod 'WASdkIntf_CN'
+ pod 'WASdkImpl_CN'
+ pod 'WAApImpl_CN'
+ pod 'WAApwImpl_CN'
+ pod 'WAWebPayImpl_CN'
+ pod 'WAWechatImpl_CN'
+ pod 'WAAiHelpImpl_CN'
+ pod 'WAQQImpl_CN'
 
 
 
