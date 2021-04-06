@@ -67,10 +67,12 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
     [btnTitles addObject:@[@"进入客服"]];
     [btnTitles addObject:@[@"查询实名认证状态"]];
     [btnTitles addObject:@[@"设置随机clientid"]];
+
     [btnTitles addObject:@[@"用户中心"]];
     [btnTitles addObject:@[@"单独账号绑定页"]];
     [btnTitles addObject:@[@"单独账号切换页"]];
     [btnTitles addObject:@[@"单独实名认证页"]];
+//	[btnTitles addObject:@[@"buy"]];
 
 
 
@@ -115,7 +117,7 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
         }
     }
     
-    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2,@1,@1,@2,@1]];
+    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2,@1,@1,@2,@2]];
     
     NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
 //    CFShow((__bridge CFTypeRef)(infoDict));
@@ -263,6 +265,9 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 						}else if(certificationInfo.userRealNameStatus==1){
 							message=@"未实名";
 
+						}else if(certificationInfo.userRealNameStatus==3){
+							message=[NSString stringWithFormat:@"认证中，年龄:=%ld",certificationInfo.age];
+
 						}else {
 							message=[NSString stringWithFormat:@"已经实名，年龄:=%ld",certificationInfo.age];
 							
@@ -311,11 +316,9 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 				[WAUserProxy openAccoutbindManager:^(NSError *error, WABindingResult *bindResult) {
 						
 					if (!error) {
-						
 						WALog(@"cp回掉绑定成功信息描述platform=%@",bindResult.platform);
 						WALog(@"cp回掉绑定成功信息描述userId=%@",bindResult.userId);
 						WALog(@"cp回掉绑定成功信息描述accessToken=%@",bindResult.accessToken);
-
 						[self showToastMessage:@"账号绑定成功===="];
 
 					}else{
@@ -324,9 +327,7 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 						[self showToastMessage:error.localizedDescription];
 						
 					}
-					
-					
-					
+
 				}];
 			}else{
 				
@@ -344,17 +345,17 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 						[self showToastMessage:@"cp会调切换账号成功===="];
 
 					}else{
-
+						
 						WALog(@"cp回掉错误信息描述=%@",error.localizedDescription);
 						[self showToastMessage:error.localizedDescription];
-
+						
 					}
-
+					
 				}];
-
+				
 			}else{
-
-				[self showToastMessage:@"没有登录或没有开启切换账号权限"];
+				
+				[self showToastMessage:@"没有开启切换账号权限"];
 
 			}
 			
@@ -370,21 +371,24 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 						WALog(@"实名认证成功=");
 
 					}else{
-
+						
 						WALog(@"cp回调 实名认证 错误信息描述=%@",error.localizedDescription);
 						[self showToastMessage:error.localizedDescription];
-
+						
 					}
-
-
+						
+					
 				}];
 			}else{
-
+				
 				[self showToastMessage:@"未登录或者已实名"];
 
-
+				
 			}
 			
+			
+		}else if([titleStr isEqualToString:@"buy"]){
+			NSLog(@"测试");
 			
 		}
 	

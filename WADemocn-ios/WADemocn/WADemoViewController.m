@@ -27,6 +27,7 @@
     [self initUI];
 	
 	
+	
 	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 		
 		BOOL cacheEnabled=YES;
@@ -56,7 +57,6 @@
     [self.view addSubview:maincnUI];
 	
 
-	
 	
 }
 
