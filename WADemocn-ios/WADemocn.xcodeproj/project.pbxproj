@@ -24,7 +24,6 @@
 		7FC4E2C31C8EEE7C0075FC7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4E2C11C8EEE7C0075FC7D /* Main.storyboard */; };
 		7FC4E2C51C8EEE7C0075FC7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4E2C41C8EEE7C0075FC7D /* Assets.xcassets */; };
 		7FC4E2C81C8EEE7C0075FC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC4E2C61C8EEE7C0075FC7D /* LaunchScreen.storyboard */; };
-		7FC4E2D31C8EEE7C0075FC7D /* WADemocnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2D21C8EEE7C0075FC7D /* WADemocnUITests.m */; };
 		7FC4E3381C8EEF3F0075FC7D /* WADemoAccountManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2DF1C8EEF3F0075FC7D /* WADemoAccountManagement.m */; };
 		7FC4E3391C8EEF3F0075FC7D /* WADemoAccountSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2E11C8EEF3F0075FC7D /* WADemoAccountSwitch.m */; };
 		7FC4E33A1C8EEF3F0075FC7D /* WADemoBindingAccountList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4E2E31C8EEF3F0075FC7D /* WADemoBindingAccountList.m */; };
@@ -108,8 +107,6 @@
 		7FC4E2C71C8EEE7C0075FC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FC4E2C91C8EEE7C0075FC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FC4E2CE1C8EEE7C0075FC7D /* WADemocn.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WADemocn.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FC4E2D21C8EEE7C0075FC7D /* WADemocnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WADemocnUITests.m; sourceTree = "<group>"; };
-		7FC4E2D41C8EEE7C0075FC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FC4E2DE1C8EEF3F0075FC7D /* WADemoAccountManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoAccountManagement.h; sourceTree = "<group>"; };
 		7FC4E2DF1C8EEF3F0075FC7D /* WADemoAccountManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADemoAccountManagement.m; sourceTree = "<group>"; };
 		7FC4E2E01C8EEF3F0075FC7D /* WADemoAccountSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADemoAccountSwitch.h; sourceTree = "<group>"; };
@@ -229,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				7FC4E2B71C8EEE7C0075FC7D /* WADemocn */,
-				7FC4E2D11C8EEE7C0075FC7D /* WADemocnUITests */,
 				7FC4E2B61C8EEE7C0075FC7D /* Products */,
 				DADDAF22A4B48C543937B1B0 /* Frameworks */,
 				D3D7F4308DC5D930DE0988B3 /* Pods */,
@@ -282,15 +278,6 @@
 				7FC4E2B91C8EEE7C0075FC7D /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7FC4E2D11C8EEE7C0075FC7D /* WADemocnUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7FC4E2D21C8EEE7C0075FC7D /* WADemocnUITests.m */,
-				7FC4E2D41C8EEE7C0075FC7D /* Info.plist */,
-			);
-			path = WADemocnUITests;
 			sourceTree = "<group>";
 		};
 		7FC4E2DD1C8EEF3F0075FC7D /* AccountManagement  */ = {
@@ -719,7 +706,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FC4E2D31C8EEE7C0075FC7D /* WADemocnUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,6 +874,7 @@
 				CURRENT_PROJECT_VERSION = 20210406001;
 				DEVELOPMENT_TEAM = Y8Z2D47ET4;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/wasdk/ap/frameworks",
@@ -904,7 +891,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.3.0;
+				MARKETING_VERSION = 2.3.1;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
 				PRODUCT_NAME = WADemocn;
@@ -923,6 +910,7 @@
 				CURRENT_PROJECT_VERSION = 20210406001;
 				DEVELOPMENT_TEAM = Y8Z2D47ET4;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/wasdk/ap/frameworks",
@@ -939,7 +927,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.3.0;
+				MARKETING_VERSION = 2.3.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
