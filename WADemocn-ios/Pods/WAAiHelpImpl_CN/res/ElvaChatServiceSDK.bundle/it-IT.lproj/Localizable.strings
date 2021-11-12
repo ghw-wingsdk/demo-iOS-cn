@@ -1,0 +1,34 @@
+//意大利语it,it-CH,it-IT
+"content_too_long"="Non più di %ld caratteri！";
+"ContactCustomerService" = "Contattaci";
+"self_service_interface" = "Self Service";
+"offLine"= "Il tuo collegamento si è interrotto, si prega di effettuare nuovamente l'accesso!";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Lo hai trovato utile";
+"elva__mark_unhelpful_toast"="Lo hai trovato inutile";
+"elva__mark_yes_no_question"="Questo è utile?";
+"elva__mark_no"="No";
+"elva__mark_yes"="Si";
+"RewardBalance"="Il tuo bilancio punti:";
+"GoTo" = "Fino a";
+"Forum" = "Spazio domande";
+"RewardSuccess" = "Premiazione riuscita";
+"RewardFailure" = "Premiazione fallita";
+"TokenInsufficient" = "Bilancio insufficiente";
+"NeedMoreHelp" = "Serve ancora aiuto?";
+"your question"="Inserire problema";
+"Cancel"="Annulla";
+"Success"="Success";
+"Failed"="Failed";
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="La dimensione del file supera il limite, carica il file più piccolo di %d MB";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="Mandare il rapporto della condizione di rete? Ci aiuterà a migliorare le qualità della connessione.";
+"After checking, the network is available"="Dopo il controllo, la rete è disponibile";
+
+
+
+
+
+
+

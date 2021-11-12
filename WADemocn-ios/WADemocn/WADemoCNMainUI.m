@@ -44,6 +44,8 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
     if (self) {
 	
 		_cacheEnabled=YES;
+        
+                
 
         [self initBtnAndLayout];
     }
@@ -72,7 +74,9 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
     [btnTitles addObject:@[@"单独账号绑定页"]];
     [btnTitles addObject:@[@"单独账号切换页"]];
     [btnTitles addObject:@[@"单独实名认证页"]];
-//	[btnTitles addObject:@[@"buy"]];
+	[btnTitles addObject:@[@"弹出获取IDFA授权"]];
+    [btnTitles addObject:@[@"单独隐私协议弹框"]];
+    [btnTitles addObject:@[@"清理缓存"]];
 
 
 
@@ -117,7 +121,7 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
         }
     }
     
-    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2,@1,@1,@2,@2]];
+    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2,@1,@1,@2,@2,@2]];
     
     NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
 //    CFShow((__bridge CFTypeRef)(infoDict));
@@ -387,10 +391,58 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 			}
 			
 			
-		}else if([titleStr isEqualToString:@"buy"]){
-			NSLog(@"测试");
+		}else if([titleStr isEqualToString:@"弹出获取IDFA授权"]){
+			NSLog(@"弹出获取IDFA授权");
+            
+            [WAUserProxy openTTAAuthorizationWithCompletionHandler:^(NSError *error, NSUInteger status) {
+                if (error) {
+                    [self showToastMessage:error.localizedDescription];
+                }else{
+                    
+                    if (status==0) {
+                        [self showToastMessage:@"ATTrackingManagerAuthorizationStatusNotDetermined(不确定)"];
+
+                    }else if(status==1){
+                        [self showToastMessage:@"ATTrackingManagerAuthorizationStatusRestricted(限制)"];
+
+                    }else if(status==2){
+                        [self showToastMessage:@"ATTrackingManagerAuthorizationStatusDenied(拒绝)"];
+
+                    }else if(status==3){
+                        [self showToastMessage:@"ATTrackingManagerAuthorizationStatusAuthorized(已同意)"];
+
+                    }
+                    
+
+                    
+                }
+            }];
+            
 			
-		}
+        }else if([titleStr isEqualToString:@"单独隐私协议弹框"]){
+            [WAUserProxy openPrivacyAgreementWindow:^(NSError *error, NSUInteger status) {
+                if (error) {
+                    [self showToastMessage:@"弹出了协议框，用户点击了拒绝"];
+                }else{
+                    if (status==1) {
+                        [self showToastMessage:@"弹出了协议框，用户点击了同意"];
+
+                    }else if(status==2){
+                        [self showToastMessage:@"没有弹出协议框，用户之前点击过同意，无需再弹"];
+
+                    }
+
+                }
+                
+            }];
+            
+        }else if([titleStr isEqualToString:@"清理缓存"]){
+            
+            NSUserDefaults * setting = [NSUserDefaults standardUserDefaults];
+            [setting setObject:@"0" forKey:@"com.winganalytics.sdk:privacyIsAgree"];
+            [setting synchronize];
+            
+        }
 	
 
 }

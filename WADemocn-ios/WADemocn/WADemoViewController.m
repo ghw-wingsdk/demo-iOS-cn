@@ -9,6 +9,7 @@
 #import "WADemoViewController.h"
 #import "WADemoCNMainUI.h"
 #import "WADemoAlertView.h"
+#import <Toast/Toast.h>
 
 @interface WADemoViewController ()
 {
@@ -26,18 +27,25 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self initUI];
 	
-	
-	
-	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-		
-		BOOL cacheEnabled=YES;
-		[WAUserProxy loginWithPlatform:WA_PLATFORM_WINGA
-								   extInfo:[NSString stringWithFormat:@"{\"enableCache\":%d,\"extInfo\":\"\"}", cacheEnabled]
-								  delegate:maincnUI];
-	});
+//	
+//	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//		
+//		BOOL cacheEnabled=YES;
+//		[WAUserProxy loginWithPlatform:WA_PLATFORM_WINGA
+//								   extInfo:[NSString stringWithFormat:@"{\"enableCache\":%d,\"extInfo\":\"\"}", cacheEnabled]
+//								  delegate:maincnUI];
+//	});
+    
+    
+
+
+
+
+    
 
     
 }
+
 
 
 
@@ -57,6 +65,7 @@
     [self.view addSubview:maincnUI];
 	
 
+	
 	
 }
 
@@ -90,10 +99,6 @@
 }
 
 -(void)switchAcctDidCompleteWithResult:(WALoginResult*)result{
-	
-	WALog(@"切换账号成功了========");
-
-	
     WADemoAlertView* alert = [[WADemoAlertView alloc]initWithTitle:@"切换账户成功" message:[NSString stringWithFormat:@"platform:%@\npUserId:%@,pToken:%@,userId:%@,token:%@",result.platform,result.pUserId,result.pToken,result.userId,result.token] cancelButtonTitle:@"Sure" otherButtonTitles:nil block:nil];
     [alert show];
 }
@@ -112,6 +117,5 @@
 }
 
 @end
-
 
 

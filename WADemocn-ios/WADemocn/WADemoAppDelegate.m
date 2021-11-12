@@ -22,10 +22,52 @@
     [WACoreProxy setSDKType:WA_SDK_TYPE_CN];
     [WACoreProxy initAppEventTracker];
     [WAPayProxy init4Iap];
-    [WACoreProxy setServerId:@"100"];
-	[WACoreProxy setNickName:@"apple"];
-    [WACoreProxy setLevel:10];
-    [WACoreProxy setGameUserId:@"12345"];
+
+//    [WACoreProxy setClientId:@"lpwlpwddd0001"];
+    
+    
+    [WAUserProxy openPrivacyAgreementWindow:^(NSError *error, NSUInteger status) {
+        if (error) {
+//            [self showToastMessage:@"弹出了协议框，用户点击了拒绝"];
+        }else{
+            if (status==1) {
+                
+                [WAUserProxy openTTAAuthorizationWithCompletionHandler:^(NSError *error, NSUInteger status) {
+                    if (error) {
+//                        [self showToastMessage:error.localizedDescription];
+                    }else{
+                        
+                        if (status==0) {
+//                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusNotDetermined(不确定)"];
+
+                        }else if(status==1){
+//                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusRestricted(限制)"];
+
+                        }else if(status==2){
+//                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusDenied(拒绝)"];
+
+                        }else if(status==3){
+//                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusAuthorized(已同意)"];
+
+                        }
+                        
+
+                        
+                    }
+                }];
+                
+                
+//                [self showToastMessage:@"弹出了协议框，用户点击了同意"];
+
+            }else if(status==2){
+//                [self showToastMessage:@"没有弹出协议框，用户之前点击过同意，无需再弹"];
+
+            }
+
+        }
+        
+    }];
+
     
     return [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];
     
@@ -40,6 +82,11 @@
 	
 	return [WACoreProxy application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
 }
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [WACoreProxy application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -74,5 +121,9 @@
     return [WACoreProxy application:app openURL:url options:options];
 }
 
-@end
+//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+//    return UIInterfaceOrientationMaskAll;
+//}
 
+
+@end

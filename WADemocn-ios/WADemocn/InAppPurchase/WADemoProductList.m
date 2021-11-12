@@ -156,18 +156,6 @@ static NSString* productCellIdentifier = @"ProductCellIdentifier";
             NSLog(@"%@ 创建订单失败.", platform);
 			[self makeToast:[NSString stringWithFormat:@"创建订单失败.%@",platform] duration:2 position:CSToastPositionCenter];
 
-			/*
-			 根据《关于防止未成年人沉迷网络游戏的通知》规定，本次充值金额超过限制
-			 */
-		}else if(iapResult.resultCode==4066||iapResult.resultCode==4067){
-			
-			[self makeToast:[NSString stringWithFormat:@"创建订单失败.%@",platform] duration:2 position:CSToastPositionCenter];
-			/*
-			根据《关于防止未成年人沉迷网络游戏的通知》规定，本月充值金额超过限制
-			*/
-		}else if(iapResult.resultCode==4070||iapResult.resultCode==4071){
-			[self makeToast:[NSString stringWithFormat:@"创建订单失败.%@",platform] duration:2 position:CSToastPositionCenter];
-
 		}else{
 			[self makeToast:iapResult.message duration:2 position:CSToastPositionCenter];
 		}
@@ -181,4 +169,3 @@ static NSString* productCellIdentifier = @"ProductCellIdentifier";
 }
 
 @end
-

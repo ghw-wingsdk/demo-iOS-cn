@@ -11,8 +11,17 @@
 		<key>domain</key>
 		<string>gamehollywoodhk@aihelp.net</string>
 	</dict>
+	<key>AiHelp -1</key>
+	<dict>
+		<key>appId</key>
+		<string>gamehollywoodhk_platform_c6efc612-deab-49f6-b76d-ed9973f5d4ba</string>
+		<key>appSecret</key>
+		<string>GAMEHOLLYWOODHK_app_6ff2af7846a245e8a56c74d2331ede73</string>
+		<key>domain</key>
+		<string>gamehollywoodhk@aihelp.net</string>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>zh_CN</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -29,14 +38,6 @@
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
 	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>mqqapi</string>
-			<key>CFBundleURLSchemes</key>
-			<array/>
-		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
@@ -225,6 +226,8 @@
 	<string>需要照片添加权限,才能保存图片到相册</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要访问您的相册权限，才能将图片上传反馈给客服</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>确认idfa数据收集</string>
 	<key>QQAppId</key>
 	<string>101858514</string>
 	<key>UIBackgroundModes</key>
@@ -257,8 +260,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
 	<key>WXAppId</key>
 	<string>wxfd7062f046e15cf3</string>
 	<key>WXSecret</key>

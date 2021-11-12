@@ -47,18 +47,18 @@
     [WADemoMaskLayer stopAnimating];
 	
 	
-
+	
 	[WAPayProxy queryChannelProduct:@"APPLE" callBackBlock:^(NSArray<WAChannelProduct *> *channelProductsArray, NSError *error) {
 		if (!error) {
-
+			
 			productList = [[WADemoProductList alloc]initWithFrame:self.scrollView.bounds];
 			productList.goToType = GoToTypeWA;
 			productList.products = Inventory;
 			productList.channelProducts=channelProductsArray;
 			[self.scrollView addSubview:productList];
-
+			
 		}else{
-
+			
 			productList = [[WADemoProductList alloc]initWithFrame:self.scrollView.bounds];
 				productList.goToType = GoToTypeWA;
 				productList.products = Inventory;
@@ -69,7 +69,10 @@
 	
 	
     
-
+//    productList = [[WADemoProductList alloc]initWithFrame:self.scrollView.bounds];
+//    productList.goToType = GoToTypeWA;
+//    productList.products = Inventory;
+//    [self.scrollView addSubview:productList];
 }
 
 -(void)queryInventoryDidFailWithError:(NSError*)error{
@@ -93,4 +96,3 @@
 }
 
 @end
-

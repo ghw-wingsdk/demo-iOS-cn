@@ -108,6 +108,7 @@
     labelName.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     labelName.font = [UIFont fontWithName:@"Helvetica" size:12];
     labelName.text = [NSString stringWithFormat:@"事件名称 : %@", mEventName];
+	labelName.textColor=[UIColor blackColor];
     [svContent addSubview:labelName];
     
     rowY += height + 3;
@@ -122,6 +123,8 @@
     labelName = [[UILabel alloc] initWithFrame:CGRectMake(rowX, rowY, svContent.frame.size.width - 2 * rowX, height)];
     labelName.font = [UIFont fontWithName:@"Helvetica" size:12];
     labelName.text = @"参数 : ";
+	labelName.textColor=[UIColor blackColor];
+
     [svContent addSubview:labelName];
     
     rowY += height;
@@ -134,12 +137,15 @@
         labelName = [[UILabel alloc] initWithFrame:CGRectMake(rowX, rowY, 180, height)];
         labelName.font = [UIFont fontWithName:@"Helvetica" size:12];
         labelName.text = [NSString stringWithFormat:@"%@[%@]", param.paramName, param.paramDesc];
+		labelName.textColor=[UIColor blackColor];
+
         [svContent addSubview:labelName];
         
         if (param.paramType == GHWParamTypeBool)
         {
             sValue = [[UISwitch alloc] initWithFrame:CGRectMake(labelName.frame.origin.x + labelName.frame.size.width, rowY, 100, height)];
             sValue.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
+
             sValue.tag = i;
             [svContent addSubview:sValue];
         }
@@ -149,6 +155,8 @@
                                                                     svContent.frame.size.width - labelName.frame.origin.x - labelName.frame.size.width- rowX, height)];
             tfValue.tag = i;
             tfValue.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
+			tfValue.textColor=[UIColor blackColor];
+
             tfValue.layer.borderColor = [UIColor blackColor].CGColor;
             tfValue.layer.borderWidth = 0.5f;
             tfValue.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, height)];

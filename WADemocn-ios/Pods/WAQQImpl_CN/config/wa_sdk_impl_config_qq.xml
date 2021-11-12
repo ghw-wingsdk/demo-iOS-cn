@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<version val="QQ2.2.0"/>
+    <comps>
+        <!-- 公共模块 -->
+        <comp module="CORE" plaf="QQ" mandatory="YES" value="WAQQCore" desc="公共模块"/>
+        <!-- 用户模块 -->
+        <comp module="USR" plaf="QQ" mandatory="YES" value="WAQQUser" desc="qq用户账户"/>
+    </comps>
+    <ops>
+        <op type="copy" category="res" isFile="NO" from="frameworks" to="wasdk/ap/frameworks" />
+        <op type="ref" category="res" isFile="NO" from="System/Library/Frameworks/StoreKit.framework"/>
+    </ops>
+</config>

@@ -7,7 +7,8 @@
 //  国内demo view
 
 #import "WADemoNaviView.h"
+#import <WASdkIntf/WASdkIntf.h>
 
-@interface WADemoCNMainUI : WADemoNaviView
+@interface WADemoCNMainUI : WADemoNaviView<WALoginDelegate>
 
 @end

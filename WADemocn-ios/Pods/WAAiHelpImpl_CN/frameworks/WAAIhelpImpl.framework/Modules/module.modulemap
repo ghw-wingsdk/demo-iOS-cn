@@ -1,0 +1,6 @@
+framework module WAAIhelpImpl {
+  umbrella header "WAAIhelpImpl.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,62 @@
+PODS:
+  - WAAiHelpImpl_CN (2.1.0):
+    - WASdkImpl_CN
+    - WASdkIntf_CN
+  - WAApImpl_CN (2.3.0):
+    - WASdkImpl_CN
+    - WASdkIntf_CN
+  - WAApwImpl_CN (2.1.0):
+    - WASdkImpl_CN
+    - WASdkIntf_CN
+  - WAQQImpl_CN (2.2.0)
+  - WASdkImpl_CN (2.4.0):
+    - WASdkIntf_CN
+  - WASdkIntf_CN (2.4.0)
+  - WAWebPayImpl_CN (2.3.0):
+    - WASdkImpl_CN
+    - WASdkIntf_CN
+  - WAWechatImpl_CN (2.1.1):
+    - WASdkImpl_CN
+    - WASdkIntf_CN
+
+DEPENDENCIES:
+  - WAAiHelpImpl_CN
+  - WAApImpl_CN
+  - WAApwImpl_CN
+  - WAQQImpl_CN
+  - WASdkImpl_CN
+  - WASdkIntf_CN
+  - WAWebPayImpl_CN
+  - WAWechatImpl_CN
+
+SPEC REPOS:
+  http://repo.wingsdk.cn:8082/r/WAAiHelpImpl_CN.git:
+    - WAAiHelpImpl_CN
+  http://repo.wingsdk.cn:8082/r/WAApImpl_CN.git:
+    - WAApImpl_CN
+  http://repo.wingsdk.cn:8082/r/WAApwImpl_CN.git:
+    - WAApwImpl_CN
+  http://repo.wingsdk.cn:8082/r/WAQQImpl_CN.git:
+    - WAQQImpl_CN
+  http://repo.wingsdk.cn:8082/r/WASdkImpl_CN.git:
+    - WASdkImpl_CN
+  http://repo.wingsdk.cn:8082/r/WASdkIntf_CN.git:
+    - WASdkIntf_CN
+  http://repo.wingsdk.cn:8082/r/WAWebPayImpl_CN.git:
+    - WAWebPayImpl_CN
+  http://repo.wingsdk.cn:8082/r/WAWechatImpl_CN.git:
+    - WAWechatImpl_CN
+
+SPEC CHECKSUMS:
+  WAAiHelpImpl_CN: c148764c82b56cb9fc80a3f9ab58c554ec323f1f
+  WAApImpl_CN: e4e8566edd50391787c5fc9205476a376f87c340
+  WAApwImpl_CN: fbbea887a06a6a5abcda3977f6b3e3e58ffb9484
+  WAQQImpl_CN: e6ebef397df82a5e703211f8689d4ce7aa966eba
+  WASdkImpl_CN: 7ac9c4ebbd10d7170d6158aa60af1608dc061b3f
+  WASdkIntf_CN: 0372281b304828e6b7df21d5209e867623e10b80
+  WAWebPayImpl_CN: d690e24724380099940551df2141413f322f0aaa
+  WAWechatImpl_CN: be1da452a79c92eef5bfcc9d4d2e62d5819764c3
+
+PODFILE CHECKSUM: 44c697bcf363a86a28f8343033273a680de5d314
+
+COCOAPODS: 1.11.2

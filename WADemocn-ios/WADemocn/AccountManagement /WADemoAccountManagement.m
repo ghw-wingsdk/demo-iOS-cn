@@ -255,6 +255,7 @@
         [WASocialProxy inviteInstallRewardPlatform:result.platform TokenString:result.accessToken handler:^(NSUInteger code, NSString *msg, NSError *error) {
             if (code == 200) {
                 
+				
                 UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"tip" message:[NSString stringWithFormat:@"触发Facebook被邀请人安装应用事件接口成功 msg:%@",msg] delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
                 [alert show];
             }else{
