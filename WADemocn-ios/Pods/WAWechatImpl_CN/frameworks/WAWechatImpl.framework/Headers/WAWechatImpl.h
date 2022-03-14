@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char WAWechatImplVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <WAWechatImpl/PublicHeader.h>
 
-//time:2020/07/07 15:35 ver:2.1.1
+//time:2022/03/15 15:35 ver:2.5.0

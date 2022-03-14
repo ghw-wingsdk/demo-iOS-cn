@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = C7031C8604596597D229CDBF3B3EB7F3 /* Build configuration list for PBXAggregateTarget "WASdkIntf_CN" */;
+			buildConfigurationList = A294FE3BD08B315E4C42890EBEDFE53D /* Build configuration list for PBXAggregateTarget "WASdkIntf_CN" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -22,8 +22,8 @@
 			buildPhases = (
 			);
 			dependencies = (
-				4DF551C871938F0845FF1D7615185F02 /* PBXTargetDependency */,
-				5F31EEF783F9C9C6BC2614DDE235E4F8 /* PBXTargetDependency */,
+				08A5D1CB72D07A4C1AD5F196FE662ADF /* PBXTargetDependency */,
+				9D0D6769EDD372E3814BA465DA3CED91 /* PBXTargetDependency */,
 			);
 			name = WAApwImpl_CN;
 		};
@@ -42,8 +42,8 @@
 			buildPhases = (
 			);
 			dependencies = (
-				E6893FB8B0DE93413D5E7A1625B1FA8A /* PBXTargetDependency */,
-				2A14F3F233BCF275321B5CABC4BD43A0 /* PBXTargetDependency */,
+				911512AF1758F2D98F5A970BE1C6C54B /* PBXTargetDependency */,
+				99351826FF11DECBB3AB2DAFD492914D /* PBXTargetDependency */,
 			);
 			name = WAWechatImpl_CN;
 		};
@@ -53,8 +53,8 @@
 			buildPhases = (
 			);
 			dependencies = (
-				46CB2FF1EEF334BE7626902F19D05AB9 /* PBXTargetDependency */,
-				61CC5C16BD84EECDF7D518CCE1CBFE22 /* PBXTargetDependency */,
+				C5C224FB9B25D06E43A5063BCEEFAD4C /* PBXTargetDependency */,
+				0981C743AC0234F32BA202F472770B2F /* PBXTargetDependency */,
 			);
 			name = WAWebPayImpl_CN;
 		};
@@ -64,18 +64,18 @@
 			buildPhases = (
 			);
 			dependencies = (
-				21E8F3CE908A139AA5539A3412FA5814 /* PBXTargetDependency */,
-				5A0CECA95E05036EA61431ABD56B5846 /* PBXTargetDependency */,
+				86CB95EF4386DD05AF61FC8113B8DE04 /* PBXTargetDependency */,
+				8C121EE662078AE45F3A4F668A5E8E47 /* PBXTargetDependency */,
 			);
 			name = WAAiHelpImpl_CN;
 		};
 		B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 83944F582B69D2AB262F87A7D4DDA96C /* Build configuration list for PBXAggregateTarget "WASdkImpl_CN" */;
+			buildConfigurationList = 64FF79E3897885C4BD5661DC367BD7B3 /* Build configuration list for PBXAggregateTarget "WASdkImpl_CN" */;
 			buildPhases = (
 			);
 			dependencies = (
-				5B1EB4F7217EA5E8E3C324093CD983F8 /* PBXTargetDependency */,
+				587096114112D16E7A1F59FA986DE1D9 /* PBXTargetDependency */,
 			);
 			name = WASdkImpl_CN;
 		};
@@ -85,8 +85,8 @@
 			buildPhases = (
 			);
 			dependencies = (
-				E4CBE9A67FB8F398E9DC57C33D271F54 /* PBXTargetDependency */,
-				808C9B5022982F1D09B158920FD635AA /* PBXTargetDependency */,
+				BA2D0F1C06A6DE341673C35A3BF4EDDE /* PBXTargetDependency */,
+				00B17CBC406CD7E4C5BE39F515D8A4E9 /* PBXTargetDependency */,
 			);
 			name = WAApImpl_CN;
 		};
@@ -97,149 +97,150 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C72F651FFD41733194E68B75814083D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6943F619B4728F2E2269F37A7D4A31B8;
-			remoteInfo = WAWechatImpl_CN;
-		};
-		18B8A1891599E7AADAEE0FC972C41F7D /* PBXContainerItemProxy */ = {
+		0AECC84B0EC2D51AEB01A30705D522E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
 			remoteInfo = WASdkImpl_CN;
 		};
-		22933F6512D068E49EE6B5FA7F688328 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 69C16EE09CDE7732C3EA907532F02055;
-			remoteInfo = WAWebPayImpl_CN;
-		};
-		2ABAC6DF2D7581BCC1D5A7028FCAE6CA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66C470B1A3558E99C66F7E3BA69030F1;
-			remoteInfo = WAQQImpl_CN;
-		};
-		54E5FF40D5071606AEE29A2B9EBD8771 /* PBXContainerItemProxy */ = {
+		118A78B1B8B3E492B7A222F5C13B8F7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
 			remoteInfo = WASdkIntf_CN;
 		};
-		6C2E9375CDE0F9A22DEE6641A8621258 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 726C579FAD35745BF2197D05DEACB2AB;
-			remoteInfo = WAAiHelpImpl_CN;
-		};
-		753CC85700196350C0A144CA7E269660 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
-			remoteInfo = WASdkImpl_CN;
-		};
-		7F49D3E8059086530C352B3C33138CFA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
-			remoteInfo = WASdkImpl_CN;
-		};
-		A1414B1BA5E4FF6F01ACDD6901150757 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
-			remoteInfo = WASdkImpl_CN;
-		};
-		AA4712DA5A9CC7C425AF1CE54031E622 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
-		};
-		AC79C80DC2D7B1717C0FDA0969472E73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
-		};
-		B35B0AAE39625325D056C9E2A8FF3097 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
-		};
-		B9719C66C01212ADFC2664F4223B55AF /* PBXContainerItemProxy */ = {
+		2B3C50D6909193A2651E15F6DB225AB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 620F337E709BADFF89171F70E91C3E63;
 			remoteInfo = WAApwImpl_CN;
 		};
-		C7EC30BB610F1D4C667D19CDFFF88D1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
-		};
-		CDAF5EF5FAAEB6BC5C5F6EBD6E541342 /* PBXContainerItemProxy */ = {
+		383EF17127DCFA93738FDFD0C04C5F58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
 			remoteInfo = WASdkImpl_CN;
 		};
-		D47E826723629064870546D25C7FCCC7 /* PBXContainerItemProxy */ = {
+		48E69514BECA27675E63C552F1AC3FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 726C579FAD35745BF2197D05DEACB2AB;
+			remoteInfo = WAAiHelpImpl_CN;
+		};
+		706526F0A325273CA14D294135FF660E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
 			remoteInfo = WASdkIntf_CN;
 		};
-		E3B3AA654F160E0EB80EA05C3564A7A0 /* PBXContainerItemProxy */ = {
+		707A2E7F51E7F1172E65D9FC11E86370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		8CEB283E99D7366CABFCE2850E4706F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		8FE0D6BE2902C17B1D7AEE4BA590B3BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
 			remoteInfo = WASdkImpl_CN;
 		};
-		EC270E60C1362EE350B5B7BE9380ED7C /* PBXContainerItemProxy */ = {
+		9D99CCE05F25D8BEED45464F2A373A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		A3B4F388E2356E588C55AC291E58E21B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69C16EE09CDE7732C3EA907532F02055;
+			remoteInfo = WAWebPayImpl_CN;
+		};
+		A9E653AB28E08F6B372AB3C9E2151D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		AB2E024006BF63C5CDEDCD2E2126B255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C470B1A3558E99C66F7E3BA69030F1;
+			remoteInfo = WAQQImpl_CN;
+		};
+		D78E7D98A143134B57D10A87E446AFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		D7EED8E49CB0E3A539CD257DA0A85911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
+			remoteInfo = WASdkImpl_CN;
+		};
+		DA83BFB72DD4F789880E5926B34AB88F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6943F619B4728F2E2269F37A7D4A31B8;
+			remoteInfo = WAWechatImpl_CN;
+		};
+		F44ADEA2AB173D691CB6D0A8ED76AFB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
+			remoteInfo = WASdkImpl_CN;
+		};
+		F8438F564C862D8AC2809AF55B99A6AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EFC8232C0D53668D015C8A22E0A2F3A5;
 			remoteInfo = WAApImpl_CN;
 		};
-		F795E2D3ECDA54E49E6BC00C8DBF957B /* PBXContainerItemProxy */ = {
+		F89BB221D3E38630919E50FCB9B06F96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
+			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
+			remoteInfo = WASdkImpl_CN;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01F1C30C3521C903C8EC061CD909D72E /* wa_sdk_impl_config_aihelp.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_aihelp.xml; path = config/wa_sdk_impl_config_aihelp.xml; sourceTree = "<group>"; };
 		0D00044C9F18D5CA6B30FB625DBE78EC /* WAApImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAApImpl_CN.release.xcconfig; sourceTree = "<group>"; };
 		0E3D9E24A630D28FE60CD0BBAC164444 /* wa_sdk.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = wa_sdk.plist; path = config/wa_sdk.plist; sourceTree = "<group>"; };
 		19A5C2C6F85BF513AFD36322626EBF05 /* WASdkImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WASdkImpl.framework; path = frameworks/WASdkImpl.framework; sourceTree = "<group>"; };
+		1EB5385309F62C7DEF8EBCEF6F705F86 /* AIHelpSupportSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AIHelpSupportSDK.bundle; path = res/AIHelpSupportSDK.bundle; sourceTree = "<group>"; };
+		2598BA0544BA095F9276C8228BD29E2E /* WAAIhelpImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAAIhelpImpl.framework; path = frameworks/WAAIhelpImpl.framework; sourceTree = "<group>"; };
 		2730FE237750D45A5416D53EC56068B5 /* WAApwImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAApwImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
 		2E1182837A4494097E7F3B846D01D814 /* wa_sdk_impl_config_winga.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_winga.xml; path = config/wa_sdk_impl_config_winga.xml; sourceTree = "<group>"; };
-		3481F6F480F7696C4A1EA5222B779897 /* WAAiHelpImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAAiHelpImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
-		36321FBD8396F4A89CE5C71CCFA21D19 /* ElvaChatServiceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ElvaChatServiceSDK.framework; path = frameworks/ElvaChatServiceSDK.framework; sourceTree = "<group>"; };
 		37C8FDE7825D54A6CE34F39CA8065DA9 /* wa_sdk_impl_config_wechat.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_wechat.xml; path = config/wa_sdk_impl_config_wechat.xml; sourceTree = "<group>"; };
 		406394ECB6FBE129C55DFD0C10512657 /* Pods-WADemocn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WADemocn.debug.xcconfig"; sourceTree = "<group>"; };
 		438F0F1700005374B8ACB53899170DE2 /* WASdkIntf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WASdkIntf.framework; path = frameworks/WASdkIntf.framework; sourceTree = "<group>"; };
@@ -263,20 +264,16 @@
 		82C8DCF4364C18979348BACE4E254711 /* WAQQImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAQQImpl.framework; path = frameworks/WAQQImpl.framework; sourceTree = "<group>"; };
 		8465FCA5D63C8EF2695E1BF331021FED /* WAWebPayImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAWebPayImpl.framework; path = frameworks/WAWebPayImpl.framework; sourceTree = "<group>"; };
 		85BBC81CC7BAE8FD9ADF35B69272C6C6 /* WAWechatImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAWechatImpl.framework; path = frameworks/WAWechatImpl.framework; sourceTree = "<group>"; };
-		908CD1384E8BBA5F5B1B5BAB30EC91A9 /* wa_sdk_impl_config_aihelp.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_aihelp.xml; path = config/wa_sdk_impl_config_aihelp.xml; sourceTree = "<group>"; };
 		974AF122F7D71F45792EEFD1E3DBD694 /* WACommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WACommon.framework; path = frameworks/WACommon.framework; sourceTree = "<group>"; };
 		9BB0533CD6A6362B11636688360AA18A /* Pods-WADemocn */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-WADemocn"; path = "libPods-WADemocn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5D056AB355656DE4A9C7DF80F647861 /* MQTTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MQTTFramework.framework; path = frameworks/MQTTFramework.framework; sourceTree = "<group>"; };
 		A9328C2C66E1DBA0BE0DE93788D02761 /* Pods-WADemocn-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WADemocn-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB500BC7A351EFF9227731B49949AD67 /* WAAiHelpImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAAiHelpImpl_CN.release.xcconfig; sourceTree = "<group>"; };
 		AC34D81EFB1E9EEA767E1051D57E25DB /* Toast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toast.framework; path = frameworks/Toast.framework; sourceTree = "<group>"; };
 		AE31734DD4B293B7343384AB032AFE60 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = frameworks/FMDB.framework; sourceTree = "<group>"; };
 		B089B03708F072EEF01FB427C6426FFE /* WAApImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAApImpl.framework; path = frameworks/WAApImpl.framework; sourceTree = "<group>"; };
-		B1F8F9B15F0C9C591369E18585B8EEDC /* WAAiHelpImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAAiHelpImpl_CN.release.xcconfig; sourceTree = "<group>"; };
 		B88820DBB01D7B0F38EB1E1C8DE4A41E /* WASdkImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WASdkImpl_CN.release.xcconfig; sourceTree = "<group>"; };
 		CAA40A65B2C0D95BE157215B1907791F /* WAApImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAApImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
-		CB884501FDD3282E855875905C269436 /* WAAIhelpImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAAIhelpImpl.framework; path = frameworks/WAAIhelpImpl.framework; sourceTree = "<group>"; };
-		CEBF20CCA48DC05080073FD6CBC132D0 /* ElvaChatServiceSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ElvaChatServiceSDK.bundle; path = res/ElvaChatServiceSDK.bundle; sourceTree = "<group>"; };
 		D1FFF41AAA75747259AC42E41E912B1D /* WAApwImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAApwImpl_CN.release.xcconfig; sourceTree = "<group>"; };
 		D484B450CEDE30D586962CF7D9782843 /* WAWebPayImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAWebPayImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
 		D4C327FBDCC95BCCA5CC95184EEB33F1 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = frameworks/TencentOpenAPI.framework; sourceTree = "<group>"; };
@@ -286,11 +283,13 @@
 		DEFD027789897C6764F14595FE029A56 /* pt-BR.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "pt-BR.plist"; path = "localizable/pt-BR.plist"; sourceTree = "<group>"; };
 		E0B12A919571CC19D35B1FF398EC3319 /* Pods-WADemocn-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WADemocn-dummy.m"; sourceTree = "<group>"; };
 		E11205F820527AEAC7AB2CBE65E898A2 /* WASdkIntf_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WASdkIntf_CN.debug.xcconfig; sourceTree = "<group>"; };
+		E73E7B47969602CE35412697F335FABB /* WAAiHelpImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAAiHelpImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
 		ED4A7C2897CF0FCB7CDD2B27279736C9 /* WAWechatImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAWechatImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
 		F2A7EEF3C9096E18ED5ADBA714E297DC /* Pods-WADemocn-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WADemocn-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F3BEA3D022677EFEACE6AA18B04B3E2A /* es.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = es.plist; path = localizable/es.plist; sourceTree = "<group>"; };
 		F4503E4A8942ED56B07065E0C67C26E4 /* WASdkIntf_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WASdkIntf_CN.release.xcconfig; sourceTree = "<group>"; };
 		F8DF6C1A0224057B51C20455A1819B51 /* wa_sdk_impl_config_webpay.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_webpay.xml; path = config/wa_sdk_impl_config_webpay.xml; sourceTree = "<group>"; };
+		FCDD1132E992719F1D8D9C546AC34E6C /* AIHelpSupportSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIHelpSupportSDK.framework; path = frameworks/AIHelpSupportSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,23 +341,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		10FB5C1BE9A9AB234FB16A7B3DD419E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCDD1132E992719F1D8D9C546AC34E6C /* AIHelpSupportSDK.framework */,
+				2598BA0544BA095F9276C8228BD29E2E /* WAAIhelpImpl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		132C2DD8A29FF54D79479A7BDEFB37B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				9BB0533CD6A6362B11636688360AA18A /* Pods-WADemocn */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		23FCF5E9EF9E10C98922DEBD0DD0A943 /* WAAiHelpImpl_CN */ = {
-			isa = PBXGroup;
-			children = (
-				5B927A32D755F770205013EBF4938F77 /* Frameworks */,
-				CA9D4D9825D583B135F721FF23C9AFA3 /* Resources */,
-				F015D1B6518A5F3976DC594E1EE39A0F /* Support Files */,
-			);
-			name = WAAiHelpImpl_CN;
-			path = WAAiHelpImpl_CN;
 			sourceTree = "<group>";
 		};
 		2F6DDB4D7AAECEA6975A0A55C885E1A5 /* Resources */ = {
@@ -390,6 +387,16 @@
 			path = "../Target Support Files/WAWechatImpl_CN";
 			sourceTree = "<group>";
 		};
+		3E4F9BDC82BB1EFF1B5A959B26B625BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E73E7B47969602CE35412697F335FABB /* WAAiHelpImpl_CN.debug.xcconfig */,
+				AB500BC7A351EFF9227731B49949AD67 /* WAAiHelpImpl_CN.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WAAiHelpImpl_CN";
+			sourceTree = "<group>";
+		};
 		41CE79DB417B1C9BA1C86B5F9C6D2C01 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,16 +412,6 @@
 			children = (
 				D4C327FBDCC95BCCA5CC95184EEB33F1 /* TencentOpenAPI.framework */,
 				82C8DCF4364C18979348BACE4E254711 /* WAQQImpl.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5B927A32D755F770205013EBF4938F77 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				36321FBD8396F4A89CE5C71CCFA21D19 /* ElvaChatServiceSDK.framework */,
-				A5D056AB355656DE4A9C7DF80F647861 /* MQTTFramework.framework */,
-				CB884501FDD3282E855875905C269436 /* WAAIhelpImpl.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -458,10 +455,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		77D4A6DD10263F7D164F0EA11BB97BF6 /* WAAiHelpImpl_CN */ = {
+			isa = PBXGroup;
+			children = (
+				10FB5C1BE9A9AB234FB16A7B3DD419E5 /* Frameworks */,
+				8BB4473C8C23C32D5CD2129B20C792E4 /* Resources */,
+				3E4F9BDC82BB1EFF1B5A959B26B625BA /* Support Files */,
+			);
+			name = WAAiHelpImpl_CN;
+			path = WAAiHelpImpl_CN;
+			sourceTree = "<group>";
+		};
 		88F9364C32FA1398A861E5FAEB121D45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				23FCF5E9EF9E10C98922DEBD0DD0A943 /* WAAiHelpImpl_CN */,
+				77D4A6DD10263F7D164F0EA11BB97BF6 /* WAAiHelpImpl_CN */,
 				3522694BCC73DA8700DC1F68940BD5D6 /* WAApImpl_CN */,
 				6F8B2B0D1369053913E131F1CB56783F /* WAApwImpl_CN */,
 				616242CF0DE07A525F4066AC2516863A /* WAQQImpl_CN */,
@@ -471,6 +479,15 @@
 				D223C95AAE80FFBB340F995E5FF9B012 /* WAWechatImpl_CN */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BB4473C8C23C32D5CD2129B20C792E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EB5385309F62C7DEF8EBCEF6F705F86 /* AIHelpSupportSDK.bundle */,
+				01F1C30C3521C903C8EC061CD909D72E /* wa_sdk_impl_config_aihelp.xml */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		928D84369BEC064D88E17E247555C18B /* WASdkIntf_CN */ = {
@@ -578,15 +595,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		CA9D4D9825D583B135F721FF23C9AFA3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CEBF20CCA48DC05080073FD6CBC132D0 /* ElvaChatServiceSDK.bundle */,
-				908CD1384E8BBA5F5B1B5BAB30EC91A9 /* wa_sdk_impl_config_aihelp.xml */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -631,16 +639,6 @@
 				6706B4156C7976A3135ED3F2A8C0FEF4 /* wa_sdk_impl_config_qq.xml */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		F015D1B6518A5F3976DC594E1EE39A0F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3481F6F480F7696C4A1EA5222B779897 /* WAAiHelpImpl_CN.debug.xcconfig */,
-				B1F8F9B15F0C9C591369E18585B8EEDC /* WAAiHelpImpl_CN.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WAAiHelpImpl_CN";
 			sourceTree = "<group>";
 		};
 		F57484BB5AF9AFC74B922C78DA37C9D7 /* Support Files */ = {
@@ -705,14 +703,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				6A6E292E315021E86998AC42281C67BA /* PBXTargetDependency */,
-				4F4BC97EDCD323E84DA1A09277348CB4 /* PBXTargetDependency */,
-				2DC8611343557F0CCFE8FA8BD8ECCFEC /* PBXTargetDependency */,
-				379E523A54D370ECAFC2AA3A22400146 /* PBXTargetDependency */,
-				7A2A326513D47DD53DA8AA98AB62E63C /* PBXTargetDependency */,
-				24B1E1F6A155EA3C2BD6B58487BA2218 /* PBXTargetDependency */,
-				A8B80844E48C1586B0E250BFC7C119C7 /* PBXTargetDependency */,
-				3AA2C3DA081DF7ADD324A0162C560284 /* PBXTargetDependency */,
+				96F5BA880660E7B2CD3C613BBD8BBF1C /* PBXTargetDependency */,
+				41A1A708AB1DFF423000DFC6F430D4F7 /* PBXTargetDependency */,
+				8EB7970A439CED4D2593C22A6D34DB4F /* PBXTargetDependency */,
+				FCF63CA61F7B755F131163143A3D9DBE /* PBXTargetDependency */,
+				9FF4F3A4A9B261BFCB89C681724F5013 /* PBXTargetDependency */,
+				658B335DEDABB9B2C4291813924FBCF3 /* PBXTargetDependency */,
+				17EF55463A00F3910642F1B983EC1904 /* PBXTargetDependency */,
+				FF27F2A86DDA97DBEEFA5A72CC91836E /* PBXTargetDependency */,
 			);
 			name = "Pods-WADemocn";
 			productName = "Pods-WADemocn";
@@ -766,119 +764,119 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		21E8F3CE908A139AA5539A3412FA5814 /* PBXTargetDependency */ = {
+		00B17CBC406CD7E4C5BE39F515D8A4E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = 8CEB283E99D7366CABFCE2850E4706F1 /* PBXContainerItemProxy */;
+		};
+		08A5D1CB72D07A4C1AD5F196FE662ADF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WASdkImpl_CN;
 			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = CDAF5EF5FAAEB6BC5C5F6EBD6E541342 /* PBXContainerItemProxy */;
+			targetProxy = D7EED8E49CB0E3A539CD257DA0A85911 /* PBXContainerItemProxy */;
 		};
-		24B1E1F6A155EA3C2BD6B58487BA2218 /* PBXTargetDependency */ = {
+		0981C743AC0234F32BA202F472770B2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WASdkIntf_CN;
 			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = AC79C80DC2D7B1717C0FDA0969472E73 /* PBXContainerItemProxy */;
+			targetProxy = 118A78B1B8B3E492B7A222F5C13B8F7C /* PBXContainerItemProxy */;
 		};
-		2A14F3F233BCF275321B5CABC4BD43A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = D47E826723629064870546D25C7FCCC7 /* PBXContainerItemProxy */;
-		};
-		2DC8611343557F0CCFE8FA8BD8ECCFEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WAApwImpl_CN;
-			target = 620F337E709BADFF89171F70E91C3E63 /* WAApwImpl_CN */;
-			targetProxy = B9719C66C01212ADFC2664F4223B55AF /* PBXContainerItemProxy */;
-		};
-		379E523A54D370ECAFC2AA3A22400146 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WAQQImpl_CN;
-			target = 66C470B1A3558E99C66F7E3BA69030F1 /* WAQQImpl_CN */;
-			targetProxy = 2ABAC6DF2D7581BCC1D5A7028FCAE6CA /* PBXContainerItemProxy */;
-		};
-		3AA2C3DA081DF7ADD324A0162C560284 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WAWechatImpl_CN;
-			target = 6943F619B4728F2E2269F37A7D4A31B8 /* WAWechatImpl_CN */;
-			targetProxy = 0C72F651FFD41733194E68B75814083D /* PBXContainerItemProxy */;
-		};
-		46CB2FF1EEF334BE7626902F19D05AB9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkImpl_CN;
-			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = A1414B1BA5E4FF6F01ACDD6901150757 /* PBXContainerItemProxy */;
-		};
-		4DF551C871938F0845FF1D7615185F02 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkImpl_CN;
-			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = 753CC85700196350C0A144CA7E269660 /* PBXContainerItemProxy */;
-		};
-		4F4BC97EDCD323E84DA1A09277348CB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WAApImpl_CN;
-			target = EFC8232C0D53668D015C8A22E0A2F3A5 /* WAApImpl_CN */;
-			targetProxy = EC270E60C1362EE350B5B7BE9380ED7C /* PBXContainerItemProxy */;
-		};
-		5A0CECA95E05036EA61431ABD56B5846 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = AA4712DA5A9CC7C425AF1CE54031E622 /* PBXContainerItemProxy */;
-		};
-		5B1EB4F7217EA5E8E3C324093CD983F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = B35B0AAE39625325D056C9E2A8FF3097 /* PBXContainerItemProxy */;
-		};
-		5F31EEF783F9C9C6BC2614DDE235E4F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = C7EC30BB610F1D4C667D19CDFFF88D1B /* PBXContainerItemProxy */;
-		};
-		61CC5C16BD84EECDF7D518CCE1CBFE22 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = F795E2D3ECDA54E49E6BC00C8DBF957B /* PBXContainerItemProxy */;
-		};
-		6A6E292E315021E86998AC42281C67BA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WAAiHelpImpl_CN;
-			target = 726C579FAD35745BF2197D05DEACB2AB /* WAAiHelpImpl_CN */;
-			targetProxy = 6C2E9375CDE0F9A22DEE6641A8621258 /* PBXContainerItemProxy */;
-		};
-		7A2A326513D47DD53DA8AA98AB62E63C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkImpl_CN;
-			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = 7F49D3E8059086530C352B3C33138CFA /* PBXContainerItemProxy */;
-		};
-		808C9B5022982F1D09B158920FD635AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = 54E5FF40D5071606AEE29A2B9EBD8771 /* PBXContainerItemProxy */;
-		};
-		A8B80844E48C1586B0E250BFC7C119C7 /* PBXTargetDependency */ = {
+		17EF55463A00F3910642F1B983EC1904 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WAWebPayImpl_CN;
 			target = 69C16EE09CDE7732C3EA907532F02055 /* WAWebPayImpl_CN */;
-			targetProxy = 22933F6512D068E49EE6B5FA7F688328 /* PBXContainerItemProxy */;
+			targetProxy = A3B4F388E2356E588C55AC291E58E21B /* PBXContainerItemProxy */;
 		};
-		E4CBE9A67FB8F398E9DC57C33D271F54 /* PBXTargetDependency */ = {
+		41A1A708AB1DFF423000DFC6F430D4F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WAApImpl_CN;
+			target = EFC8232C0D53668D015C8A22E0A2F3A5 /* WAApImpl_CN */;
+			targetProxy = F8438F564C862D8AC2809AF55B99A6AC /* PBXContainerItemProxy */;
+		};
+		587096114112D16E7A1F59FA986DE1D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = 9D99CCE05F25D8BEED45464F2A373A93 /* PBXContainerItemProxy */;
+		};
+		658B335DEDABB9B2C4291813924FBCF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = 706526F0A325273CA14D294135FF660E /* PBXContainerItemProxy */;
+		};
+		86CB95EF4386DD05AF61FC8113B8DE04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WASdkImpl_CN;
 			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = E3B3AA654F160E0EB80EA05C3564A7A0 /* PBXContainerItemProxy */;
+			targetProxy = 383EF17127DCFA93738FDFD0C04C5F58 /* PBXContainerItemProxy */;
 		};
-		E6893FB8B0DE93413D5E7A1625B1FA8A /* PBXTargetDependency */ = {
+		8C121EE662078AE45F3A4F668A5E8E47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = 707A2E7F51E7F1172E65D9FC11E86370 /* PBXContainerItemProxy */;
+		};
+		8EB7970A439CED4D2593C22A6D34DB4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WAApwImpl_CN;
+			target = 620F337E709BADFF89171F70E91C3E63 /* WAApwImpl_CN */;
+			targetProxy = 2B3C50D6909193A2651E15F6DB225AB9 /* PBXContainerItemProxy */;
+		};
+		911512AF1758F2D98F5A970BE1C6C54B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WASdkImpl_CN;
 			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = 18B8A1891599E7AADAEE0FC972C41F7D /* PBXContainerItemProxy */;
+			targetProxy = 8FE0D6BE2902C17B1D7AEE4BA590B3BF /* PBXContainerItemProxy */;
+		};
+		96F5BA880660E7B2CD3C613BBD8BBF1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WAAiHelpImpl_CN;
+			target = 726C579FAD35745BF2197D05DEACB2AB /* WAAiHelpImpl_CN */;
+			targetProxy = 48E69514BECA27675E63C552F1AC3FB3 /* PBXContainerItemProxy */;
+		};
+		99351826FF11DECBB3AB2DAFD492914D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = D78E7D98A143134B57D10A87E446AFCC /* PBXContainerItemProxy */;
+		};
+		9D0D6769EDD372E3814BA465DA3CED91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = A9E653AB28E08F6B372AB3C9E2151D50 /* PBXContainerItemProxy */;
+		};
+		9FF4F3A4A9B261BFCB89C681724F5013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkImpl_CN;
+			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
+			targetProxy = F44ADEA2AB173D691CB6D0A8ED76AFB0 /* PBXContainerItemProxy */;
+		};
+		BA2D0F1C06A6DE341673C35A3BF4EDDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkImpl_CN;
+			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
+			targetProxy = 0AECC84B0EC2D51AEB01A30705D522E6 /* PBXContainerItemProxy */;
+		};
+		C5C224FB9B25D06E43A5063BCEEFAD4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkImpl_CN;
+			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
+			targetProxy = F89BB221D3E38630919E50FCB9B06F96 /* PBXContainerItemProxy */;
+		};
+		FCF63CA61F7B755F131163143A3D9DBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WAQQImpl_CN;
+			target = 66C470B1A3558E99C66F7E3BA69030F1 /* WAQQImpl_CN */;
+			targetProxy = AB2E024006BF63C5CDEDCD2E2126B255 /* PBXContainerItemProxy */;
+		};
+		FF27F2A86DDA97DBEEFA5A72CC91836E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WAWechatImpl_CN;
+			target = 6943F619B4728F2E2269F37A7D4A31B8 /* WAWechatImpl_CN */;
+			targetProxy = DA83BFB72DD4F789880E5926B34AB88F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -896,9 +894,22 @@
 			};
 			name = Debug;
 		};
+		30CAF4BB7985D3C0426C739DA3A837EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E11205F820527AEAC7AB2CBE65E898A2 /* WASdkIntf_CN.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		350EC7F6594EF00A8A2FEDD00DF24F7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1F8F9B15F0C9C591369E18585B8EEDC /* WAAiHelpImpl_CN.release.xcconfig */;
+			baseConfigurationReference = AB500BC7A351EFF9227731B49949AD67 /* WAAiHelpImpl_CN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -945,7 +956,7 @@
 			};
 			name = Release;
 		};
-		508DCEC43CAC9EEF89F5CE3188943C45 /* Release */ = {
+		4FC87C7D2BB99317CDAA787B58D1264F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4503E4A8942ED56B07065E0C67C26E4 /* WASdkIntf_CN.release.xcconfig */;
 			buildSettings = {
@@ -999,6 +1010,19 @@
 			};
 			name = Release;
 		};
+		736AC99270CFCB754FC600C620966B7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80F2A0C94CF901FB3B8D39975CCE305 /* WASdkImpl_CN.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		7A3A55A1B0021F932D8F542B843CDD69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D00044C9F18D5CA6B30FB625DBE78EC /* WAApImpl_CN.release.xcconfig */;
@@ -1047,49 +1071,9 @@
 			};
 			name = Release;
 		};
-		A884CC36D87B5F7700254DCE4F7779C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E11205F820527AEAC7AB2CBE65E898A2 /* WASdkIntf_CN.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A890AC8591ACD4E2FE2A70A0ED09EFCE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D80F2A0C94CF901FB3B8D39975CCE305 /* WASdkImpl_CN.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		B3749C5E18DE9AB42B11360C54E58ADD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D1FFF41AAA75747259AC42E41E912B1D /* WAApwImpl_CN.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BD9A51F36652D699673D626A792EDA8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B88820DBB01D7B0F38EB1E1C8DE4A41E /* WASdkImpl_CN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1167,6 +1151,20 @@
 			};
 			name = Debug;
 		};
+		CBE3697BCF6ADBDEDF24EC2D8DE99B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B88820DBB01D7B0F38EB1E1C8DE4A41E /* WASdkImpl_CN.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D70FA62FEF584A48D30D538F3B18DAA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2730FE237750D45A5416D53EC56068B5 /* WAApwImpl_CN.debug.xcconfig */;
@@ -1182,7 +1180,7 @@
 		};
 		EACEC9F75242DCABB42F96A69D885828 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3481F6F480F7696C4A1EA5222B779897 /* WAAiHelpImpl_CN.debug.xcconfig */;
+			baseConfigurationReference = E73E7B47969602CE35412697F335FABB /* WAAiHelpImpl_CN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1316,20 +1314,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		64FF79E3897885C4BD5661DC367BD7B3 /* Build configuration list for PBXAggregateTarget "WASdkImpl_CN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736AC99270CFCB754FC600C620966B7A /* Debug */,
+				CBE3697BCF6ADBDEDF24EC2D8DE99B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		773CD96FE974472456FEAEDBA7610D52 /* Build configuration list for PBXAggregateTarget "WAApImpl_CN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6731D412C164495C76DB4D0B4F31AD65 /* Debug */,
 				7A3A55A1B0021F932D8F542B843CDD69 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83944F582B69D2AB262F87A7D4DDA96C /* Build configuration list for PBXAggregateTarget "WASdkImpl_CN" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A890AC8591ACD4E2FE2A70A0ED09EFCE /* Debug */,
-				BD9A51F36652D699673D626A792EDA8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1352,11 +1350,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7031C8604596597D229CDBF3B3EB7F3 /* Build configuration list for PBXAggregateTarget "WASdkIntf_CN" */ = {
+		A294FE3BD08B315E4C42890EBEDFE53D /* Build configuration list for PBXAggregateTarget "WASdkIntf_CN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A884CC36D87B5F7700254DCE4F7779C3 /* Debug */,
-				508DCEC43CAC9EEF89F5CE3188943C45 /* Release */,
+				30CAF4BB7985D3C0426C739DA3A837EE /* Debug */,
+				4FC87C7D2BB99317CDAA787B58D1264F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

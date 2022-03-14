@@ -153,6 +153,11 @@
  *  进行WING平台登录之后
  */
 -(void)postWingLogin;
+
+/**
+ *  弹出登录框时发送
+ */
+-(void)postShowLoginWindow;
 /**
  *  自定义事件
  */

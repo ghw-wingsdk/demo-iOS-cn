@@ -29,7 +29,10 @@
 - (void)showConversation:(nullable NSMutableDictionary *)config;
 
 #pragma mark -- 设置游戏名称信息
-- (void)setName:(nonnull NSString *)name;
+/*!
+ DEPRECATED: aihep2.x版本已废弃
+ */
+- (void)setName:(nonnull NSString *)name  __attribute__ ((deprecated));
 
 #pragma mark -- 设置SDK语言
 - (void)setLanguage:(nonnull NSString *)language;

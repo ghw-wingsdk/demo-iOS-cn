@@ -15,6 +15,6 @@ FOUNDATION_EXPORT double WAQQImplVersionNumber;
 FOUNDATION_EXPORT const unsigned char WAQQImplVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <WAQQImpl/PublicHeader.h>
-//time:2021/01/29 15:35 ver:2.2.0
+//time:2022/03/15 15:35 ver:2.5.0
 
 

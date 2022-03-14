@@ -68,4 +68,4 @@ FOUNDATION_EXPORT const unsigned char WASdkIntfVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <WASdkIntf/PublicHeader.h>
 
-//time:2021/11/17 09:15 ver:2.4.0
+//time:2022/01/05 09:15 ver:2.4.1

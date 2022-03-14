@@ -303,6 +303,7 @@ extern NSString *const WASDK_STATUS_UNKNOWN_1;
 
 extern NSString *const WASDK_CACHE_KEY_FB_APP_SECRET;
 
+extern NSString *const WASDK_CACHE_KEY_TTA_TAG;
 
 
 

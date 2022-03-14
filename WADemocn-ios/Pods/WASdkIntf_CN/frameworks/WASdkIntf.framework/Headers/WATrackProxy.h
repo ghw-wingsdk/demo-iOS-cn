@@ -191,6 +191,9 @@ extern NSString *const WAEventParameterNameAmount;//变更货币数
 
 // 获取登录方式之后
 extern NSString *const WAEventParameterNameLoginWayCount; // 登录方式个数
+extern NSString *const WAEventShowLoginWindow;    //打开登录框
+
+
 
 // 进行登录之前、进行第三方渠道登录之后、进行WING平台登录之后
 extern NSString *const WAEventParameterNamePlatformName; // 登录渠道名称

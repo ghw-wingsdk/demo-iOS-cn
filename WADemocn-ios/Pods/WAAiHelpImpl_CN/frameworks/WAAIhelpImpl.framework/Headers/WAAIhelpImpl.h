@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char WAAIhelpImplVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <WAAIhelpImpl/PublicHeader.h>
 
-//time:2020/05/07 12:30 ver:2.1.0
+//time:2022/03/15 12:30 ver:3.8.4

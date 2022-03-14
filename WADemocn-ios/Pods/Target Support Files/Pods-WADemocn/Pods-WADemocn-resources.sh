@@ -98,7 +98,7 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/WAAiHelpImpl_CN/config/wa_sdk_impl_config_aihelp.xml"
-  install_resource "${PODS_ROOT}/WAAiHelpImpl_CN/res/ElvaChatServiceSDK.bundle"
+  install_resource "${PODS_ROOT}/WAAiHelpImpl_CN/res/AIHelpSupportSDK.bundle"
   install_resource "${PODS_ROOT}/WAApImpl_CN/config/wa_sdk_impl_config_apple.xml"
   install_resource "${PODS_ROOT}/WAApwImpl_CN/config/wa_sdk_impl_config_apw.xml"
   install_resource "${PODS_ROOT}/WAQQImpl_CN/config/wa_sdk_impl_config_qq.xml"
@@ -118,7 +118,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/WAAiHelpImpl_CN/config/wa_sdk_impl_config_aihelp.xml"
-  install_resource "${PODS_ROOT}/WAAiHelpImpl_CN/res/ElvaChatServiceSDK.bundle"
+  install_resource "${PODS_ROOT}/WAAiHelpImpl_CN/res/AIHelpSupportSDK.bundle"
   install_resource "${PODS_ROOT}/WAApImpl_CN/config/wa_sdk_impl_config_apple.xml"
   install_resource "${PODS_ROOT}/WAApwImpl_CN/config/wa_sdk_impl_config_apw.xml"
   install_resource "${PODS_ROOT}/WAQQImpl_CN/config/wa_sdk_impl_config_qq.xml"

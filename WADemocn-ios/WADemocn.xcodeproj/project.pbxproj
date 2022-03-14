@@ -583,7 +583,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WADemocn/Pods-WADemocn-resources.sh",
 				"${PODS_ROOT}/WAAiHelpImpl_CN/config/wa_sdk_impl_config_aihelp.xml",
-				"${PODS_ROOT}/WAAiHelpImpl_CN/res/ElvaChatServiceSDK.bundle",
+				"${PODS_ROOT}/WAAiHelpImpl_CN/res/AIHelpSupportSDK.bundle",
 				"${PODS_ROOT}/WAApImpl_CN/config/wa_sdk_impl_config_apple.xml",
 				"${PODS_ROOT}/WAApwImpl_CN/config/wa_sdk_impl_config_apw.xml",
 				"${PODS_ROOT}/WAQQImpl_CN/config/wa_sdk_impl_config_qq.xml",
@@ -604,7 +604,7 @@
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_aihelp.xml",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ElvaChatServiceSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIHelpSupportSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_apple.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_apw.xml",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wa_sdk_impl_config_qq.xml",
@@ -871,7 +871,7 @@
 				CODE_SIGN_ENTITLEMENTS = WADemocn/WADemocn.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 20210406001;
+				CURRENT_PROJECT_VERSION = 20220314001;
 				DEVELOPMENT_TEAM = Y8Z2D47ET4;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
@@ -891,7 +891,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.4.1;
+				MARKETING_VERSION = 2.5.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
 				PRODUCT_NAME = WADemocn;
@@ -907,7 +907,7 @@
 				CODE_SIGN_ENTITLEMENTS = WADemocn/WADemocn.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 20210406001;
+				CURRENT_PROJECT_VERSION = 20220314001;
 				DEVELOPMENT_TEAM = Y8Z2D47ET4;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
@@ -927,7 +927,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.4.1;
+				MARKETING_VERSION = 2.5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;

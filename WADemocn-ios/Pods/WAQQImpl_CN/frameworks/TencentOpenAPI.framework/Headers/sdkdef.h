@@ -57,7 +57,7 @@ typedef enum
  *
  * APIResponse用于封装所有请求的返回结果，包括错误码、错误信息、原始返回数据以及返回数据的json格式字典
  */
-@interface APIResponse : NSObject<NSCoding> {
+@interface APIResponse : NSObject<NSSecureCoding> {
     int      _detailRetCode;
 	int		 _retCode;
 	int		 _seq;
@@ -247,6 +247,9 @@ FOUNDATION_EXTERN NSString * const TCOpenSDKErrorMsgWebPage;
 
 /** 设置头像图片过大 */
 FOUNDATION_EXTERN NSString * const TCOpenSDKErrorMsgUserHeadPicLarge;
+
+/** 用户未同意授权隐私协议 */
+FOUNDATION_EXPORT NSString * const TCOpenSDKErrorMsgUserNotAgreedAuthorization;
 
 ///@}
 

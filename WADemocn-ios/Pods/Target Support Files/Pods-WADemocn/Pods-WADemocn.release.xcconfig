@@ -1,7 +1,7 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/WAAiHelpImpl_CN/frameworks" "${PODS_ROOT}/WAApImpl_CN/frameworks" "${PODS_ROOT}/WAApwImpl_CN/frameworks" "${PODS_ROOT}/WAQQImpl_CN/frameworks" "${PODS_ROOT}/WASdkImpl_CN/frameworks" "${PODS_ROOT}/WASdkIntf_CN/frameworks" "${PODS_ROOT}/WAWebPayImpl_CN/frameworks" "${PODS_ROOT}/WAWechatImpl_CN/frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"sqlite3" -l"z" -framework "AFNetworking" -framework "CFNetwork" -framework "CoreTelephony" -framework "ElvaChatServiceSDK" -framework "FMDB" -framework "MJRefresh" -framework "MQTTFramework" -framework "Security" -framework "SystemConfiguration" -framework "TencentOpenAPI" -framework "Toast" -framework "WAAIhelpImpl" -framework "WAApImpl" -framework "WAApwImpl" -framework "WACommon" -framework "WAQQImpl" -framework "WASdkImpl" -framework "WASdkIntf" -framework "WAWebPayImpl" -framework "WAWechatImpl" -framework "WebKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"sqlite3" -l"z" -framework "AFNetworking" -framework "AIHelpSupportSDK" -framework "CFNetwork" -framework "CoreTelephony" -framework "FMDB" -framework "MJRefresh" -framework "Security" -framework "SystemConfiguration" -framework "TencentOpenAPI" -framework "Toast" -framework "WAAIhelpImpl" -framework "WAApImpl" -framework "WAApwImpl" -framework "WACommon" -framework "WAQQImpl" -framework "WASdkImpl" -framework "WASdkIntf" -framework "WAWebPayImpl" -framework "WAWechatImpl" -framework "WebKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
