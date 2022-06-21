@@ -45,6 +45,14 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 	
 		_cacheEnabled=YES;
         
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [WAUserProxy requestDeleteAccoutUI:^(NSError *error, NSUInteger status) {
+                
+            }];
+        });
+        
+        
+
                 
 
         [self initBtnAndLayout];
@@ -77,6 +85,8 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 	[btnTitles addObject:@[@"弹出获取IDFA授权"]];
     [btnTitles addObject:@[@"单独隐私协议弹框"]];
     [btnTitles addObject:@[@"清理缓存"]];
+    [btnTitles addObject:@[@"删除苹果授权"]];
+    [btnTitles addObject:@[@"删除账号UI"]];
 
 
 
@@ -121,7 +131,7 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
         }
     }
     
-    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2,@1,@1,@2,@2,@2]];
+    NSMutableArray* btnLayout = [NSMutableArray arrayWithArray:@[@1,@2,@2,@2,@2,@2,@1,@1,@2,@2,@2,@2]];
     
     NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
 //    CFShow((__bridge CFTypeRef)(infoDict));
@@ -299,6 +309,9 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 			WADemoViewController* vc = (WADemoViewController*)[WADemoUtil getCurrentVC];
 			[WAUserProxy openAccountManager:vc];
 			
+            NSLog(@"当前登录方式为====%@",[WAUserProxy getCurrentLoginPlatform]);
+            NSLog(@"当前登录方式为====%@",[WAUserProxy getCurrentLoginResult].platform);
+
 			
 			//查询绑定
 		}else if([titleStr isEqualToString:@"设置随机clientid"]){
@@ -382,7 +395,7 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 					}
 						
 					
-				}];
+                }];
 			}else{
 				
 				[self showToastMessage:@"未登录或者已实名"];
@@ -426,12 +439,9 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
                 }else{
                     if (status==1) {
                         [self showToastMessage:@"弹出了协议框，用户点击了同意"];
-
                     }else if(status==2){
                         [self showToastMessage:@"没有弹出协议框，用户之前点击过同意，无需再弹"];
-
                     }
-
                 }
                 
             }];
@@ -441,6 +451,32 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
             NSUserDefaults * setting = [NSUserDefaults standardUserDefaults];
             [setting setObject:@"0" forKey:@"com.winganalytics.sdk:privacyIsAgree"];
             [setting synchronize];
+            
+        }else if([titleStr isEqualToString:@"删除苹果授权"]){
+
+            [WAUserProxy deleteAccounAuthorizationWithPlatform:WA_PLATFORM_QQ completeBlock:^(NSError *error, WADeleteRequestModel *deleteResult) {
+                NSLog(@"");
+            }];
+            
+        }else if([titleStr isEqualToString:@"删除账号UI"]){
+            
+            
+            [WAUserProxy requestDeleteAccoutUI:^(NSError *error, NSUInteger status) {
+                if(error){
+                    
+                    [self showToastMessage:error.userInfo[WAErrorDeveloperMessageKey]];
+
+                    return;
+                }
+                
+                if(status==WA_ACCOUNT_DELETE_UI_SUCCESS ){
+                    
+                    [WAUserProxy logout];
+                    [self showToastMessage:@"注销成功，cp需要退出sdk登录，以及cp退出登录页"];
+
+                }
+            }];
+
             
         }
 	
