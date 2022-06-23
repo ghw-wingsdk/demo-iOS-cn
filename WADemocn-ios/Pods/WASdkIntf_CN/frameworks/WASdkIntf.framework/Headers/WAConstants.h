@@ -121,6 +121,15 @@ extern NSString *const WAPrivacyAgreementURL_PrivacyPolicy;         //隐私地�
 extern NSString *const WAPrivacyAgreementURL_ChildrenPrivacyPolicy; //儿童隐私协议
 
 
+extern NSString *const deleteAccountProtocolURL_EN;             //账号删除协议
+extern NSString *const deleteAccountProtocolURL_CN;               //账号删除协议
+
+//账号删除有关
+extern const int WA_ACCOUNT_DELETE_UI_CANCEL;
+extern const int WA_ACCOUNT_DELETE_UI_SUCCESS;
+extern const int WA_ACCOUNT_DELETE_UI_FAILURE; //调用失败，未开启删除权限或者未登录
+
+
 
 @interface WAConstants : NSObject {
     

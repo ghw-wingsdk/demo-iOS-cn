@@ -60,6 +60,9 @@
 #import <WASdkIntf/WAError.h>
 #import <WASdkIntf/WAErrorCode.h>
 #import <WASdkIntf/WASdkIntf.h>
+#import <WASdkIntf/WADeleteRequestModel.h>
+#import <WASdkIntf/WADeleteResult.h>
+
 //! Project version number for WASdkIntf.
 FOUNDATION_EXPORT double WASdkIntfVersionNumber;
 
@@ -68,4 +71,4 @@ FOUNDATION_EXPORT const unsigned char WASdkIntfVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <WASdkIntf/PublicHeader.h>
 
-//time:2022/01/05 09:15 ver:2.4.1
+//time:2022/06/20 09:15 ver:2.6.0

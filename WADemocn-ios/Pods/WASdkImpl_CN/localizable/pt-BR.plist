@@ -14,9 +14,9 @@
 	<string>Clique aqui para abrir o menu popup</string>
 	<key>wasdk_sdk_version</key>
 	<string>Versão SDK</string>
-	<key>wasdk_pat_version</key>
-	<string>Versão Pat</string>
-	<key>wasdk_has_no_pat</key>
+	<key>wasdk_patch_version</key>
+	<string>Versão Patch</string>
+	<key>wasdk_has_no_patch</key>
 	<string>Nenhum</string>
 	<key>wasdk_login</key>
 	<string>Entrar</string>
@@ -67,9 +67,9 @@
 	<key>wasdk_tip_bind_fail</key>
 	<string>Falha ao vincular. Por favor tente mais tarde.</string>
 	<key>wasdk_tip_bind_fail_other_user</key>
-	<string>Esta conta está vinculada a outro usuário. </string>
+	<string>This account has been bound to another user.</string>
 	<key>wasdk_tip_unbind_succ</key>
-	<string>Desvinculada com sucesso!</string>
+	<string>Unbinded successfully!</string>
 	<key>wasdk_tip_unbind_fail</key>
 	<string>Falha ao desvincular. Por favor tente mais tarde.</string>
 	<key>wasdk_tip_create_user_fail</key>
@@ -92,33 +92,11 @@
 	<string>Aviso</string>
 	<key>wasdk_jailbreak_not_purchase</key>
 	<string>proibido compras em telefones com jailbreak</string>
-	<key>wasdk_copy</key>
+	<key>New item</key>
 	<string>Copy</string>
-	<key>wasdk_login_twitter</key>
-	<string>Twitter</string>
-	<key>wasdk_login_instagram</key>
-	<string>Instagram</string>
-	<key>wasdk_tip_bind_closed</key>
-	<string>Falha ao vincular</string>
-	<key>wasdk_tip_unbind_closed</key>
-	<string>Falha ao desvincular</string>
-	<key>wasdk_loading_error</key>
-	<string>Erro de rede, por favor tente novamente mais tarde.</string>
-	<key>wasdk_privacy_policy</key>
-	<string>Política de Privacidade</string>
-	<key>wasdk_privacy_reminder</key>
-	<string>Aviso de Privacidade</string>
-	<key>wasdk_privacy_policy_alert_content</key>
-	<string>Leia e concorde com nossa Política de Privacidade.</string>
-	<key>wasdk_privacy_view details</key>
-	<string>Leia nossa Política de Privacidade</string>
-	<key>wasdk_no_agree</key>
-	<string>Discordo</string>
-	<key>wasdk_agree</key>
-	<string>Concordo</string>
-	<key>wasdk_privacy_policy_agree</key>
-	<string>Li e concordo</string>
-	<key>wasdk_please_agree_privacy_policy</key>
-	<string>Por favor, concorde com a Política de Privacidade Primeiro.</string>
+    <key>wasdk_login_twitter</key>
+    <string>Twitter</string>
+    <key>wasdk_login_instagram</key>
+    <string>Instagram</string>
 </dict>
 </plist>

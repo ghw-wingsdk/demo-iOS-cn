@@ -82,6 +82,12 @@ extern NSString *const WASDK_PARAM_KEY_EXTRA;
 extern NSString *const WASDK_PARAM_KEY_EXT_VERIFYINFO;
 extern NSString *const WASDK_PARAM_KEY_EXTRA_APPLEAUTHORIZATIONCODE;
 
+extern NSString *const WASDK_PARAM_KEY_REALNAME ;
+extern NSString *const WASDK_PARAM_KEY_IDCARD   ;
+
+extern NSString *const WASDK_PARAM_KEY_REVOKE_PLATFORM;
+extern NSString *const WASDK_PARAM_KEY_REVOKE_TOKEN;
+
 
 extern NSString *const WASDK_PARAM_KEY_COLLECTION_INFO;
 extern NSString *const WASDK_PARAM_KEY_SDKEXTINFO;
@@ -279,6 +285,14 @@ extern NSString *const WASDK_AD_URL_GAME_CREATE_WINGA_ACCOUNT;
 //充值中心-短链接申请
 extern NSString *const WASDK_PAYCENTER_URL_GET_SHORT_LINK;
 
+// 玩家身份确认接口
+extern NSString *const WASDK_ACCOUNT_DELETE_IDENTITY_CHECK;
+
+// 申请注销账号
+extern NSString *const WASDK_ACCOUNT_DELETE_DELETE_APPLY;
+
+// 撤销注销账号申请
+extern NSString *const WASDK_ACCOUNT_DELETE_DELETE_REVOCATION;
 
 extern NSString *const WASDK_FB_INVITE_FROM_USERID;
 extern NSString *const WASDK_FB_INVITE_TO_USERID;
@@ -304,6 +318,7 @@ extern NSString *const WASDK_STATUS_UNKNOWN_1;
 extern NSString *const WASDK_CACHE_KEY_FB_APP_SECRET;
 
 extern NSString *const WASDK_CACHE_KEY_TTA_TAG;
+
 
 
 

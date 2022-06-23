@@ -47,5 +47,10 @@
 @property(nonatomic)NSInteger autoGuestLogin;       // 游客自动登录开关 0 - 开启，  1 - 关闭
 @property(nonatomic)NSInteger guestLoginBindAlert;   // 游客登录绑定提醒 0 - 关闭，  1 - 开启
 
+@property (nonatomic)NSInteger isOpenAccountDelete;       // 账号注销总开关 (0-关闭, 1-ALL, 2-仅Android 3-仅iOS)
+@property (nonatomic)NSInteger accountDeleteBufferDays;   // 账号注销缓存天数 (默认 15)
+@property (nonatomic)NSInteger deletingAccountRemind;     // 账号注销提醒开关.(0-关闭, 1-开启, 默认关闭) 开启后，当注销中用户登录时，SDK弹出取消注销账号提醒，如用户取消，则SDK自动调用取消删除账号接口
+@property(nonatomic,copy)NSString* deleteAccountProtocolURL; // 删除账号协议
+
 
 @end

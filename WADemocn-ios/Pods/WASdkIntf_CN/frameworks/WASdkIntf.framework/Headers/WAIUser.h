@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "WAUserProxy.h"
+#import <WASdkIntf/WASdkIntf.h>
 @interface WAIUser : NSObject
 -(void)setLoginFlowType:(int)flowType;
 -(int)getLoginFlowType;
@@ -17,6 +18,7 @@
 -(void)logout;
 -(void)bindingAccountWithExtInfo:(NSString*)extInfo delegate:(id<WAAccountBindingDelegate>)delegate;
 -(void)bindingAccountWithPlatform:(NSString *const)platform bindingResult:(WABindingResult*)bindingResult extInfo:(NSString *)extInfo  delegate:(id<WAAccountBindingDelegate>)delegate;
+
 -(void)queryBoundAccountWithCompleteBlock:(void(^)(NSError* error,NSArray<WAAccount *>* accounts))block;
 -(void)unBindAccountWithPlatform:(NSString *const)platform platformUserId:(NSString *)pUserId completeBlock:(void (^)(NSError *))completeBlock;
 -(void)switchAccountWithPlatform:(NSString *const)platform completeBlock:(void (^)(NSError *, WALoginResult *))completeBlock;
@@ -105,4 +107,31 @@
 - (void)openPrivacyAgreementWindow:(void(^)(NSError* error,NSUInteger status))block;
 
 
+
+
+
+//****************************************账号删除有关接口*********************************************************************
+/*!
+@discussion 检测是否可调用玩家身份确认接口
+ */
+- (BOOL) canCheckIdentity;
+
+
+
+//玩家身份确认接口
+- (void)identityCheck:(NSString*)realName idCard:(NSString*)idCard completeBlock:(void(^)(NSError* error))block;
+
+//删除账号授权,拿到第三方的token信息，如 signinwithapple拿到authorizationCode
+-(void)deleteAccounAuthorizationWithPlatform:(NSString*)platform completeBlock:(void(^)(NSError* error,WADeleteRequestModel*deleteResult))block;
+
+/*!
+@discussion 账号删除
+ */
+- (void)requestDeleteAccout:(WADeleteRequestModel*)deleteResult completeBlock:(void(^)(NSError* error,WADeleteResult*result))completeBlock;
+// 取消删除
+-(void)cancelRequestDeleteAccoutWithUserid:(NSString*)userid callback:(void (^)(NSError *))completeBlock;
+
+
+
+- (void)requestDeleteAccoutUI:(void(^)(NSError *error, NSUInteger status))completeBlock;
 @end

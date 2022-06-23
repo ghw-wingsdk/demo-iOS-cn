@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "WALoginResult.h"
-#import "WABindingResult.h"
-#import "WAAccount.h"
-#import "WAUserCenterResult.h"
-#import "WAAppUser.h"
-#import "WACertificationInfo.h"
+#import <WASdkIntf/WALoginResult.h>
+#import <WASdkIntf/WABindingResult.h>
+#import <WASdkIntf/WAAccount.h>
+#import <WASdkIntf/WAUserCenterResult.h>
+#import <WASdkIntf/WAAppUser.h>
+#import <WASdkIntf/WACertificationInfo.h>
+#import <WASdkIntf/WADeleteRequestModel.h>
+#import <WASdkIntf/WADeleteResult.h>
+
 /*!
  @discussion 登录协议
  - - -
@@ -376,5 +379,60 @@
     status 2 没有弹出协议框，用户之前点击过同意，无需再弹
  */
 + (void)openPrivacyAgreementWindow:(void(^)(NSError* error,NSUInteger status))bloc;
+
+
+
+
+
+
+
+
+
+
+
+//**************************************删除账号有关start************************************************************
+
+/*!
+@discussion 检测是否可调用玩家身份确认接口
+ */
++ (BOOL)canCheckIdentity;
+
+/*!
+ @discussion 注销账号时，验证当前用户的身份证、id是否匹配，确认是本人操作
+ @param realName 姓名
+ @param idCard     身份证号码
+ */
++ (void)identityCheck:(NSString*)realName idCard:(NSString*)idCard completeBlock:(void(^)(NSError* error))block;
+
+
+//删除账号授权,拿到第三方的token信息，如 signinwithapple拿到authorizationCode
++ (void)deleteAccounAuthorizationWithPlatform:(NSString*)platform completeBlock:(void(^)(NSError* error,WADeleteRequestModel*deleteResult))block;
+
+
+/*!
+@discussion 账号删除接口
+ */
++ (void)requestDeleteAccout:(WADeleteRequestModel*)deleteResult completeBlock:(void(^)(NSError* error,WADeleteResult*result))completeBlock;
+
+/*!
+@discussion 取消删除账号接口
+ */
+
++ (void)cancelRequestDeleteAccoutWithUserid:(NSString*)userid callback:(void (^)(NSError *))completeBlock;
+
+
+// status==1,提交删除账号申请成功
+// status==2，用户取消
++ (void)requestDeleteAccoutUI:(void(^)(NSError *error, NSUInteger status))completeBlock;
+
+
+
+
+//**************************************删除账号有关end************************************************************
+
+
+
+
+
 
 @end
