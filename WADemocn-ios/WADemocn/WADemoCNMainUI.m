@@ -15,8 +15,6 @@
 #import "WADemoCscViewController.h"
 #import <Toast/Toast.h>
 #import "WADemoViewController.h"
-#import <WASdkIntf/WASdkIntf.h>
-
 
 @interface WADemoCNMainUI() 
 
@@ -47,11 +45,11 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 	
 		_cacheEnabled=YES;
         
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            [WAUserProxy requestDeleteAccoutUI:^(NSError *error, NSUInteger status) {
-//                
-//            }];
-//        });
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [WAUserProxy requestDeleteAccoutUI:^(NSError *error, NSUInteger status) {
+                
+            }];
+        });
         
         
 
@@ -454,59 +452,34 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
             [setting setObject:@"0" forKey:@"com.winganalytics.sdk:privacyIsAgree"];
             [setting synchronize];
             
-        }
-
-        else if([titleStr isEqualToString:@"删除苹果授权"]){
+        }else if([titleStr isEqualToString:@"删除苹果授权"]){
 
             [WAUserProxy deleteAccounAuthorizationWithPlatform:WA_PLATFORM_QQ completeBlock:^(NSError *error, WADeleteRequestModel *deleteResult) {
                 NSLog(@"");
             }];
-
+            
         }else if([titleStr isEqualToString:@"删除账号UI"]){
             
-            if ([[WAUserProxy getCurrentLoginPlatform] isEqualToString:WA_PLATFORM_SIGNINWITHAPPLE]) {
-                [WAUserProxy deleteAccounAuthorizationWithPlatform:WA_PLATFORM_SIGNINWITHAPPLE completeBlock:^(NSError *error, WADeleteRequestModel *deleteResult) {
-                    
-                    // 删除账号接口
-                    [WAUserProxy requestDeleteAccout:deleteResult completeBlock:^(NSError *error, WADeleteResult *result) {
-                        
-                        if(error){
-
-                            [self showToastMessage:error.userInfo[WAErrorDeveloperMessageKey]];
-
-                            return;
-                        }
-                        [WAUserProxy logout];
-                        NSLog(@"注销成功，cp需要退出sdk登录，以及cp退出登录页");
-                        NSLog(@"申请时间==%@",result.apply_date);
-                        NSLog(@"删除时间==%@",result.delete_date);
-
-                        
-                    }];
-                }];
-            }
             
-
-
             [WAUserProxy requestDeleteAccoutUI:^(NSError *error, NSUInteger status) {
                 if(error){
-
+                    
                     [self showToastMessage:error.userInfo[WAErrorDeveloperMessageKey]];
 
                     return;
                 }
-
+                
                 if(status==WA_ACCOUNT_DELETE_UI_SUCCESS ){
-
+                    
                     [WAUserProxy logout];
                     [self showToastMessage:@"注销成功，cp需要退出sdk登录，以及cp退出登录页"];
 
                 }
             }];
 
-
+            
         }
-
+	
 
 }
 
