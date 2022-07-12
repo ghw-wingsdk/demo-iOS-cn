@@ -121,6 +121,9 @@
 // cp 使用
 @property int isGuestAccount;		// 0 不是游客账号      1是游客账号
 
+@property(copy,nonatomic)NSString *apply_delete_status;//申请删除账号状态   0-未申请删除； 1-已申请删除
+@property(copy,nonatomic)NSString *delete_date;        //apply_delete_status=1时有值，返回时间戳。
+
 
 -(id)initWithPUserId:(NSString*)userId pToken:(NSString*)token platform:(NSString*)platform;
 +(id)loginResultWithPUserId:(NSString*)userId pToken:(NSString*)token platform:(NSString*)platform;

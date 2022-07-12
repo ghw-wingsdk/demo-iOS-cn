@@ -58,7 +58,10 @@ typedef enum WACode{
     WACodeCurrentIDNotMatch = -211 ,//当前平台账号跟当前WA UserId绑定的平台账号不一致,或者没有绑定该平台账号
     WACodeDeviceNotSupported = -401 ,//设备不支持
     WACodeNetworkUnavailable = -402 ,//网络不可用
-    WACodePayReOrderTimeLimit = -509 //支付流程未完成或者在特定的时间内重复下订单
+    WACodePayReOrderTimeLimit = -509 ,//支付流程未完成或者在特定的时间内重复下订单
+    
+    WACodeDeleteAccountLimitLogin =4084, //账号删除中，禁止登录
+
     
 }WACode;
 

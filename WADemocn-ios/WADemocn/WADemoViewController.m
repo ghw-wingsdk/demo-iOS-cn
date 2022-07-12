@@ -37,10 +37,24 @@
 //	});
     
     
-
-
-
-
+    
+    [WAUserProxy openPrivacyAgreementWindow:^(NSError *error, NSUInteger status) {
+        if (error) {
+            //退出游戏
+        }else{
+            //继续逻辑
+            //建议status为1，也就是第一次弹框同意后再调用TTA
+            if(status==1){
+                [WAUserProxy openTTAAuthorizationWithCompletionHandler:^(NSError *error, NSUInteger status) {
+                    
+                }];
+            }
+  
+        }
+    }];
+    
+ 
+                
     
 
     

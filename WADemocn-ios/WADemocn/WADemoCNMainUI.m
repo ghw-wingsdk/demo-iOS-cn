@@ -510,7 +510,7 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
 	
 	[self showToastMessage:@"登录成功回调,通知cp"];
 
-	
+
 	
 }
 
@@ -520,7 +520,20 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
     NSLog(@"result.pToken:%@",result.pToken);
     NSLog(@"result.pUserId:%@",result.pUserId);
     NSLog(@"loginDidFailWithError:%@",error);
-	[self showToastMessage:@"loginDidFailWithError"];
+    if ([result.apply_delete_status intValue]==1) {
+        NSString * userid =result.userId;
+        NSString * deletedata= result.delete_date;
+        
+        
+        UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"cp回掉状态" message:[NSString stringWithFormat:@"userid=%@,删除日期=%@,登录平台=%@",userid,deletedata,result.platform] delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
+        [alert show];
+        
+
+
+    }else{
+        [self showToastMessage:@"loginDidFailWithError"];
+
+    }
 
 }
 

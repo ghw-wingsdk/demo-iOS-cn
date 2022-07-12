@@ -26,47 +26,61 @@
 //    [WACoreProxy setClientId:@"lpwlpwddd0001"];
     
     
-    [WAUserProxy openPrivacyAgreementWindow:^(NSError *error, NSUInteger status) {
-        if (error) {
-//            [self showToastMessage:@"弹出了协议框，用户点击了拒绝"];
-        }else{
-            if (status==1) {
+    
+    
+    /*!
+    @discussion 隐私协议弹框
+     error 不为空时
+        status  -1  弹出了协议框，用户点击了拒绝
                 
-                [WAUserProxy openTTAAuthorizationWithCompletionHandler:^(NSError *error, NSUInteger status) {
-                    if (error) {
-//                        [self showToastMessage:error.localizedDescription];
-                    }else{
-                        
-                        if (status==0) {
-//                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusNotDetermined(不确定)"];
-
-                        }else if(status==1){
-//                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusRestricted(限制)"];
-
-                        }else if(status==2){
-//                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusDenied(拒绝)"];
-
-                        }else if(status==3){
-//                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusAuthorized(已同意)"];
-
-                        }
-                        
-
-                        
-                    }
-                }];
-                
-                
-//                [self showToastMessage:@"弹出了协议框，用户点击了同意"];
-
-            }else if(status==2){
-//                [self showToastMessage:@"没有弹出协议框，用户之前点击过同意，无需再弹"];
-
-            }
-
-        }
-        
-    }];
+     error 为空
+        status 1 弹出了协议框，用户点击了同意
+        status 2 没有弹出协议框，用户之前点击过同意，无需再弹
+     */
+    
+//    [WAUserProxy openPrivacyAgreementWindow:^(NSError *error, NSUInteger status) {
+//        if (error) {
+//            WALog(@"拒绝======")
+////            [self showToastMessage:@"弹出了协议框，用户点击了拒绝"];
+//        }else{
+//            if (status==1) {
+//                
+//                // status状态与 ATTrackingManagerAuthorizationStatus 一致
+//                [WAUserProxy openTTAAuthorizationWithCompletionHandler:^(NSError *error, NSUInteger status) {
+//                    if (error) {
+////                        [self showToastMessage:error.localizedDescription];
+//                    }else{
+//                        
+//                        if (status==0) {
+////                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusNotDetermined(不确定)"];
+//
+//                        }else if(status==1){
+////                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusRestricted(限制)"];
+//
+//                        }else if(status==2){
+////                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusDenied(拒绝)"];
+//
+//                        }else if(status==3){
+////                            [self showToastMessage:@"ATTrackingManagerAuthorizationStatusAuthorized(已同意)"];
+//
+//                        }
+//                        
+//
+//                        
+//                    }
+//                }];
+//                
+//                
+////                [self showToastMessage:@"弹出了协议框，用户点击了同意"];
+//
+//            }else if(status==2){
+////                [self showToastMessage:@"没有弹出协议框，用户之前点击过同意，无需再弹"];
+//
+//            }
+//
+//        }
+//        
+//    }];
 
     
     return [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];

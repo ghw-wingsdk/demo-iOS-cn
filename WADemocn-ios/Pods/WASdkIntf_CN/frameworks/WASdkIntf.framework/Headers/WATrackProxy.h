@@ -158,7 +158,8 @@ extern NSString *const WAEventParameterNameNetwork;//网络制式
 extern NSString *const WAEventParameterNameOS;//系统
 extern NSString *const WAEventParameterNameResolution;//分辨率
 
-
+extern NSString *const WAEventParameterNameLoginPlatform ;
+extern NSString *const WAEventParameterNamePuserId ;
 
 
 extern NSString *const WAEventParameterNameOsign;
