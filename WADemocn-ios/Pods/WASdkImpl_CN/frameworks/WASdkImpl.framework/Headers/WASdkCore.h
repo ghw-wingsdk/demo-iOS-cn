@@ -23,6 +23,13 @@ NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WASdkCore getVersion],__FUNCTION_
  *  初始化
  */
 +(void)init;
+
+
+/**
+ *  初始化(20221027 新增回掉)
+ */
++(void)initWithCompletionHandler:(void (^_Nullable)())completionHandler;
+
 /**
  *  设置调试模式
  *

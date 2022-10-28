@@ -12,5 +12,9 @@
 	<array>
 		<string>applinks:sdk-test1.gamehollywood.com</string>
 	</array>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>$(AppIdentifierPrefix)gamehollywood.wingsdk.clientid.group</string>
+	</array>
 </dict>
 </plist>

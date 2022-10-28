@@ -285,6 +285,14 @@ extern NSString *const WASDK_AD_URL_GAME_CREATE_WINGA_ACCOUNT;
 //充值中心-短链接申请
 extern NSString *const WASDK_PAYCENTER_URL_GET_SHORT_LINK;
 
+
+// 刷新短链接有效期
+extern NSString *const WASDK_PAYCENTER_URL_LINK_REFRESH;
+
+//8.充值中心短链
+extern NSString *const WASDK_PAYCENTER_URL_RECHARGE_CENTER_LINK;
+
+
 // 玩家身份确认接口
 extern NSString *const WASDK_ACCOUNT_DELETE_IDENTITY_CHECK;
 
@@ -321,6 +329,8 @@ extern NSString *const WASDK_CACHE_KEY_TTA_TAG;
 
 
 
+extern NSString *const WASDK_PARAM_KEY_WASDK_RANDOMCODE ;
+extern NSString *const WASDK_PARAM_KEY_WASDK_RECHARGE_TYPE ;
 
 
 

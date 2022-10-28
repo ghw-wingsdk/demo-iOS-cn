@@ -452,6 +452,10 @@ static const NSString *kRandomAlphabet = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJK
             [setting setObject:@"0" forKey:@"com.winganalytics.sdk:privacyIsAgree"];
             [setting synchronize];
             
+ 
+            
+            
+            
         }else if([titleStr isEqualToString:@"删除苹果授权"]){
 
             [WAUserProxy deleteAccounAuthorizationWithPlatform:WA_PLATFORM_QQ completeBlock:^(NSError *error, WADeleteRequestModel *deleteResult) {

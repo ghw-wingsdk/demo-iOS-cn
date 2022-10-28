@@ -11,6 +11,7 @@
 @class WAParamConfigObj;
 @interface WACore : NSObject
 -(void)initialize;
+-(void)initWithCompletionHandler:(void (^_Nullable)())completionHandler;
 -(void)initAppEventTracker;
 -(void)setSDKType:(NSInteger)sdkType;
 -(NSInteger)getSDKType;

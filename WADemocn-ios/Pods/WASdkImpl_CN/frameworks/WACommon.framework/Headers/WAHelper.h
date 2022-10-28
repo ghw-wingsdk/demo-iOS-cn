@@ -15,7 +15,7 @@
 + (NSString *)file_md5:(NSString*) path;
 + (NSString*)getOts;
 + (id)toArrayOrNSDictionary:(NSString *)jsonString;
-+ (void)setClientId:(NSString*)clientId;
++ (void)setClientId:(NSString*)newClientId;
 + (void)deleteClientId;
 + (NSString*)getClientId;
 + (NSString*)getBundleId;
@@ -38,11 +38,22 @@
 +(void)saveKeyChainWithObj:(id)obj andKey:(NSString *const)key;
 +(id)loadObjFromKeyChainWithKey:(NSString *const)key;
 +(void)deleteObjFromKeyChainWithKey:(NSString *const)key;
+
+// group
++(BOOL)saveKeyChainWithObj:(id)obj andKey:(NSString *const)key  group:(NSString*)group;
++(id)loadObjFromKeyChainWithKey:(NSString *const)key group:(NSString*)group;
++(void)deleteObjFromKeyChainWithKey:(NSString *const)key group:(NSString*)group;
++ (NSString *)getUUID;
+
 +(NSString*)getIDFV;
 +(NSString*)getIDFA;
 +(NSString*)getSimulateIDFA;
 +(NSArray*)getSimulateIDFAParams;
 +(NSString*)getPreferredLanguage;
+
+// 读取提前写入的group钥匙串是否正确 572fb189425e0cc04087b6703f95da3e = md5(thisistestgroupclientid)
++(NSString*)getGroupTestSdkClientid;
++(NSString*)getGHWTestValidationClientId;
 /**
  *  获取本地时间
  */

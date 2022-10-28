@@ -47,6 +47,15 @@ NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WACoreProxy getSdkVer],__FUNCTION
  @abstract 初始化
  */
 +(void)init;
+
+
+/*!
+ @abstract 初始化(20221202新增初始化回调)
+ */
+
++(void)initWithCompletionHandler:(void (^_Nullable)())completionHandler;
+
+
 /*!
  @abstract 设置sdk类型 0 国外，1 国内
  */

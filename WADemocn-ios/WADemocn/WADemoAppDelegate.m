@@ -8,6 +8,8 @@
 
 #import "WADemoAppDelegate.h"
 #import <WASdkIntf/WASdkIntf.h>
+#import <WACommon/WAHelper.h>
+
 @interface WADemoAppDelegate () <UNUserNotificationCenterDelegate>
 
 @end
@@ -17,15 +19,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-	[WACoreProxy setDebugMode:YES];
-	[WACoreProxy init];
-    [WACoreProxy setSDKType:WA_SDK_TYPE_CN];
-    [WACoreProxy initAppEventTracker];
-    [WAPayProxy init4Iap];
+    
+//    [WACoreProxy init];
+    [WACoreProxy initWithCompletionHandler:^{
+        NSLog(@"初始化完成====");
 
-//    [WACoreProxy setClientId:@"lpwlpwddd0001"];
-    
-    
+        [WACoreProxy setDebugMode:YES];
+        [WACoreProxy setSDKType:WA_SDK_TYPE_CN];
+        [WACoreProxy initAppEventTracker];
+        [WAPayProxy init4Iap];
+
+//        [WACoreProxy setClientId:@"lpwlpwddd0001"];
+        [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];
+        
+        
+        NSLog(@"国内读取==WAFinishTransactionTime==%@",[WAHelper loadObjFromKeyChainWithKey:@"WAFinishTransactionTime"]);
+
+        
+    }];
+
+
     
     
     /*!
@@ -83,7 +96,7 @@
 //    }];
 
     
-    return [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];
+    return YES;
     
 }
 

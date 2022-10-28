@@ -36,6 +36,7 @@
 
 
 @property(nonatomic)NSInteger userCenterStatus; // 用户中心状态 0-关闭，1-打开
+@property(nonatomic)NSInteger userCenterStatusV2; //新版用户中心状态（CharacterID）：0-关闭， 1-打开
 @property(nonatomic)NSInteger isRechargeCenterPay; // 是否开启充值中心支付：0-关闭，1-打开，2-仅安卓打开，3-仅IOS打开
 @property(nonatomic,copy)NSString* rechargeCenterIcon; // 充值中心的支付图片URL
 @property(nonatomic)NSInteger isOpenKefu; //  是否开启客服  0  关闭 1 启动机器人客服聊天界面   2 启动人工客服聊天界面   3 启动运营界面  4 展示全部FAQ菜单 5 展示全部FAQ菜单(无机器人客服)

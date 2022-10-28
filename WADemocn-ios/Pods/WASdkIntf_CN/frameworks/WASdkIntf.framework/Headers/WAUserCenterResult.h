@@ -20,35 +20,25 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract 结果描述
  */
 @property(copy,nonatomic)NSString *msg;
+
 /*!
- @abstract 用户中心文字内容
+ @abstract characterId           （cp使用）
+ */
+@property(copy,nonatomic)NSString *characterId;
+
+/*!
+ @abstract shortUrl                 （cp使用）
+ */
+@property(copy,nonatomic)NSString *shortUrl;
+
+/*
+ uid                    （cp使用）
+ */
+@property(copy,nonatomic)NSString *uid;
+/*!
+ @abstract 用户中心文字内容 （cp使用）
  */
 @property(copy,nonatomic)NSString *userCenterInfo;
-/*!
- @abstract 用户名
- */
-@property(copy,nonatomic)NSString *userName;
-/*!
- @abstract 初始密码
- */
-@property(copy,nonatomic)NSString *password;
-
-/*!
- @abstract 充值中心域名
- */
-@property(copy,nonatomic)NSString *rechargeCenterDomain;
-
-/*!
- @abstract 服务器名
- */
-@property(copy,nonatomic)NSString *serverName;
-
-/*!
- @abstract 游戏名称
- */
-@property(copy,nonatomic)NSString *appName;
-
-
 
 @end
 

@@ -9,9 +9,9 @@ PODS:
     - WASdkImpl_CN
     - WASdkIntf_CN
   - WAQQImpl_CN (2.5.0)
-  - WASdkImpl_CN (2.6.1):
+  - WASdkImpl_CN (2.7.0):
     - WASdkIntf_CN
-  - WASdkIntf_CN (2.6.1)
+  - WASdkIntf_CN (2.7.0)
   - WAWebPayImpl_CN (2.3.0):
     - WASdkImpl_CN
     - WASdkIntf_CN
@@ -52,8 +52,8 @@ SPEC CHECKSUMS:
   WAApImpl_CN: 2f268620804d18811894a2c746982fcafc029b45
   WAApwImpl_CN: fbbea887a06a6a5abcda3977f6b3e3e58ffb9484
   WAQQImpl_CN: 9ba7d51a3d261fba06f521dd128d3cca1ef3cfc9
-  WASdkImpl_CN: f3a4a95dea8f23d389cd56ef8c3d518b1d8570fa
-  WASdkIntf_CN: e61cb9c5040aa01e90c1d0322b5d8fb04b8955ab
+  WASdkImpl_CN: 469d23947814dce8af667c265c134d43adba516f
+  WASdkIntf_CN: 65f159e71a551dcf64f693d8beecf9c3d07db3cc
   WAWebPayImpl_CN: d690e24724380099940551df2141413f322f0aaa
   WAWechatImpl_CN: 770dc562a6b062c5b0c2824357e7dcf5333fa7b0
 
