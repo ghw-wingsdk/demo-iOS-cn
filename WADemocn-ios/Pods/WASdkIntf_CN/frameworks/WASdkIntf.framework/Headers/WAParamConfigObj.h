@@ -39,7 +39,6 @@
 @property(nonatomic)NSInteger userCenterStatusV2; //新版用户中心状态（CharacterID）：0-关闭， 1-打开
 @property(nonatomic)NSInteger isRechargeCenterPay; // 是否开启充值中心支付：0-关闭，1-打开，2-仅安卓打开，3-仅IOS打开
 @property(nonatomic,copy)NSString* rechargeCenterIcon; // 充值中心的支付图片URL
-@property(nonatomic)NSInteger isOpenKefu; //  是否开启客服  0  关闭 1 启动机器人客服聊天界面   2 启动人工客服聊天界面   3 启动运营界面  4 展示全部FAQ菜单 5 展示全部FAQ菜单(无机器人客服)
 @property (nonatomic, copy) NSDictionary *paymentTip; //付款信息提示  (complete:提示语字段的key)
 @property(nonatomic)NSInteger logEventControl; //  事件日志开关  0  关闭 1 全部打开  2 仅android打开   3 仅ios打开  
 @property(nonatomic)NSInteger loginRna; 	// 0 - 关闭，登录后不弹实名认证。   1 - 开启并强制   2开启不强制
@@ -52,6 +51,12 @@
 @property (nonatomic)NSInteger accountDeleteBufferDays;   // 账号注销缓存天数 (默认 15)
 @property (nonatomic)NSInteger deletingAccountRemind;     // 账号注销提醒开关.(0-关闭, 1-开启, 默认关闭) 开启后，当注销中用户登录时，SDK弹出取消注销账号提醒，如用户取消，则SDK自动调用取消删除账号接口
 @property(nonatomic,copy)NSString* deleteAccountProtocolURL; // 删除账号协议
+
+//3.15.0 add 20230523
+@property(nonatomic)NSInteger isOpenKefuV2; // SDK客服开关V2(0-关闭, 1-开启, 默认关闭)
+@property(nonatomic,copy)NSString* kefuEntranceId; // aihelp客服入口id
+@property(nonatomic)NSInteger isOpenGameReview_ios; // 游戏评价开关(0-关闭, 1-开启, 默认关闭)
+@property(nonatomic,copy)NSString* kefuGameReviewEntranceId; //AIHELP游戏评价入口
 
 
 @end

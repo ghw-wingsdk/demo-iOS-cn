@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "WAUserProxy.h"
+#import <WASdkIntf/WAUserProxy.h>
 #import <WASdkIntf/WASdkIntf.h>
 @interface WAIUser : NSObject
 -(void)setLoginFlowType:(int)flowType;
@@ -134,4 +134,14 @@
 
 
 - (void)requestDeleteAccoutUI:(void(^)(NSError *error, NSUInteger status))completeBlock;
+
+
+
+
+/*!
+@discussion 打开游戏评分功能
+ */
+- (void)openGameReview:(void(^)(OpenGameReviewState status))block;
+
+
 @end

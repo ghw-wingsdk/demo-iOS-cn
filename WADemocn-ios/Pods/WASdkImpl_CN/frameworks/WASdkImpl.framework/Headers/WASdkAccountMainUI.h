@@ -14,6 +14,8 @@
 @property(nonatomic,strong)UIView* separator;
 @property(nonatomic,strong)UIView* contentView;
 @property(nonatomic,strong)UIButton* backBtn;
+@property(nonatomic,strong)UIView* btn_sepa;
+@property(nonatomic,strong)UIImageView* backIcon;
 @property(nonatomic,strong)NSMutableArray* views;
 @property(nonatomic,weak)id<WAAcctManagerDelegate>acctDelegate;
 -(instancetype)initWithViewController:(id<WAAcctManagerDelegate>)viewController;

@@ -36,6 +36,12 @@ extern NSString *const WA_PLATFORM_QQ;
 extern NSString *const WA_PLATFORM_SIGNINWITHAPPLE;
 extern NSString *const WA_PLATFORM_FIREBASE;
 
+// weblogin 
+extern NSString *const WA_PLATFORM_WEBLOGIN;
+extern NSString *const WA_PLATFORM_GHG;
+extern NSString *const WA_PLATFORM_R2;
+
+
 
 
 extern NSString *const WA_PLATFORM_QQ_CN_NAME;

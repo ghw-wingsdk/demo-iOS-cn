@@ -1,5 +1,5 @@
 PODS:
-  - WAAiHelpImpl_CN (2.5.0):
+  - WAAiHelpImpl_CN (2.8.0):
     - WASdkImpl_CN
     - WASdkIntf_CN
   - WAApImpl_CN (2.6.0):
@@ -8,14 +8,14 @@ PODS:
   - WAApwImpl_CN (2.1.0):
     - WASdkImpl_CN
     - WASdkIntf_CN
-  - WAQQImpl_CN (2.5.0)
-  - WASdkImpl_CN (2.7.0):
+  - WAQQImpl_CN (2.8.0)
+  - WASdkImpl_CN (2.8.0):
     - WASdkIntf_CN
-  - WASdkIntf_CN (2.7.0)
-  - WAWebPayImpl_CN (2.3.0):
+  - WASdkIntf_CN (2.8.0)
+  - WAWebPayImpl_CN (2.8.0):
     - WASdkImpl_CN
     - WASdkIntf_CN
-  - WAWechatImpl_CN (2.5.0):
+  - WAWechatImpl_CN (2.8.0):
     - WASdkImpl_CN
     - WASdkIntf_CN
 
@@ -48,15 +48,15 @@ SPEC REPOS:
     - WAWechatImpl_CN
 
 SPEC CHECKSUMS:
-  WAAiHelpImpl_CN: 3b353bcdddf365f7219582276beb55a7dbcee755
+  WAAiHelpImpl_CN: c6f84087d11c66e7a3feba251349830a2868a723
   WAApImpl_CN: 2f268620804d18811894a2c746982fcafc029b45
   WAApwImpl_CN: fbbea887a06a6a5abcda3977f6b3e3e58ffb9484
-  WAQQImpl_CN: 9ba7d51a3d261fba06f521dd128d3cca1ef3cfc9
-  WASdkImpl_CN: 469d23947814dce8af667c265c134d43adba516f
-  WASdkIntf_CN: 65f159e71a551dcf64f693d8beecf9c3d07db3cc
-  WAWebPayImpl_CN: d690e24724380099940551df2141413f322f0aaa
-  WAWechatImpl_CN: 770dc562a6b062c5b0c2824357e7dcf5333fa7b0
+  WAQQImpl_CN: 2c13230e29b0beff0c37e4582a2a15417c7d08b7
+  WASdkImpl_CN: 54160821c34d0c59726904e40b275af007010f57
+  WASdkIntf_CN: 8e19d789951fad41a2ae5f8e0651a7280990c11f
+  WAWebPayImpl_CN: 4662b2c6fd98f656234c797aa62be2ef7b3b9eb0
+  WAWechatImpl_CN: f2fcd8733b9d7716851e38fde10c388251d09e45
 
-PODFILE CHECKSUM: 44c697bcf363a86a28f8343033273a680de5d314
+PODFILE CHECKSUM: 86d30fd86c0a7070cee0b4ef170a9b943b99bdf2
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

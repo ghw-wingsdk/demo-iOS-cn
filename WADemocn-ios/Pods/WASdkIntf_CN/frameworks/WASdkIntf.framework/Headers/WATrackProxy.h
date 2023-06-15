@@ -193,6 +193,7 @@ extern NSString *const WAEventParameterNameAmount;//变更货币数
 // 获取登录方式之后
 extern NSString *const WAEventParameterNameLoginWayCount; // 登录方式个数
 extern NSString *const WAEventShowLoginWindow;    //打开登录框
+extern NSString *const WAEventOpenGameReview;    //游戏评分点击选项
 
 
 
@@ -204,6 +205,7 @@ extern NSString *const WAEventParameterNameLoginStatus; //  登录状态
 extern NSString *const WAValueForPaymentTypeApple;
 extern NSString *const WAValueForPaymentTypeGoogle;
 extern NSString *const WAValueForPaymentTypeFree;
+extern NSString *const WAValueForPaymentTypeH5Platform;
 
 
 

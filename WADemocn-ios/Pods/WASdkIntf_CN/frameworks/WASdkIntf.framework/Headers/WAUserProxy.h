@@ -17,6 +17,13 @@
 #import <WASdkIntf/WADeleteRequestModel.h>
 #import <WASdkIntf/WADeleteResult.h>
 
+typedef NS_ENUM(NSInteger, OpenGameReviewState) {
+    OpenGameReviewStateReject=0,           //游戏评价结果：不，谢谢！
+    OpenGameReviewStateOpenAiHelp,       //游戏评价结果：我要提意见
+    OpenGameReviewStateOpentReview,       //游戏评价结果：提交好评(无法获取用户是否点击评分以及具体的评分分数)
+    OpenGameReviewStateError            //打开游戏评价失败,后台没有开启游戏评价开关
+
+};
 /*!
  @discussion 登录协议
  - - -
@@ -382,14 +389,6 @@
 
 
 
-
-
-
-
-
-
-
-
 //**************************************删除账号有关start************************************************************
 
 /*!
@@ -427,11 +426,14 @@
 
 
 
-
 //**************************************删除账号有关end************************************************************
 
 
 
+/*!
+@discussion 打开游戏评分功能
+ */
++ (void)openGameReview:(void(^)(OpenGameReviewState status))block;
 
 
 

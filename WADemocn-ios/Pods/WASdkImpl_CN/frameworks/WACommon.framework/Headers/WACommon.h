@@ -27,5 +27,5 @@ FOUNDATION_EXPORT const unsigned char WACommonVersionString[];
 #import <WACommon/WAWebProgressView.h>
 #import <WACommon/WAWebViewController.h>
 
-//time:2022/10/26 	 09:16
+//time:2023/06/15 12:29 ver:2.8.0
 

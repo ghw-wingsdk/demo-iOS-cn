@@ -29,7 +29,6 @@
         [WACoreProxy initAppEventTracker];
         [WAPayProxy init4Iap];
 
-//        [WACoreProxy setClientId:@"lpwlpwddd0001"];
         [WACoreProxy application:application didFinishLaunchingWithOptions:launchOptions];
         
         
