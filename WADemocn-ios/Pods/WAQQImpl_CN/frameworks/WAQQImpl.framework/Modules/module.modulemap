@@ -1,6 +1,6 @@
 framework module WAQQImpl {
   umbrella header "WAQQImpl.h"
-
   export *
+
   module * { export * }
 }

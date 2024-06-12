@@ -8,6 +8,7 @@
 
 #import <WASdkIntf/WASdkIntf.h>
 
+
 @class WACoreProxy;
 @class WAWechatCore;
 

@@ -195,6 +195,7 @@ extern NSString *const WAEventParameterNameLoginWayCount; // 登录方式个数
 extern NSString *const WAEventShowLoginWindow;    //打开登录框
 extern NSString *const WAEventOpenGameReview;    //游戏评分点击选项
 
+extern NSString *const WAEventCMPResult;    //cmp 弹框结果
 
 
 // 进行登录之前、进行第三方渠道登录之后、进行WING平台登录之后

@@ -19,8 +19,6 @@
 -(void)setCurrentLoginResult:(WALoginResult*)loginResult;
 //获取当前登录结果
 +(WALoginResult*)getCurrentLoginResult;
-//设置当前登录是否为绑定登录
-//+(void)setIsBindingLogin:(BOOL)isBinding;
 
 //弹出登录界面
 +(void)login:(id<WALoginViewDelegate>)delegate cacheEnabled:(BOOL)cacheEnabled;
@@ -29,4 +27,9 @@
 //设置当前平台
 +(void)setCurrentLoginPlatform:(NSString *)platform;
 +(NSString*)getCurrentLoginPlatform;
+
+// 针对wa登录（邮箱和手机登录）
+-(void)loginPlatform:(NSString*)platform WithExtInfo:(NSString *)extInfo delegate:(id<WALoginDelegate>)delegate;
+
+@property(nonatomic)BOOL switchWaLogin; //如果是切换wa账号，需要处理UI
 @end

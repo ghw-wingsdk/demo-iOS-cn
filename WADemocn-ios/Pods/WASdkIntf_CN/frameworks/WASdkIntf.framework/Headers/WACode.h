@@ -39,8 +39,20 @@ typedef enum WACode{
     WACodeThridPlatformAccountExpired = 4047 ,//第三方平台登录过期
     WACodePayPlatformClosed = 4026 ,//支付渠道已关闭
     WACodeLoginPlatformClosed = 4029 ,//登录渠道已关闭
+    
+    WACodeMobileExists=4031,//手机帐号已存在！
+    
+    WACodePhoneError = 4032 ,//无效效手机号
+    WACodeCodeError = 4033 ,//无效验证码
+    WACodePhoneMessageLimit =4039, //短信发送超过限制
+
     WACodeBindAccountClosed = 4048 ,//账号绑定关闭
     WACodeUnBindAccountClosed = 4049 ,//账号解绑关闭
+    
+    WACodeEmailExists = 4054 ,//邮箱地址已存在
+    
+    WACodeAccountError = 4057 ,//账号错误
+    WACodePasswordError = 4058 ,//账号或密码错误
     WACodeUserCenterClosed = 4059 ,//用户中心未开启
     WACodeCanNotSwitchToAnonymous = 5001 ,
     WACodeFbObjectType = 5002 ,//facebook的objectType不能为空

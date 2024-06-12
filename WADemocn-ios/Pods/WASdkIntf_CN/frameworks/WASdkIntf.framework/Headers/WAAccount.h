@@ -24,6 +24,8 @@
 
 @property (nonatomic, strong) NSString *mobile;//wa平台才有此字段
 
+@property (nonatomic,strong) NSString * email;//WA平台且已绑定邮箱时返回 20230703  绑定帐号列表 V4(增加邮箱返回)
+
 
 +(WAAccount*)parserWithDict:(NSDictionary*)dict;
 +(NSArray*)parserWithArray:(NSArray*)arr;

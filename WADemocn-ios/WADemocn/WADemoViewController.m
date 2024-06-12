@@ -46,7 +46,7 @@
             //建议status为1，也就是第一次弹框同意后再调用TTA
             if(status==1){
                 [WAUserProxy openTTAAuthorizationWithCompletionHandler:^(NSError *error, NSUInteger status) {
-                    
+                    NSLog(@"状态=======%ld",status);
                 }];
             }
   

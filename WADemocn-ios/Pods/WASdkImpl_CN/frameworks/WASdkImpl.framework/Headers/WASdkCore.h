@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <WASdkIntf/WASdkIntf.h>
 #import <WACommon/WACommon.h>
-
+NS_ASSUME_NONNULL_BEGIN
 #define WASdkLog(fmt,...) {\
 if([WACoreProxy isDebugMode]){\
 NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WASdkCore getVersion],__FUNCTION__, ##__VA_ARGS__);\
@@ -110,7 +110,13 @@ NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WASdkCore getVersion],__FUNCTION_
  */
 +(NSString*)getVersion;
 
+/**
+ 
+ sdk内部使用，tta结果后，调用是否需要弹出（didomisdk 初始化快，tta结果慢点情况）
+ */
++ (BOOL)needShowCmpUI;
++ (void)showDidomiUI;
 
-
-
++ (void)showConsentPreferences;
 @end
+NS_ASSUME_NONNULL_END

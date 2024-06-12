@@ -308,6 +308,27 @@ typedef NS_ENUM(NSInteger, OpenGameReviewState) {
  sourceApplication:(NSString *)sourceApplication
         annotation:(id)annotation;
 
+
+
+//当一个新的场景被创建时调用，可以在这个方法中配置场景。
+- (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions API_AVAILABLE(ios(13.0));
+// 当场景被销毁时调用。
+- (void)sceneDidDisconnect:(UIScene *)scene  API_AVAILABLE(ios(13.0));
+//当场景变成活跃状态时调用。
+- (void)sceneDidBecomeActive:(UIScene *)scene API_AVAILABLE(ios(13.0));
+//当场景将要变成非活跃状态时调用。
+- (void)sceneWillResignActive:(UIScene *)scene API_AVAILABLE(ios(13.0));
+//当应用程序即将进入前台时调用。
+- (void)sceneWillEnterForeground:(UIScene *)scene  API_AVAILABLE(ios(13.0));
+//当应用程序进入后台时调用。
+- (void)sceneDidEnterBackground:(UIScene *)scene API_AVAILABLE(ios(13.0));
+//当别的APP通过URL地址，打开我们的app时调用
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts API_AVAILABLE(ios(13.0));
+- (void)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)userActivity API_AVAILABLE(ios(13.0));
+
+
+
+
 /*!
  @discussion （tip:CP无需关注）此方法为成功登录第三方平台之后调用。根据第三方平台的pUserId，pToken，platform构建一个WALoginResult实例作为参数调用此方法。此方法将会调用WindAnalytics的登录接口。
  @param result 登录结果
@@ -436,5 +457,9 @@ typedef NS_ENUM(NSInteger, OpenGameReviewState) {
 + (void)openGameReview:(void(^)(OpenGameReviewState status))block;
 
 
+/*!
+@discussion 弹出cmp修改同意内容弹框
+ */
++ (void)showConsentPreferences;;
 
 @end

@@ -13,4 +13,7 @@
 @interface WASdkAccountListUI : UIView
 -(instancetype)initWithFrame:(CGRect)frame andMainUI:(WASdkAccountMainUI*)mainUI;
 @property(nonatomic,weak)WASdkAccountMainUI* mainUI;
+@property(nonatomic,weak)id<WAAcctManagerDelegate>acctDelegate;
+
+
 @end

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-	<version val="QQ2.8.0"/>
+	<version val="QQ2.9.0"/>
     <comps>
         <!-- 公共模块 -->
         <comp module="CORE" plaf="QQ" mandatory="YES" value="WAQQCore" desc="公共模块"/>

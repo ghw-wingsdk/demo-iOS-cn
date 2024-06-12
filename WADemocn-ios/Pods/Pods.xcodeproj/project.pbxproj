@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = A294FE3BD08B315E4C42890EBEDFE53D /* Build configuration list for PBXAggregateTarget "WASdkIntf_CN" */;
+			buildConfigurationList = 7519C2C73ED3B132ADCDBC16F7D61203 /* Build configuration list for PBXAggregateTarget "WASdkIntf_CN" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -22,15 +22,16 @@
 			buildPhases = (
 			);
 			dependencies = (
-				08A5D1CB72D07A4C1AD5F196FE662ADF /* PBXTargetDependency */,
-				9D0D6769EDD372E3814BA465DA3CED91 /* PBXTargetDependency */,
+				B62C82E5008694D1FF786CB681DB8B2B /* PBXTargetDependency */,
+				15CD359286B68C4AF9FEAB04B9460F43 /* PBXTargetDependency */,
 			);
 			name = WAApwImpl_CN;
 		};
 		66C470B1A3558E99C66F7E3BA69030F1 /* WAQQImpl_CN */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 26158DF1D1142B9E9C9F5DC39F2BFAF2 /* Build configuration list for PBXAggregateTarget "WAQQImpl_CN" */;
+			buildConfigurationList = E7BC90B90193D0DD53D63EAD3180BB19 /* Build configuration list for PBXAggregateTarget "WAQQImpl_CN" */;
 			buildPhases = (
+				B15A97D749BFF0AF392386E19268DA0B /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -42,8 +43,8 @@
 			buildPhases = (
 			);
 			dependencies = (
-				911512AF1758F2D98F5A970BE1C6C54B /* PBXTargetDependency */,
-				99351826FF11DECBB3AB2DAFD492914D /* PBXTargetDependency */,
+				6394BA82FE774C57272671960F980D07 /* PBXTargetDependency */,
+				3BF5AA66FE3C302701DE5DE7CAE15F7E /* PBXTargetDependency */,
 			);
 			name = WAWechatImpl_CN;
 		};
@@ -53,8 +54,8 @@
 			buildPhases = (
 			);
 			dependencies = (
-				C5C224FB9B25D06E43A5063BCEEFAD4C /* PBXTargetDependency */,
-				0981C743AC0234F32BA202F472770B2F /* PBXTargetDependency */,
+				DA12A5F1C0E240D0B141F8B2F041AE4D /* PBXTargetDependency */,
+				CE266A23E36CFCDDF148CC2D4896F712 /* PBXTargetDependency */,
 			);
 			name = WAWebPayImpl_CN;
 		};
@@ -64,18 +65,19 @@
 			buildPhases = (
 			);
 			dependencies = (
-				86CB95EF4386DD05AF61FC8113B8DE04 /* PBXTargetDependency */,
-				8C121EE662078AE45F3A4F668A5E8E47 /* PBXTargetDependency */,
+				A512A4A7883240058268ACA40591496D /* PBXTargetDependency */,
+				BA642D64E020121D0D877F55E167E541 /* PBXTargetDependency */,
 			);
 			name = WAAiHelpImpl_CN;
 		};
 		B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 64FF79E3897885C4BD5661DC367BD7B3 /* Build configuration list for PBXAggregateTarget "WASdkImpl_CN" */;
+			buildConfigurationList = 9D139245540212588450B9C08925708A /* Build configuration list for PBXAggregateTarget "WASdkImpl_CN" */;
 			buildPhases = (
+				D5C9345A905F0A457362570F401E3416 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				587096114112D16E7A1F59FA986DE1D9 /* PBXTargetDependency */,
+				CECAA29022A7724B1A68D4B4197F6D7F /* PBXTargetDependency */,
 			);
 			name = WASdkImpl_CN;
 		};
@@ -85,145 +87,145 @@
 			buildPhases = (
 			);
 			dependencies = (
-				BA2D0F1C06A6DE341673C35A3BF4EDDE /* PBXTargetDependency */,
-				00B17CBC406CD7E4C5BE39F515D8A4E9 /* PBXTargetDependency */,
+				4214303A454A3B2CB306E0AB9E019806 /* PBXTargetDependency */,
+				37A75CF8F11F6BD81992760B10D08A56 /* PBXTargetDependency */,
 			);
 			name = WAApImpl_CN;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		FA98A80BA351937FD2BE04AD20611C3D /* Pods-WADemocn-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B12A919571CC19D35B1FF398EC3319 /* Pods-WADemocn-dummy.m */; };
+		FA98A80BA351937FD2BE04AD20611C3D /* Pods-WADemocn-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67060072EF0FD8024C72EA144BE771D9 /* Pods-WADemocn-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0AECC84B0EC2D51AEB01A30705D522E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
-			remoteInfo = WASdkImpl_CN;
-		};
-		118A78B1B8B3E492B7A222F5C13B8F7C /* PBXContainerItemProxy */ = {
+		15ED8C770D7D4ECE7FAB114B65C5AA61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
 			remoteInfo = WASdkIntf_CN;
 		};
-		2B3C50D6909193A2651E15F6DB225AB9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 620F337E709BADFF89171F70E91C3E63;
-			remoteInfo = WAApwImpl_CN;
-		};
-		383EF17127DCFA93738FDFD0C04C5F58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
-			remoteInfo = WASdkImpl_CN;
-		};
-		48E69514BECA27675E63C552F1AC3FB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 726C579FAD35745BF2197D05DEACB2AB;
-			remoteInfo = WAAiHelpImpl_CN;
-		};
-		706526F0A325273CA14D294135FF660E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
-		};
-		707A2E7F51E7F1172E65D9FC11E86370 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
-		};
-		8CEB283E99D7366CABFCE2850E4706F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
-		};
-		8FE0D6BE2902C17B1D7AEE4BA590B3BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
-			remoteInfo = WASdkImpl_CN;
-		};
-		9D99CCE05F25D8BEED45464F2A373A93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
-		};
-		A3B4F388E2356E588C55AC291E58E21B /* PBXContainerItemProxy */ = {
+		1C22BCAC3250CCF4BB36C7388B5E16A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 69C16EE09CDE7732C3EA907532F02055;
 			remoteInfo = WAWebPayImpl_CN;
 		};
-		A9E653AB28E08F6B372AB3C9E2151D50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
-			remoteInfo = WASdkIntf_CN;
-		};
-		AB2E024006BF63C5CDEDCD2E2126B255 /* PBXContainerItemProxy */ = {
+		2ABAC6DF2D7581BCC1D5A7028FCAE6CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 66C470B1A3558E99C66F7E3BA69030F1;
 			remoteInfo = WAQQImpl_CN;
 		};
-		D78E7D98A143134B57D10A87E446AFCC /* PBXContainerItemProxy */ = {
+		4814BD047A41B10F000A6DE4B638F676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
+			remoteInfo = WASdkImpl_CN;
+		};
+		48CD95E24991FC86DBE40807F91856EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
+			remoteInfo = WASdkImpl_CN;
+		};
+		5760FDDCF3FEF0D6BF44B45112ABC7E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
 			remoteInfo = WASdkIntf_CN;
 		};
-		D7EED8E49CB0E3A539CD257DA0A85911 /* PBXContainerItemProxy */ = {
+		6C2E9375CDE0F9A22DEE6641A8621258 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 726C579FAD35745BF2197D05DEACB2AB;
+			remoteInfo = WAAiHelpImpl_CN;
+		};
+		6D81F5B650A5E00267F54E185C0F5AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		81B3D16817707B2931BBCD8195EC65D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
 			remoteInfo = WASdkImpl_CN;
 		};
-		DA83BFB72DD4F789880E5926B34AB88F /* PBXContainerItemProxy */ = {
+		9FDCC75DB87F9D3280BD8E170B204C4C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6943F619B4728F2E2269F37A7D4A31B8;
 			remoteInfo = WAWechatImpl_CN;
 		};
-		F44ADEA2AB173D691CB6D0A8ED76AFB0 /* PBXContainerItemProxy */ = {
+		A7D46BAE721FA71336FDEB851B6FD0BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		B9719C66C01212ADFC2664F4223B55AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 620F337E709BADFF89171F70E91C3E63;
+			remoteInfo = WAApwImpl_CN;
+		};
+		BA2849368F89EC97E11C98B620AF361C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		BEEBF71C6832727F9864E26C7948272A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		C51CA103A4001EBB70987B141CE48571 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
 			remoteInfo = WASdkImpl_CN;
 		};
-		F8438F564C862D8AC2809AF55B99A6AC /* PBXContainerItemProxy */ = {
+		C87DDA1F5A6789321CC6BD16BBE83D06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B214E7BF290498102642CCE31204E0E5;
+			remoteInfo = WASdkImpl_CN;
+		};
+		EC270E60C1362EE350B5B7BE9380ED7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EFC8232C0D53668D015C8A22E0A2F3A5;
 			remoteInfo = WAApImpl_CN;
 		};
-		F89BB221D3E38630919E50FCB9B06F96 /* PBXContainerItemProxy */ = {
+		FCC61882DFA34DDA465CB89476D8D936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A98CACB3CEB6F66511A8468FF0057C7;
+			remoteInfo = WASdkIntf_CN;
+		};
+		FF22B5ED74CF409330F3194670F0A891 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -234,59 +236,63 @@
 
 /* Begin PBXFileReference section */
 		01F1C30C3521C903C8EC061CD909D72E /* wa_sdk_impl_config_aihelp.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_aihelp.xml; path = config/wa_sdk_impl_config_aihelp.xml; sourceTree = "<group>"; };
+		02D9CD9097BE69CBF0548EC6DA4A786F /* pt-BR.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "pt-BR.plist"; path = "localizable/pt-BR.plist"; sourceTree = "<group>"; };
 		0D00044C9F18D5CA6B30FB625DBE78EC /* WAApImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAApImpl_CN.release.xcconfig; sourceTree = "<group>"; };
 		0E3D9E24A630D28FE60CD0BBAC164444 /* wa_sdk.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = wa_sdk.plist; path = config/wa_sdk.plist; sourceTree = "<group>"; };
-		19A5C2C6F85BF513AFD36322626EBF05 /* WASdkImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WASdkImpl.framework; path = frameworks/WASdkImpl.framework; sourceTree = "<group>"; };
 		1EB5385309F62C7DEF8EBCEF6F705F86 /* AIHelpSupportSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AIHelpSupportSDK.bundle; path = res/AIHelpSupportSDK.bundle; sourceTree = "<group>"; };
 		2598BA0544BA095F9276C8228BD29E2E /* WAAIhelpImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAAIhelpImpl.framework; path = frameworks/WAAIhelpImpl.framework; sourceTree = "<group>"; };
 		2730FE237750D45A5416D53EC56068B5 /* WAApwImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAApwImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
-		2E1182837A4494097E7F3B846D01D814 /* wa_sdk_impl_config_winga.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_winga.xml; path = config/wa_sdk_impl_config_winga.xml; sourceTree = "<group>"; };
+		2E25AE1BF6EA6060E9703EB128D0D1F5 /* WASdkImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WASdkImpl_CN.release.xcconfig; sourceTree = "<group>"; };
+		2E6C4F758BA73FF8D932F0BF3FFD1CFE /* WASDK-Resource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = "WASDK-Resource.bundle"; path = "bundle/WASDK-Resource.bundle"; sourceTree = "<group>"; };
+		36EF3D87A69CA46ABC8411BD633F526F /* Toast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toast.framework; path = frameworks/Toast.framework; sourceTree = "<group>"; };
 		37C8FDE7825D54A6CE34F39CA8065DA9 /* wa_sdk_impl_config_wechat.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_wechat.xml; path = config/wa_sdk_impl_config_wechat.xml; sourceTree = "<group>"; };
-		406394ECB6FBE129C55DFD0C10512657 /* Pods-WADemocn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WADemocn.debug.xcconfig"; sourceTree = "<group>"; };
+		3914AC0DB5CCD915622BDF00E5D90064 /* WAQQImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAQQImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
+		3CE3FC3603127801720443FEA1BCB60E /* WASdkImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WASdkImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
+		4299644805BEB0A9BBED51D326310081 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = bundle/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		438F0F1700005374B8ACB53899170DE2 /* WASdkIntf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WASdkIntf.framework; path = frameworks/WASdkIntf.framework; sourceTree = "<group>"; };
-		453E97678FECA20433EE9B5769AB7787 /* en.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = en.plist; path = localizable/en.plist; sourceTree = "<group>"; };
+		487938EF84E52D301B8113640304C608 /* Pods-WADemocn-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WADemocn-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4C7DABD7CBB6828C171FF36326A6C98B /* wa_sdk_impl_config_apw.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_apw.xml; path = config/wa_sdk_impl_config_apw.xml; sourceTree = "<group>"; };
-		4E3002B7F82F3E9A8EA90CBC85E12138 /* WASDK-Resource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = "WASDK-Resource.bundle"; path = "bundle/WASDK-Resource.bundle"; sourceTree = "<group>"; };
 		4F3A184358AFD17750B8D793FA3A6685 /* WAWebPayImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAWebPayImpl_CN.release.xcconfig; sourceTree = "<group>"; };
-		54E64DFBD2D9EBB53765B90AD7C9981C /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = bundle/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		551EBA8698E9D21F1A4BA818990FDB49 /* WAApwImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAApwImpl.framework; path = frameworks/WAApwImpl.framework; sourceTree = "<group>"; };
-		5C4CC27A472DBB5017BF049660189EB8 /* base.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = base.plist; path = localizable/base.plist; sourceTree = "<group>"; };
-		6051891F3D688340705C243197067CBB /* zh-Hans.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "zh-Hans.plist"; path = "localizable/zh-Hans.plist"; sourceTree = "<group>"; };
+		577DB6157D0564EA058D52362D7DBC93 /* Pods-WADemocn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WADemocn.debug.xcconfig"; sourceTree = "<group>"; };
+		6361A9E110619352DAEB7F9C66F341EA /* Didomi.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Didomi.xcframework; path = frameworks/Didomi.xcframework; sourceTree = "<group>"; };
 		64BC2BB7906AEA4B301C2838EA44452D /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = frameworks/MJRefresh.framework; sourceTree = "<group>"; };
-		6706B4156C7976A3135ED3F2A8C0FEF4 /* wa_sdk_impl_config_qq.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_qq.xml; path = config/wa_sdk_impl_config_qq.xml; sourceTree = "<group>"; };
+		67060072EF0FD8024C72EA144BE771D9 /* Pods-WADemocn-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WADemocn-dummy.m"; sourceTree = "<group>"; };
 		6AF8A591FB687B0724142AB0D296BDA5 /* WAWechatImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAWechatImpl_CN.release.xcconfig; sourceTree = "<group>"; };
-		6C52DEF1EC2F0D691D51171CC588DA7E /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = frameworks/AFNetworking.framework; sourceTree = "<group>"; };
-		6D1EA98728F827A8C8D615DDC92A4529 /* ru.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = ru.plist; path = localizable/ru.plist; sourceTree = "<group>"; };
-		715CF73DF1187638651EDCB71FF03FFF /* WAQQImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAQQImpl_CN.release.xcconfig; sourceTree = "<group>"; };
+		719EE3D03CF55EA4B5E2B32D4BFF35B5 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = frameworks/FMDB.framework; sourceTree = "<group>"; };
 		72A52C675B6CD5B1DB49AB2978A573C5 /* wa_sdk_impl_config_apple.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_apple.xml; path = config/wa_sdk_impl_config_apple.xml; sourceTree = "<group>"; };
-		7316D5928BF60FCBD41079F0F727294A /* Pods-WADemocn-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WADemocn-resources.sh"; sourceTree = "<group>"; };
-		7842ED85E726A27AEB11EC05C087F757 /* WAQQImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAQQImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
-		82C8DCF4364C18979348BACE4E254711 /* WAQQImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAQQImpl.framework; path = frameworks/WAQQImpl.framework; sourceTree = "<group>"; };
+		73A957FF29C330A2864ED4E196A6D461 /* wa_sdk_impl_config_qq.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_qq.xml; path = config/wa_sdk_impl_config_qq.xml; sourceTree = "<group>"; };
+		75A58A8A6BC8FA1F097C12CB4E50338F /* zh-Hans.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "zh-Hans.plist"; path = "localizable/zh-Hans.plist"; sourceTree = "<group>"; };
 		8465FCA5D63C8EF2695E1BF331021FED /* WAWebPayImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAWebPayImpl.framework; path = frameworks/WAWebPayImpl.framework; sourceTree = "<group>"; };
 		85BBC81CC7BAE8FD9ADF35B69272C6C6 /* WAWechatImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAWechatImpl.framework; path = frameworks/WAWechatImpl.framework; sourceTree = "<group>"; };
-		974AF122F7D71F45792EEFD1E3DBD694 /* WACommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WACommon.framework; path = frameworks/WACommon.framework; sourceTree = "<group>"; };
+		8C5C877355FD452FF7ECFB1496E9ADE2 /* ru.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = ru.plist; path = localizable/ru.plist; sourceTree = "<group>"; };
+		93F1C9BAC87A35F938F557DB4110C07F /* WASdkImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WASdkImpl.framework; path = frameworks/WASdkImpl.framework; sourceTree = "<group>"; };
+		96AD6C656F5609B011D52BA64DC4FFCD /* Pods-WADemocn-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WADemocn-resources.sh"; sourceTree = "<group>"; };
+		9A2EA316FCB812AC8651BA62CA65BED0 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = frameworks/AFNetworking.framework; sourceTree = "<group>"; };
 		9BB0533CD6A6362B11636688360AA18A /* Pods-WADemocn */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-WADemocn"; path = "libPods-WADemocn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8E02138B9796020CC218DBE6DCF1FD /* Pods-WADemocn-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WADemocn-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A9328C2C66E1DBA0BE0DE93788D02761 /* Pods-WADemocn-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WADemocn-acknowledgements.plist"; sourceTree = "<group>"; };
+		A0DEA2782D39FD39A6F573FCA43F1C30 /* WAQQImpl_CN-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "WAQQImpl_CN-xcframeworks.sh"; sourceTree = "<group>"; };
+		A8DB141D6F6A33FEF524C670A444F4BC /* Pods-WADemocn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WADemocn.release.xcconfig"; sourceTree = "<group>"; };
 		AB500BC7A351EFF9227731B49949AD67 /* WAAiHelpImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAAiHelpImpl_CN.release.xcconfig; sourceTree = "<group>"; };
-		AC34D81EFB1E9EEA767E1051D57E25DB /* Toast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toast.framework; path = frameworks/Toast.framework; sourceTree = "<group>"; };
-		AE31734DD4B293B7343384AB032AFE60 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = frameworks/FMDB.framework; sourceTree = "<group>"; };
 		B089B03708F072EEF01FB427C6426FFE /* WAApImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAApImpl.framework; path = frameworks/WAApImpl.framework; sourceTree = "<group>"; };
-		B88820DBB01D7B0F38EB1E1C8DE4A41E /* WASdkImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WASdkImpl_CN.release.xcconfig; sourceTree = "<group>"; };
+		B5AFF1B4EBA54A30F1BE774CEA9AFD0C /* en.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = en.plist; path = localizable/en.plist; sourceTree = "<group>"; };
+		B6A7B07BC77E14B97AA9262CA3AC73C0 /* Pods-WADemocn-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WADemocn-frameworks.sh"; sourceTree = "<group>"; };
+		C58865DF8C83C76405292BBB2E3AFBDA /* TencentOpenAPI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TencentOpenAPI.xcframework; path = frameworks/TencentOpenAPI.xcframework; sourceTree = "<group>"; };
+		C81518D2D10E4CF6E1940291980D4D19 /* es.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = es.plist; path = localizable/es.plist; sourceTree = "<group>"; };
 		CAA40A65B2C0D95BE157215B1907791F /* WAApImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAApImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
+		CCB8C02AE8E05F8FDEE1485A8A917119 /* WASdkImpl_CN-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "WASdkImpl_CN-xcframeworks.sh"; sourceTree = "<group>"; };
+		CCF7841468DC18EFB2E024AD027129D0 /* base.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = base.plist; path = localizable/base.plist; sourceTree = "<group>"; };
+		D0D8AB88F93CB8F8779001009025392E /* WACommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WACommon.framework; path = frameworks/WACommon.framework; sourceTree = "<group>"; };
 		D1FFF41AAA75747259AC42E41E912B1D /* WAApwImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAApwImpl_CN.release.xcconfig; sourceTree = "<group>"; };
 		D484B450CEDE30D586962CF7D9782843 /* WAWebPayImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAWebPayImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
-		D4C327FBDCC95BCCA5CC95184EEB33F1 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = frameworks/TencentOpenAPI.framework; sourceTree = "<group>"; };
-		D66CB6CBFC358B431206D77F5B6C97A0 /* Pods-WADemocn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WADemocn.release.xcconfig"; sourceTree = "<group>"; };
-		D80F2A0C94CF901FB3B8D39975CCE305 /* WASdkImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WASdkImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
+		D9C14EC11926629577D7B655FC6AD381 /* wa_sdk_impl_config_winga.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_winga.xml; path = config/wa_sdk_impl_config_winga.xml; sourceTree = "<group>"; };
 		DEDAE7CEEC5B9C128C6A93AC831F2AE3 /* wa_sdk_track_config.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = wa_sdk_track_config.plist; path = config/wa_sdk_track_config.plist; sourceTree = "<group>"; };
-		DEFD027789897C6764F14595FE029A56 /* pt-BR.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "pt-BR.plist"; path = "localizable/pt-BR.plist"; sourceTree = "<group>"; };
-		E0B12A919571CC19D35B1FF398EC3319 /* Pods-WADemocn-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WADemocn-dummy.m"; sourceTree = "<group>"; };
 		E11205F820527AEAC7AB2CBE65E898A2 /* WASdkIntf_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WASdkIntf_CN.debug.xcconfig; sourceTree = "<group>"; };
+		E3A16B1692801856C672761CEC923251 /* WAQQImpl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WAQQImpl.framework; path = frameworks/WAQQImpl.framework; sourceTree = "<group>"; };
 		E73E7B47969602CE35412697F335FABB /* WAAiHelpImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAAiHelpImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
+		ECFACB3C3592EE975912F4C2B160015F /* WAQQImpl_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAQQImpl_CN.release.xcconfig; sourceTree = "<group>"; };
 		ED4A7C2897CF0FCB7CDD2B27279736C9 /* WAWechatImpl_CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAWechatImpl_CN.debug.xcconfig; sourceTree = "<group>"; };
-		F2A7EEF3C9096E18ED5ADBA714E297DC /* Pods-WADemocn-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WADemocn-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F3BEA3D022677EFEACE6AA18B04B3E2A /* es.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = es.plist; path = localizable/es.plist; sourceTree = "<group>"; };
 		F4503E4A8942ED56B07065E0C67C26E4 /* WASdkIntf_CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WASdkIntf_CN.release.xcconfig; sourceTree = "<group>"; };
 		F8DF6C1A0224057B51C20455A1819B51 /* wa_sdk_impl_config_webpay.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = wa_sdk_impl_config_webpay.xml; path = config/wa_sdk_impl_config_webpay.xml; sourceTree = "<group>"; };
 		FCDD1132E992719F1D8D9C546AC34E6C /* AIHelpSupportSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIHelpSupportSDK.framework; path = frameworks/AIHelpSupportSDK.framework; sourceTree = "<group>"; };
@@ -329,16 +335,15 @@
 			path = "../Target Support Files/WAWebPayImpl_CN";
 			sourceTree = "<group>";
 		};
-		0BB7C2BA2A227BDCC008E9E8A012B040 /* Frameworks */ = {
+		0DCD51ADF7DB8FC70DC3E96E14B109A4 /* WASdkImpl_CN */ = {
 			isa = PBXGroup;
 			children = (
-				6C52DEF1EC2F0D691D51171CC588DA7E /* AFNetworking.framework */,
-				AE31734DD4B293B7343384AB032AFE60 /* FMDB.framework */,
-				AC34D81EFB1E9EEA767E1051D57E25DB /* Toast.framework */,
-				974AF122F7D71F45792EEFD1E3DBD694 /* WACommon.framework */,
-				19A5C2C6F85BF513AFD36322626EBF05 /* WASdkImpl.framework */,
+				C217DB0D8272D43B640FDE0361318F41 /* Frameworks */,
+				2246DD0C87F053CE8CB6FBF50ED997CD /* Resources */,
+				ED5EAE73065A9B7F38E33203F6AB2D02 /* Support Files */,
 			);
-			name = Frameworks;
+			name = WASdkImpl_CN;
+			path = WASdkImpl_CN;
 			sourceTree = "<group>";
 		};
 		10FB5C1BE9A9AB234FB16A7B3DD419E5 /* Frameworks */ = {
@@ -358,6 +363,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2246DD0C87F053CE8CB6FBF50ED997CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7841468DC18EFB2E024AD027129D0 /* base.plist */,
+				B5AFF1B4EBA54A30F1BE774CEA9AFD0C /* en.plist */,
+				C81518D2D10E4CF6E1940291980D4D19 /* es.plist */,
+				02D9CD9097BE69CBF0548EC6DA4A786F /* pt-BR.plist */,
+				8C5C877355FD452FF7ECFB1496E9ADE2 /* ru.plist */,
+				D9C14EC11926629577D7B655FC6AD381 /* wa_sdk_impl_config_winga.xml */,
+				2E6C4F758BA73FF8D932F0BF3FFD1CFE /* WASDK-Resource.bundle */,
+				75A58A8A6BC8FA1F097C12CB4E50338F /* zh-Hans.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2F6DDB4D7AAECEA6975A0A55C885E1A5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +395,15 @@
 			);
 			name = WAApImpl_CN;
 			path = WAApImpl_CN;
+			sourceTree = "<group>";
+		};
+		3689697CC4B7EE267965BCF00FAB1AB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C58865DF8C83C76405292BBB2E3AFBDA /* TencentOpenAPI.xcframework */,
+				E3A16B1692801856C672761CEC923251 /* WAQQImpl.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3A39D2AE4D7315216D7F85F92E5EC47D /* Support Files */ = {
@@ -407,15 +436,6 @@
 			path = "../Target Support Files/WAApwImpl_CN";
 			sourceTree = "<group>";
 		};
-		506EC78938A78B7029A3D29C5ACDBC67 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D4C327FBDCC95BCCA5CC95184EEB33F1 /* TencentOpenAPI.framework */,
-				82C8DCF4364C18979348BACE4E254711 /* WAQQImpl.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5F977DC5380F613005332AFBFFE35F73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,17 +443,6 @@
 				551EBA8698E9D21F1A4BA818990FDB49 /* WAApwImpl.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		616242CF0DE07A525F4066AC2516863A /* WAQQImpl_CN */ = {
-			isa = PBXGroup;
-			children = (
-				506EC78938A78B7029A3D29C5ACDBC67 /* Frameworks */,
-				DB42F6A6C96092C064E5A23D1ACC97D1 /* Resources */,
-				AA5F0890E8F58A7425D08FEA2834A16C /* Support Files */,
-			);
-			name = WAQQImpl_CN;
-			path = WAQQImpl_CN;
 			sourceTree = "<group>";
 		};
 		6F8B2B0D1369053913E131F1CB56783F /* WAApwImpl_CN */ = {
@@ -445,6 +454,14 @@
 			);
 			name = WAApwImpl_CN;
 			path = WAApwImpl_CN;
+			sourceTree = "<group>";
+		};
+		6FE0F6EE94E27B712574F4B3604BE881 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8AFE49354FCB5CDEF42C1C0DA0B44FF /* Pods-WADemocn */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		75242D44AEB7732F344CF198009EB934 /* Frameworks */ = {
@@ -466,14 +483,25 @@
 			path = WAAiHelpImpl_CN;
 			sourceTree = "<group>";
 		};
+		88CCA6E00EDEC5B487A48484F2AE5DFD /* WAQQImpl_CN */ = {
+			isa = PBXGroup;
+			children = (
+				3689697CC4B7EE267965BCF00FAB1AB6 /* Frameworks */,
+				9B3EE10C244309C6800DA322BDFE8C5D /* Resources */,
+				9DA1B4D54D9DFDEADFDC1B462670EFE0 /* Support Files */,
+			);
+			name = WAQQImpl_CN;
+			path = WAQQImpl_CN;
+			sourceTree = "<group>";
+		};
 		88F9364C32FA1398A861E5FAEB121D45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				77D4A6DD10263F7D164F0EA11BB97BF6 /* WAAiHelpImpl_CN */,
 				3522694BCC73DA8700DC1F68940BD5D6 /* WAApImpl_CN */,
 				6F8B2B0D1369053913E131F1CB56783F /* WAApwImpl_CN */,
-				616242CF0DE07A525F4066AC2516863A /* WAQQImpl_CN */,
-				9A02A5937D7F4AC8902056B7142FDB7F /* WASdkImpl_CN */,
+				88CCA6E00EDEC5B487A48484F2AE5DFD /* WAQQImpl_CN */,
+				0DCD51ADF7DB8FC70DC3E96E14B109A4 /* WASdkImpl_CN */,
 				928D84369BEC064D88E17E247555C18B /* WASdkIntf_CN */,
 				ABC445F831F23F5CEA332357CD78BDFD /* WAWebPayImpl_CN */,
 				D223C95AAE80FFBB340F995E5FF9B012 /* WAWechatImpl_CN */,
@@ -501,23 +529,24 @@
 			path = WASdkIntf_CN;
 			sourceTree = "<group>";
 		};
-		9A02A5937D7F4AC8902056B7142FDB7F /* WASdkImpl_CN */ = {
+		9B3EE10C244309C6800DA322BDFE8C5D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0BB7C2BA2A227BDCC008E9E8A012B040 /* Frameworks */,
-				B1890D3B745E0AF95DBBD61AD88D3287 /* Resources */,
-				F57484BB5AF9AFC74B922C78DA37C9D7 /* Support Files */,
+				4299644805BEB0A9BBED51D326310081 /* TencentOpenApi_IOS_Bundle.bundle */,
+				73A957FF29C330A2864ED4E196A6D461 /* wa_sdk_impl_config_qq.xml */,
 			);
-			name = WASdkImpl_CN;
-			path = WASdkImpl_CN;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		9C7E5AA5980783508A8D23B905D6FEFD /* Targets Support Files */ = {
+		9DA1B4D54D9DFDEADFDC1B462670EFE0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9E78D384DD032561A5747433894C292A /* Pods-WADemocn */,
+				A0DEA2782D39FD39A6F573FCA43F1C30 /* WAQQImpl_CN-xcframeworks.sh */,
+				3914AC0DB5CCD915622BDF00E5D90064 /* WAQQImpl_CN.debug.xcconfig */,
+				ECFACB3C3592EE975912F4C2B160015F /* WAQQImpl_CN.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/WAQQImpl_CN";
 			sourceTree = "<group>";
 		};
 		9E760FE0757967FE1B83016F9C3272C7 /* Frameworks */ = {
@@ -526,30 +555,6 @@
 				438F0F1700005374B8ACB53899170DE2 /* WASdkIntf.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9E78D384DD032561A5747433894C292A /* Pods-WADemocn */ = {
-			isa = PBXGroup;
-			children = (
-				F2A7EEF3C9096E18ED5ADBA714E297DC /* Pods-WADemocn-acknowledgements.markdown */,
-				A9328C2C66E1DBA0BE0DE93788D02761 /* Pods-WADemocn-acknowledgements.plist */,
-				E0B12A919571CC19D35B1FF398EC3319 /* Pods-WADemocn-dummy.m */,
-				7316D5928BF60FCBD41079F0F727294A /* Pods-WADemocn-resources.sh */,
-				406394ECB6FBE129C55DFD0C10512657 /* Pods-WADemocn.debug.xcconfig */,
-				D66CB6CBFC358B431206D77F5B6C97A0 /* Pods-WADemocn.release.xcconfig */,
-			);
-			name = "Pods-WADemocn";
-			path = "Target Support Files/Pods-WADemocn";
-			sourceTree = "<group>";
-		};
-		AA5F0890E8F58A7425D08FEA2834A16C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7842ED85E726A27AEB11EC05C087F757 /* WAQQImpl_CN.debug.xcconfig */,
-				715CF73DF1187638651EDCB71FF03FFF /* WAQQImpl_CN.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WAQQImpl_CN";
 			sourceTree = "<group>";
 		};
 		ABC445F831F23F5CEA332357CD78BDFD /* WAWebPayImpl_CN */ = {
@@ -572,27 +577,25 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		B1890D3B745E0AF95DBBD61AD88D3287 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5C4CC27A472DBB5017BF049660189EB8 /* base.plist */,
-				453E97678FECA20433EE9B5769AB7787 /* en.plist */,
-				F3BEA3D022677EFEACE6AA18B04B3E2A /* es.plist */,
-				DEFD027789897C6764F14595FE029A56 /* pt-BR.plist */,
-				6D1EA98728F827A8C8D615DDC92A4529 /* ru.plist */,
-				2E1182837A4494097E7F3B846D01D814 /* wa_sdk_impl_config_winga.xml */,
-				4E3002B7F82F3E9A8EA90CBC85E12138 /* WASDK-Resource.bundle */,
-				6051891F3D688340705C243197067CBB /* zh-Hans.plist */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		BB42D2D6ED03F4CAD0FFC0CCF4DEA1B1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				72A52C675B6CD5B1DB49AB2978A573C5 /* wa_sdk_impl_config_apple.xml */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		C217DB0D8272D43B640FDE0361318F41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A2EA316FCB812AC8651BA62CA65BED0 /* AFNetworking.framework */,
+				6361A9E110619352DAEB7F9C66F341EA /* Didomi.xcframework */,
+				719EE3D03CF55EA4B5E2B32D4BFF35B5 /* FMDB.framework */,
+				36EF3D87A69CA46ABC8411BD633F526F /* Toast.framework */,
+				D0D8AB88F93CB8F8779001009025392E /* WACommon.framework */,
+				93F1C9BAC87A35F938F557DB4110C07F /* WASdkImpl.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -602,7 +605,7 @@
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				88F9364C32FA1398A861E5FAEB121D45 /* Pods */,
 				132C2DD8A29FF54D79479A7BDEFB37B8 /* Products */,
-				9C7E5AA5980783508A8D23B905D6FEFD /* Targets Support Files */,
+				6FE0F6EE94E27B712574F4B3604BE881 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -632,20 +635,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DB42F6A6C96092C064E5A23D1ACC97D1 /* Resources */ = {
+		E8AFE49354FCB5CDEF42C1C0DA0B44FF /* Pods-WADemocn */ = {
 			isa = PBXGroup;
 			children = (
-				54E64DFBD2D9EBB53765B90AD7C9981C /* TencentOpenApi_IOS_Bundle.bundle */,
-				6706B4156C7976A3135ED3F2A8C0FEF4 /* wa_sdk_impl_config_qq.xml */,
+				487938EF84E52D301B8113640304C608 /* Pods-WADemocn-acknowledgements.markdown */,
+				9C8E02138B9796020CC218DBE6DCF1FD /* Pods-WADemocn-acknowledgements.plist */,
+				67060072EF0FD8024C72EA144BE771D9 /* Pods-WADemocn-dummy.m */,
+				B6A7B07BC77E14B97AA9262CA3AC73C0 /* Pods-WADemocn-frameworks.sh */,
+				96AD6C656F5609B011D52BA64DC4FFCD /* Pods-WADemocn-resources.sh */,
+				577DB6157D0564EA058D52362D7DBC93 /* Pods-WADemocn.debug.xcconfig */,
+				A8DB141D6F6A33FEF524C670A444F4BC /* Pods-WADemocn.release.xcconfig */,
 			);
-			name = Resources;
+			name = "Pods-WADemocn";
+			path = "Target Support Files/Pods-WADemocn";
 			sourceTree = "<group>";
 		};
-		F57484BB5AF9AFC74B922C78DA37C9D7 /* Support Files */ = {
+		ED5EAE73065A9B7F38E33203F6AB2D02 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D80F2A0C94CF901FB3B8D39975CCE305 /* WASdkImpl_CN.debug.xcconfig */,
-				B88820DBB01D7B0F38EB1E1C8DE4A41E /* WASdkImpl_CN.release.xcconfig */,
+				CCB8C02AE8E05F8FDEE1485A8A917119 /* WASdkImpl_CN-xcframeworks.sh */,
+				3CE3FC3603127801720443FEA1BCB60E /* WASdkImpl_CN.debug.xcconfig */,
+				2E25AE1BF6EA6060E9703EB128D0D1F5 /* WASdkImpl_CN.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/WASdkImpl_CN";
@@ -703,14 +713,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				96F5BA880660E7B2CD3C613BBD8BBF1C /* PBXTargetDependency */,
-				41A1A708AB1DFF423000DFC6F430D4F7 /* PBXTargetDependency */,
-				8EB7970A439CED4D2593C22A6D34DB4F /* PBXTargetDependency */,
-				FCF63CA61F7B755F131163143A3D9DBE /* PBXTargetDependency */,
-				9FF4F3A4A9B261BFCB89C681724F5013 /* PBXTargetDependency */,
-				658B335DEDABB9B2C4291813924FBCF3 /* PBXTargetDependency */,
-				17EF55463A00F3910642F1B983EC1904 /* PBXTargetDependency */,
-				FF27F2A86DDA97DBEEFA5A72CC91836E /* PBXTargetDependency */,
+				6A6E292E315021E86998AC42281C67BA /* PBXTargetDependency */,
+				4F4BC97EDCD323E84DA1A09277348CB4 /* PBXTargetDependency */,
+				2DC8611343557F0CCFE8FA8BD8ECCFEC /* PBXTargetDependency */,
+				379E523A54D370ECAFC2AA3A22400146 /* PBXTargetDependency */,
+				6C3047C6B0A3864563CF7789983D9C49 /* PBXTargetDependency */,
+				E5164BA7B7EC990B7CC3AE01F5631DBA /* PBXTargetDependency */,
+				5F74CF42F6237E8277E90240E933DDA3 /* PBXTargetDependency */,
+				4FFA4A68DA21B7430ACEC1EAA5F88CB1 /* PBXTargetDependency */,
 			);
 			name = "Pods-WADemocn";
 			productName = "Pods-WADemocn";
@@ -723,8 +733,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -752,6 +762,45 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B15A97D749BFF0AF392386E19268DA0B /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/WAQQImpl_CN/WAQQImpl_CN-xcframeworks.sh",
+				"${PODS_ROOT}/WAQQImpl_CN/frameworks/TencentOpenAPI.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WAQQImpl_CN/TencentOpenAPI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/WAQQImpl_CN/WAQQImpl_CN-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C9345A905F0A457362570F401E3416 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/WASdkImpl_CN/WASdkImpl_CN-xcframeworks.sh",
+				"${PODS_ROOT}/WASdkImpl_CN/frameworks/Didomi.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WASdkImpl_CN/Didomi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/WASdkImpl_CN/WASdkImpl_CN-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69099DFBE24E9C471A06530180D996E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -764,119 +813,119 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00B17CBC406CD7E4C5BE39F515D8A4E9 /* PBXTargetDependency */ = {
+		15CD359286B68C4AF9FEAB04B9460F43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WASdkIntf_CN;
 			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = 8CEB283E99D7366CABFCE2850E4706F1 /* PBXContainerItemProxy */;
+			targetProxy = 15ED8C770D7D4ECE7FAB114B65C5AA61 /* PBXContainerItemProxy */;
 		};
-		08A5D1CB72D07A4C1AD5F196FE662ADF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkImpl_CN;
-			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = D7EED8E49CB0E3A539CD257DA0A85911 /* PBXContainerItemProxy */;
-		};
-		0981C743AC0234F32BA202F472770B2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = 118A78B1B8B3E492B7A222F5C13B8F7C /* PBXContainerItemProxy */;
-		};
-		17EF55463A00F3910642F1B983EC1904 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WAWebPayImpl_CN;
-			target = 69C16EE09CDE7732C3EA907532F02055 /* WAWebPayImpl_CN */;
-			targetProxy = A3B4F388E2356E588C55AC291E58E21B /* PBXContainerItemProxy */;
-		};
-		41A1A708AB1DFF423000DFC6F430D4F7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WAApImpl_CN;
-			target = EFC8232C0D53668D015C8A22E0A2F3A5 /* WAApImpl_CN */;
-			targetProxy = F8438F564C862D8AC2809AF55B99A6AC /* PBXContainerItemProxy */;
-		};
-		587096114112D16E7A1F59FA986DE1D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = 9D99CCE05F25D8BEED45464F2A373A93 /* PBXContainerItemProxy */;
-		};
-		658B335DEDABB9B2C4291813924FBCF3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = 706526F0A325273CA14D294135FF660E /* PBXContainerItemProxy */;
-		};
-		86CB95EF4386DD05AF61FC8113B8DE04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkImpl_CN;
-			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = 383EF17127DCFA93738FDFD0C04C5F58 /* PBXContainerItemProxy */;
-		};
-		8C121EE662078AE45F3A4F668A5E8E47 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = 707A2E7F51E7F1172E65D9FC11E86370 /* PBXContainerItemProxy */;
-		};
-		8EB7970A439CED4D2593C22A6D34DB4F /* PBXTargetDependency */ = {
+		2DC8611343557F0CCFE8FA8BD8ECCFEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WAApwImpl_CN;
 			target = 620F337E709BADFF89171F70E91C3E63 /* WAApwImpl_CN */;
-			targetProxy = 2B3C50D6909193A2651E15F6DB225AB9 /* PBXContainerItemProxy */;
+			targetProxy = B9719C66C01212ADFC2664F4223B55AF /* PBXContainerItemProxy */;
 		};
-		911512AF1758F2D98F5A970BE1C6C54B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkImpl_CN;
-			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = 8FE0D6BE2902C17B1D7AEE4BA590B3BF /* PBXContainerItemProxy */;
-		};
-		96F5BA880660E7B2CD3C613BBD8BBF1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WAAiHelpImpl_CN;
-			target = 726C579FAD35745BF2197D05DEACB2AB /* WAAiHelpImpl_CN */;
-			targetProxy = 48E69514BECA27675E63C552F1AC3FB3 /* PBXContainerItemProxy */;
-		};
-		99351826FF11DECBB3AB2DAFD492914D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = D78E7D98A143134B57D10A87E446AFCC /* PBXContainerItemProxy */;
-		};
-		9D0D6769EDD372E3814BA465DA3CED91 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkIntf_CN;
-			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
-			targetProxy = A9E653AB28E08F6B372AB3C9E2151D50 /* PBXContainerItemProxy */;
-		};
-		9FF4F3A4A9B261BFCB89C681724F5013 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkImpl_CN;
-			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = F44ADEA2AB173D691CB6D0A8ED76AFB0 /* PBXContainerItemProxy */;
-		};
-		BA2D0F1C06A6DE341673C35A3BF4EDDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkImpl_CN;
-			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = 0AECC84B0EC2D51AEB01A30705D522E6 /* PBXContainerItemProxy */;
-		};
-		C5C224FB9B25D06E43A5063BCEEFAD4C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WASdkImpl_CN;
-			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
-			targetProxy = F89BB221D3E38630919E50FCB9B06F96 /* PBXContainerItemProxy */;
-		};
-		FCF63CA61F7B755F131163143A3D9DBE /* PBXTargetDependency */ = {
+		379E523A54D370ECAFC2AA3A22400146 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WAQQImpl_CN;
 			target = 66C470B1A3558E99C66F7E3BA69030F1 /* WAQQImpl_CN */;
-			targetProxy = AB2E024006BF63C5CDEDCD2E2126B255 /* PBXContainerItemProxy */;
+			targetProxy = 2ABAC6DF2D7581BCC1D5A7028FCAE6CA /* PBXContainerItemProxy */;
 		};
-		FF27F2A86DDA97DBEEFA5A72CC91836E /* PBXTargetDependency */ = {
+		37A75CF8F11F6BD81992760B10D08A56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = BA2849368F89EC97E11C98B620AF361C /* PBXContainerItemProxy */;
+		};
+		3BF5AA66FE3C302701DE5DE7CAE15F7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = 5760FDDCF3FEF0D6BF44B45112ABC7E9 /* PBXContainerItemProxy */;
+		};
+		4214303A454A3B2CB306E0AB9E019806 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkImpl_CN;
+			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
+			targetProxy = C51CA103A4001EBB70987B141CE48571 /* PBXContainerItemProxy */;
+		};
+		4F4BC97EDCD323E84DA1A09277348CB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WAApImpl_CN;
+			target = EFC8232C0D53668D015C8A22E0A2F3A5 /* WAApImpl_CN */;
+			targetProxy = EC270E60C1362EE350B5B7BE9380ED7C /* PBXContainerItemProxy */;
+		};
+		4FFA4A68DA21B7430ACEC1EAA5F88CB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WAWechatImpl_CN;
 			target = 6943F619B4728F2E2269F37A7D4A31B8 /* WAWechatImpl_CN */;
-			targetProxy = DA83BFB72DD4F789880E5926B34AB88F /* PBXContainerItemProxy */;
+			targetProxy = 9FDCC75DB87F9D3280BD8E170B204C4C /* PBXContainerItemProxy */;
+		};
+		5F74CF42F6237E8277E90240E933DDA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WAWebPayImpl_CN;
+			target = 69C16EE09CDE7732C3EA907532F02055 /* WAWebPayImpl_CN */;
+			targetProxy = 1C22BCAC3250CCF4BB36C7388B5E16A8 /* PBXContainerItemProxy */;
+		};
+		6394BA82FE774C57272671960F980D07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkImpl_CN;
+			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
+			targetProxy = C87DDA1F5A6789321CC6BD16BBE83D06 /* PBXContainerItemProxy */;
+		};
+		6A6E292E315021E86998AC42281C67BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WAAiHelpImpl_CN;
+			target = 726C579FAD35745BF2197D05DEACB2AB /* WAAiHelpImpl_CN */;
+			targetProxy = 6C2E9375CDE0F9A22DEE6641A8621258 /* PBXContainerItemProxy */;
+		};
+		6C3047C6B0A3864563CF7789983D9C49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkImpl_CN;
+			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
+			targetProxy = FF22B5ED74CF409330F3194670F0A891 /* PBXContainerItemProxy */;
+		};
+		A512A4A7883240058268ACA40591496D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkImpl_CN;
+			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
+			targetProxy = 48CD95E24991FC86DBE40807F91856EB /* PBXContainerItemProxy */;
+		};
+		B62C82E5008694D1FF786CB681DB8B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkImpl_CN;
+			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
+			targetProxy = 4814BD047A41B10F000A6DE4B638F676 /* PBXContainerItemProxy */;
+		};
+		BA642D64E020121D0D877F55E167E541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = 6D81F5B650A5E00267F54E185C0F5AFE /* PBXContainerItemProxy */;
+		};
+		CE266A23E36CFCDDF148CC2D4896F712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = FCC61882DFA34DDA465CB89476D8D936 /* PBXContainerItemProxy */;
+		};
+		CECAA29022A7724B1A68D4B4197F6D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = A7D46BAE721FA71336FDEB851B6FD0BF /* PBXContainerItemProxy */;
+		};
+		DA12A5F1C0E240D0B141F8B2F041AE4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkImpl_CN;
+			target = B214E7BF290498102642CCE31204E0E5 /* WASdkImpl_CN */;
+			targetProxy = 81B3D16817707B2931BBCD8195EC65D5 /* PBXContainerItemProxy */;
+		};
+		E5164BA7B7EC990B7CC3AE01F5631DBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WASdkIntf_CN;
+			target = 5A98CACB3CEB6F66511A8468FF0057C7 /* WASdkIntf_CN */;
+			targetProxy = BEEBF71C6832727F9864E26C7948272A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -894,9 +943,9 @@
 			};
 			name = Debug;
 		};
-		30CAF4BB7985D3C0426C739DA3A837EE /* Debug */ = {
+		1EA6F9D075D3DCE0E3AE436A34C9AF2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E11205F820527AEAC7AB2CBE65E898A2 /* WASdkIntf_CN.debug.xcconfig */;
+			baseConfigurationReference = 3914AC0DB5CCD915622BDF00E5D90064 /* WAQQImpl_CN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -923,7 +972,7 @@
 		};
 		434B89E03AFC2E0FB9FC20024E4D1FA1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D66CB6CBFC358B431206D77F5B6C97A0 /* Pods-WADemocn.release.xcconfig */;
+			baseConfigurationReference = A8DB141D6F6A33FEF524C670A444F4BC /* Pods-WADemocn.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -942,34 +991,6 @@
 			};
 			name = Release;
 		};
-		481F35693FBB783587253093A10EA4E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 715CF73DF1187638651EDCB71FF03FFF /* WAQQImpl_CN.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4FC87C7D2BB99317CDAA787B58D1264F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4503E4A8942ED56B07065E0C67C26E4 /* WASdkIntf_CN.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		6731D412C164495C76DB4D0B4F31AD65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAA40A65B2C0D95BE157215B1907791F /* WAApImpl_CN.debug.xcconfig */;
@@ -983,9 +1004,9 @@
 			};
 			name = Debug;
 		};
-		6897A92980367FE915AC8AB9414F8D80 /* Debug */ = {
+		6A3608024638B2853606B9D2B0C84ECB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7842ED85E726A27AEB11EC05C087F757 /* WAQQImpl_CN.debug.xcconfig */;
+			baseConfigurationReference = 2E25AE1BF6EA6060E9703EB128D0D1F5 /* WASdkImpl_CN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -993,8 +1014,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		6E8311F8F1D9ED167B3F37DC320B17A2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1010,9 +1032,9 @@
 			};
 			name = Release;
 		};
-		736AC99270CFCB754FC600C620966B7A /* Debug */ = {
+		6F65A09528931D9F7050EFF4177B2FFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D80F2A0C94CF901FB3B8D39975CCE305 /* WASdkImpl_CN.debug.xcconfig */;
+			baseConfigurationReference = 3CE3FC3603127801720443FEA1BCB60E /* WASdkImpl_CN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1037,9 +1059,22 @@
 			};
 			name = Release;
 		};
+		82095F5FFD38C381BB93F79AAB89A6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E11205F820527AEAC7AB2CBE65E898A2 /* WASdkIntf_CN.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		91A3C8FC99394B77CB1ECB23DD61D04A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 406394ECB6FBE129C55DFD0C10512657 /* Pods-WADemocn.debug.xcconfig */;
+			baseConfigurationReference = 577DB6157D0564EA058D52362D7DBC93 /* Pods-WADemocn.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1056,6 +1091,20 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		99FFC969C2C5C173476D9C5F68F8F31C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4503E4A8942ED56B07065E0C67C26E4 /* WASdkIntf_CN.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		A65AA4CE37370D3A1807577CA2D2787A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1151,9 +1200,9 @@
 			};
 			name = Debug;
 		};
-		CBE3697BCF6ADBDEDF24EC2D8DE99B5E /* Release */ = {
+		CA21DE83DAFB49DA2A221205CCD673C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B88820DBB01D7B0F38EB1E1C8DE4A41E /* WASdkImpl_CN.release.xcconfig */;
+			baseConfigurationReference = ECFACB3C3592EE975912F4C2B160015F /* WAQQImpl_CN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1269,15 +1318,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26158DF1D1142B9E9C9F5DC39F2BFAF2 /* Build configuration list for PBXAggregateTarget "WAQQImpl_CN" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6897A92980367FE915AC8AB9414F8D80 /* Debug */,
-				481F35693FBB783587253093A10EA4E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2A7C53BCF05D2A61125F73E6B0E26E17 /* Build configuration list for PBXAggregateTarget "WAAiHelpImpl_CN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1314,11 +1354,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64FF79E3897885C4BD5661DC367BD7B3 /* Build configuration list for PBXAggregateTarget "WASdkImpl_CN" */ = {
+		7519C2C73ED3B132ADCDBC16F7D61203 /* Build configuration list for PBXAggregateTarget "WASdkIntf_CN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				736AC99270CFCB754FC600C620966B7A /* Debug */,
-				CBE3697BCF6ADBDEDF24EC2D8DE99B5E /* Release */,
+				82095F5FFD38C381BB93F79AAB89A6F0 /* Debug */,
+				99FFC969C2C5C173476D9C5F68F8F31C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1350,11 +1390,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A294FE3BD08B315E4C42890EBEDFE53D /* Build configuration list for PBXAggregateTarget "WASdkIntf_CN" */ = {
+		9D139245540212588450B9C08925708A /* Build configuration list for PBXAggregateTarget "WASdkImpl_CN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30CAF4BB7985D3C0426C739DA3A837EE /* Debug */,
-				4FC87C7D2BB99317CDAA787B58D1264F /* Release */,
+				6F65A09528931D9F7050EFF4177B2FFB /* Debug */,
+				6A3608024638B2853606B9D2B0C84ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7BC90B90193D0DD53D63EAD3180BB19 /* Build configuration list for PBXAggregateTarget "WAQQImpl_CN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA6F9D075D3DCE0E3AE436A34C9AF2B /* Debug */,
+				CA21DE83DAFB49DA2A221205CCD673C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

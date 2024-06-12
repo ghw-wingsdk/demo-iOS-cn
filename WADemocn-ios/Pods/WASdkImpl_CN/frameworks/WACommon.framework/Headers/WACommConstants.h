@@ -225,6 +225,7 @@ extern NSString *const WASDK_DATA_COLLECTION_URL;
 
 extern NSString *const WASDK_APW_TRACKING;
 extern NSString *const WASDK_FIRST_LAUNCH;
+extern NSString *const WASDK_IDFA_REPORT ;
 
 extern NSString *const WASDK_USER_LIST;
 
@@ -237,8 +238,7 @@ extern NSString *const WASDK_CLT_STATUS_DONE;
 
 // 获取产品及支付方式列表
 extern NSString *const WASDK_PAY_URL_PRODUCTS;
-// 提交web支付
-extern NSString *const WASDK_PAY_URL_DO_PAY;
+
 // web支付成功
 extern NSString *const WASDK_PAY_URL_SUCCESS;
 // web支付失败
@@ -334,7 +334,7 @@ extern NSString *const WASDK_PARAM_KEY_WASDK_RECHARGE_TYPE ;
 extern NSString *const WASDK_PARAM_KEY_WASDK_WEBLOGIIN_SUCCESS_TYPE ;
 
 
-
+extern  NSString *const WASDK_CACHE_KEY_IDFA_REPORT;
 @interface WACommConstants : NSObject {
     
 }

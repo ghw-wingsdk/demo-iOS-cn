@@ -24,4 +24,11 @@
  @abstract 绑定平台accessToken
  */
 @property(copy,nonatomic)NSString *accessToken;
+
+/*!
+ @abstract 绑定wa时，是邮箱绑定还是email绑定
+ */
+@property(copy,nonatomic)NSString *email;
+@property(copy,nonatomic)NSString *mobile;
+
 @end

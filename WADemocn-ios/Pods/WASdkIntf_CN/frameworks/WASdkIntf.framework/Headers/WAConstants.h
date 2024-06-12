@@ -51,6 +51,7 @@ extern NSString *const WA_PLATFORM_WINGA_CN_NAME;
 extern NSString *const WA_CONSTANT_GUEST_CN_NAME;
 
 
+extern NSString *const WA_PLATFORM_APPSELFLOGIN;
 
 
 extern NSString *const WA_PLATFORM_HUP;

@@ -483,6 +483,7 @@
 				7FC4E2B21C8EEE7C0075FC7D /* Frameworks */,
 				7FC4E2B31C8EEE7C0075FC7D /* Resources */,
 				439F10DA7C29239235FC8FC7 /* [CP] Copy Pods Resources */,
+				D2220742A874B38AC3873834 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -646,6 +647,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2220742A874B38AC3873834 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WADemocn/Pods-WADemocn-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WASdkImpl_CN/Didomi.framework/Didomi",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Didomi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WADemocn/Pods-WADemocn-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -890,7 +909,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.8.0;
+				MARKETING_VERSION = 2.9.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;
 				PRODUCT_NAME = WADemocn;
@@ -926,7 +945,7 @@
 					"$(PROJECT_DIR)/wasdk/wechat/frameworks",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.8.0;
+				MARKETING_VERSION = 2.9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wing.sdkcn;

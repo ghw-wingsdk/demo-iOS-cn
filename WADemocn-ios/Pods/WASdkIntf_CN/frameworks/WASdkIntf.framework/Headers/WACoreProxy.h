@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "WACore.h"
 #import "WAIPush.h"
+NS_ASSUME_NONNULL_BEGIN
+
 @class WACoreProxy;
 
 #define WALog(fmt,...) {\
@@ -291,6 +293,22 @@ NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WACoreProxy getSdkVer],__FUNCTION
 
 + (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler API_AVAILABLE(ios(8.0));
 
+//当一个新的场景被创建时调用，可以在这个方法中配置场景。
++ (void)scene:(UIScene *_Nonnull)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *_Nonnull)connectionOptions API_AVAILABLE(ios(13.0));
+// 当场景被销毁时调用。
++ (void)sceneDidDisconnect:(UIScene *_Nonnull)scene  API_AVAILABLE(ios(13.0));
+//当场景变成活跃状态时调用。
++ (void)sceneDidBecomeActive:(UIScene *_Nonnull)scene API_AVAILABLE(ios(13.0));
+//当场景将要变成非活跃状态时调用。
++ (void)sceneWillResignActive:(UIScene *_Nonnull)scene API_AVAILABLE(ios(13.0));
+//当应用程序即将进入前台时调用。
++ (void)sceneWillEnterForeground:(UIScene *_Nonnull)scene  API_AVAILABLE(ios(13.0));
+//当应用程序进入后台时调用。
++ (void)sceneDidEnterBackground:(UIScene *_Nonnull)scene API_AVAILABLE(ios(13.0));
+//当别的APP通过URL地址，打开我们的app时调用
++  (void)scene:(UIScene *_Nonnull)scene openURLContexts:(NSSet<UIOpenURLContext *> *_Nonnull)URLContexts API_AVAILABLE(ios(13.0));
++ (void)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)userActivity API_AVAILABLE(ios(13.0));
+
 /*!
  @abstract 设备是否越狱
  */
@@ -299,3 +317,4 @@ NSLog((@"WASDK LOG [(version %@) %s ]:" fmt), [WACoreProxy getSdkVer],__FUNCTION
 
 
 @end
+NS_ASSUME_NONNULL_END

@@ -55,8 +55,10 @@
 //3.15.0 add 20230523
 @property(nonatomic)NSInteger isOpenKefuV2; // SDK客服开关V2(0-关闭, 1-开启, 默认关闭)
 @property(nonatomic,copy)NSString* kefuEntranceId; // aihelp客服入口id
-@property(nonatomic)NSInteger isOpenGameReview_ios; // 游戏评价开关(0-关闭, 1-开启, 默认关闭)
+@property(nonatomic)NSInteger isOpenGameReview; // 游戏评价开关(0-关闭, 1-仅安卓开启，2-仅ios开启，3-全部开启, 默认关闭)
+
 @property(nonatomic,copy)NSString* kefuGameReviewEntranceId; //AIHELP游戏评价入口
 
+@property(nonatomic,copy)NSString * mobile_country;// 优先展示国家
 
 @end

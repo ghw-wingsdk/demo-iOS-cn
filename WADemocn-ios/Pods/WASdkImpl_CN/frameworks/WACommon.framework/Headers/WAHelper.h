@@ -71,4 +71,12 @@
 +(NSInteger)getSDKType;
 
 +(NSString*)getMsgWithDict:(NSDictionary*)dict;
+
+
+
++(NSMutableArray*)getContryDataSourceArray;
+
+
+
+
 @end

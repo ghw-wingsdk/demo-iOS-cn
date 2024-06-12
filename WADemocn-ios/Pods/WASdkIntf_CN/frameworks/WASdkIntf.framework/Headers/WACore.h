@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+NS_ASSUME_NONNULL_BEGIN
+
 @class WAParamConfigObj;
 @interface WACore : NSObject
 -(void)initialize;
@@ -57,5 +59,6 @@
 /** 检测设备是否越狱 */
 - (BOOL)isJailBreak;
 
+NS_ASSUME_NONNULL_END
 
 @end

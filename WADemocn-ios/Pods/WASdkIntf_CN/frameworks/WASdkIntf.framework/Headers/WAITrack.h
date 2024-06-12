@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface WAITrack : NSObject
 @property(strong,nonatomic)NSMutableDictionary *params;
 @property(nonatomic)double value;
@@ -158,6 +158,13 @@
  *  弹出登录框时发送
  */
 -(void)postShowLoginWindow;
+
+
+
+/**
+ *  cmp结果
+ */
+-(void)postCMPResult;
 /**
  *  自定义事件
  */
@@ -168,5 +175,5 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
-
+NS_ASSUME_NONNULL_END
 @end

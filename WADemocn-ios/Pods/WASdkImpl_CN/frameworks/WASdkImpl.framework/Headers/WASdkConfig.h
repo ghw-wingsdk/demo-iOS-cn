@@ -19,4 +19,5 @@
 +(NSString *)getSdkId;
 +(void)setAppKey:(NSString*)appKey;
 +(void)setAppId:(NSString*)appKey;
+
 @end
