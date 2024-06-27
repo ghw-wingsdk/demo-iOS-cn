@@ -1,26 +1,26 @@
 platform :ios, '7.0'
 workspace 'Workspace.xcworkspace'
-# source 'http://172.16.100.58:7070/r/WASdkIntf_CN.git'
-# source 'http://172.16.100.58:7070/r/WASdkImpl_CN.git'
-# source 'http://172.16.100.58:7070/r/WAApwImpl_CN.git'
-# source 'http://172.16.100.58:7070/r/WAApImpl_CN.git'
-# source 'http://172.16.100.58:7070/r/WAWebPayImpl_CN.git'
-# source 'http://172.16.100.58:7070/r/WAWechatImpl_CN.git'
-# source 'http://172.16.100.58:7070/r/WAAiHelpImpl_CN.git'
-# source 'http://172.16.100.58:7070/r/WAQQImpl_CN.git'
-# source 'http://172.16.100.58:7070/r/WAPushImpl_CN.git'
+#source 'http://172.16.100.58:7070/r/WASdkIntf_CN.git'
+#source 'http://172.16.100.58:7070/r/WASdkImpl_CN.git'
+#source 'http://172.16.100.58:7070/r/WAApwImpl_CN.git'
+#source 'http://172.16.100.58:7070/r/WAApImpl_CN.git'
+#source 'http://172.16.100.58:7070/r/WAWebPayImpl_CN.git'
+#source 'http://172.16.100.58:7070/r/WAWechatImpl_CN.git'
+#source 'http://172.16.100.58:7070/r/WAAiHelpImpl_CN.git'
+#source 'http://172.16.100.58:7070/r/WAQQImpl_CN.git'
+#source 'http://172.16.100.58:7070/r/WAPushImpl_CN.git'
 
 
 
 
-  source 'http://repo.wingsdk.cn:8082/r/WASdkIntf_CN.git'
-  source 'http://repo.wingsdk.cn:8082/r/WASdkImpl_CN.git'
-  source 'http://repo.wingsdk.cn:8082/r/WAApwImpl_CN.git'
-  source 'http://repo.wingsdk.cn:8082/r/WAApImpl_CN.git'
-  source 'http://repo.wingsdk.cn:8082/r/WAWebPayImpl_CN.git'
-  source 'http://repo.wingsdk.cn:8082/r/WAWechatImpl_CN.git'
-  source 'http://repo.wingsdk.cn:8082/r/WAAiHelpImpl_CN.git'
-  source 'http://repo.wingsdk.cn:8082/r/WAQQImpl_CN.git'
+   source 'http://repo.wingsdk.cn:8082/r/WASdkIntf_CN.git'
+   source 'http://repo.wingsdk.cn:8082/r/WASdkImpl_CN.git'
+   source 'http://repo.wingsdk.cn:8082/r/WAApwImpl_CN.git'
+   source 'http://repo.wingsdk.cn:8082/r/WAApImpl_CN.git'
+   source 'http://repo.wingsdk.cn:8082/r/WAWebPayImpl_CN.git'
+   source 'http://repo.wingsdk.cn:8082/r/WAWechatImpl_CN.git'
+   source 'http://repo.wingsdk.cn:8082/r/WAAiHelpImpl_CN.git'
+   source 'http://repo.wingsdk.cn:8082/r/WAQQImpl_CN.git'
 
 
 target "WADemocn" do

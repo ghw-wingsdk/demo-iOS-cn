@@ -9,9 +9,9 @@ PODS:
     - WASdkImpl_CN
     - WASdkIntf_CN
   - WAQQImpl_CN (2.9.0)
-  - WASdkImpl_CN (2.9.0):
+  - WASdkImpl_CN (2.9.1):
     - WASdkIntf_CN
-  - WASdkIntf_CN (2.9.0)
+  - WASdkIntf_CN (2.9.1)
   - WAWebPayImpl_CN (2.9.0):
     - WASdkImpl_CN
     - WASdkIntf_CN
@@ -52,11 +52,11 @@ SPEC CHECKSUMS:
   WAApImpl_CN: 075e1c5ef8f2297a40addac204bde61d76f6cf12
   WAApwImpl_CN: fbbea887a06a6a5abcda3977f6b3e3e58ffb9484
   WAQQImpl_CN: c1fe17f934d17dc9071934857a1e9040a6a3e400
-  WASdkImpl_CN: d489bcaa32a85b56a03b057727f482becd2d8649
-  WASdkIntf_CN: 70140ea9f7dda6eee07a094c47b89c030dd847ab
+  WASdkImpl_CN: b48ae34b129055dd595334f10ea4dcad40d02775
+  WASdkIntf_CN: 33680aca96bc334af120a67bf934d6add3a41d5d
   WAWebPayImpl_CN: 5d915ca14529dce9f1a075798cf438ea460c1c21
   WAWechatImpl_CN: cdfd732270b9891e405af34ad19429ed2aac3a46
 
-PODFILE CHECKSUM: 86d30fd86c0a7070cee0b4ef170a9b943b99bdf2
+PODFILE CHECKSUM: 49300a54c6d3adc0e438578965150a0b4198b2cf
 
 COCOAPODS: 1.15.2
